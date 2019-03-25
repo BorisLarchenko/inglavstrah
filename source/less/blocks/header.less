@@ -1,0 +1,23 @@
+.header {
+
+  width: @mobileWidth;
+  margin: 0 auto;
+
+  background-color: #f6f6f6;
+}
+
+@media (min-width: @tabletWidth)  {
+  .header {
+    box-sizing: border-box;
+    width: @tabletWidth;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: @desctopWidth) {
+  .header {
+    box-sizing: border-box;
+    width: @desctopWidth;
+    padding: 0 50px;
+  }
+}
