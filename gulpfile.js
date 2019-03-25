@@ -59,10 +59,16 @@ gulpfile.task('copy-html-js', function(){
     .pipe(gulpfile.dest('build'))
 });
 
+gulpfile.task('copy-fonts' , function () {
+  return gulpfile.src('./source/fonts/**/*')
+    .pipe(gulpfile.dest('./build/fonts'));
+});
+
 gulpfile.task("build", function (done) {
   run(
     "clean-prod",
     "copy-html-js",
+    'copy-fonts',
     "images-prod",
     "style-prod",
     done

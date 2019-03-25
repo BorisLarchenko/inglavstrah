@@ -1,9 +1,38 @@
 .header {
-
   width: @mobileWidth;
   margin: 0 auto;
+  //height: 142px;
 
-  background-color: #f6f6f6;
+  background-color: #4cf67c;
+}
+
+.header__toggle-btn {
+  display: none;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-right: 40px;
+  padding-left: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #324a67;
+}
+
+.header__phone {
+  margin-left: 138px;
+  &-svg {
+    fill: #ffffff;
+  }
+}
+
+.header__login {
+  margin-left: 20px;
+  &-svg1 {
+    fill: #ffffff;
+  }
 }
 
 @media (min-width: @tabletWidth)  {
@@ -18,6 +47,58 @@
   .header {
     box-sizing: border-box;
     width: @desctopWidth;
-    padding: 0 50px;
+    padding: 0;
+  }
+  .header__wrapper {
+    .padding-desctop();
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color: #ffffff;
+  }
+
+
+
+}
+
+@media (max-width: 767.9px) {
+  .header__nav {
+    position: relative;
+  }
+
+
+  .header__toggle-btn {
+    position: absolute;
+    right: 40px;
+    top: -53px;
+
+    display: block;
+
+
+    padding: 0;
+    border: 0;
+
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 28px;
+      height: 14px;
+      background: #324a67 url("../../img/gamburger.png") center no-repeat;
+    }
+  }
+
+  .header__nav--opened .header__toggle-btn {
+    right: 32px;
+  }
+
+  .header__nav--opened .header__toggle-btn::before {
+
+
+    width: 16px;
+    height: 16px;
+    background: #324a67 url("../../img/cross.png") center no-repeat;
   }
 }
