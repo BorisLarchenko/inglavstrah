@@ -19,11 +19,7 @@
   fill: #31597e;
 }
 
-@media (min-width: @desctopWidth) {
-  .logo__text {
-    display: inline;
-  }
-
+@media (min-width: @tabletWidth) {
   .logo__svg {
     width: 35px;
     height: 35px;
@@ -32,5 +28,15 @@
 
   .logo__svg2 {
     fill: #324a67;
+  }
+
+  .logo__svg4 {
+    fill: #ffffff;
+  }
+}
+
+@media (min-width: @desctopWidth) {
+  .logo__text {
+    display: inline;
   }
 }
