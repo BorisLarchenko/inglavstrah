@@ -1,4 +1,5 @@
 .header {
+  box-sizing: border-box;
   width: @mobileWidth;
   margin: 0 auto;
   //height: 142px;
@@ -54,8 +55,89 @@
   .header {
     box-sizing: border-box;
     width: @tabletWidth;
-    padding: 0 40px;
+    padding: 0;
   }
+  .header__wrapper {
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+
+    background-color: #ffffff;
+  }
+
+  .header__phone {
+    margin-left: 140px;
+
+    text-decoration: none;
+  }
+  .header__phone-svg {
+    display: none;
+  }
+
+  .header__phone-text {
+    display: inline;
+
+    font-family: 'cuprumbold', 'Arial', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+
+    color: #000000;
+
+  }
+
+  .header__login {
+    margin-left: 120px;
+
+    text-decoration: none;
+  }
+
+  .header__login-svg {
+    display: none;
+  }
+  .header__login-text {
+    display: inline-block;
+
+    font-family: 'cuprumbold', 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0;
+
+    color: #305a7f;
+  }
+
+  .header__login-svg-desc {
+    display: inline;
+
+    width: 16px;
+    height: 14px;
+    padding-left: 4px;
+  }
+
+  .header__login-svg-desc1 {
+    fill: #305a7f;
+  }
+
+  .header__button {
+    display: inline-block;
+
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 18px;
+
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0;
+    color: #ffffff;
+
+    background-color: #305a7f;
+    border: 1px solid #305a7f;
+    border-radius: 0 10px 10px;
+  }
+
 }
 
 @media (min-width: @desctopWidth) {
