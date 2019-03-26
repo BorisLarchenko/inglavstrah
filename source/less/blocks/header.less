@@ -50,6 +50,46 @@
   display: none;
 }
 
+.header__nav-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.header__nav-main-item {
+  box-sizing: border-box;
+
+  width: 160px;
+  padding-left: 15px;
+
+
+  font-family: 'cuprumbold', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 43px;
+  letter-spacing: 0;
+  color: #ffffff;
+
+  background-color: #466182;
+
+  &:first-child,
+  &:nth-child(2){
+    border-bottom: #feee7e 1px solid;
+  }
+  &:first-child,
+  &:nth-child(3){
+    border-right: #feee7e 1px solid;
+  }
+
+}
+
+.header__nav-additional {
+  display: none;
+}
 
 @media (min-width: @tabletWidth)  {
   .header {
@@ -138,6 +178,36 @@
     border-radius: 0 10px 10px;
   }
 
+  .header__nav-main-item {
+    width: 25%;
+  }
+
+  .header__nav-additional {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+  }
+
+  .header__nav-additional-item {
+    box-sizing: border-box;
+
+    width: 16.65%;
+    padding-left: 15px;
+
+
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 43px;
+    letter-spacing: 0;
+    color: #ffffff;
+
+    background-color: #466182;
+  }
 }
 
 @media (min-width: @desctopWidth) {
@@ -150,80 +220,34 @@
     .padding-desctop();
     padding-top: 20px;
     padding-bottom: 20px;
-
-    background-color: #ffffff;
   }
 
   .header__phone {
     margin-left: 378px;
-
-    text-decoration: none;
-  }
-  .header__phone-svg {
-    display: none;
   }
 
-  .header__phone-text {
-    display: inline;
-
-    font-family: 'cuprumbold', 'Arial', sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0.1em;
-
-    color: #000000;
-
-  }
 
   .header__login {
     margin-left: 378px;
-
-    text-decoration: none;
   }
 
-  .header__login-svg {
-    display: none;
+  .header__nav {
+    display: flex;
+    flex-direction: row;
+    &-main {
+      width: 50%;
+    }
+    &-additional {
+      width: 50%;
+    }
   }
-  .header__login-text {
-    display: inline-block;
-
-    font-family: 'cuprumbold', 'Arial', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: 0;
-
-    color: #305a7f;
+  .header__nav-main-item {
+    width: 25%;
   }
+  .header__nav-additional-item {
+    width: 16.65%;
 
-  .header__login-svg-desc {
-    display: inline;
-
-    width: 16px;
-    height: 14px;
-    padding-left: 4px;
-  }
-
-  .header__login-svg-desc1 {
-    fill: #305a7f;
-  }
-
-  .header__button {
-    display: inline-block;
-
-    margin-left: 20px;
-    padding-left: 20px;
-    padding-right: 18px;
-
-    font-family: 'Cuprum', 'Arial', sans-serif;
     font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0;
-    color: #ffffff;
-
-    background-color: #305a7f;
-    border: 1px solid #305a7f;
-    border-radius: 0 10px 10px;
   }
 }
 
