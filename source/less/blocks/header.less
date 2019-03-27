@@ -2,9 +2,6 @@
   box-sizing: border-box;
   width: @mobileWidth;
   margin: 0 auto;
-  //height: 142px;
-
-  background-color: #4cf67c;
 }
 
 .header__toggle-btn {
@@ -85,11 +82,11 @@
 
   &:first-child,
   &:nth-child(2){
-    border-bottom: #feee7e 1px solid;
+    border-bottom: rgba(254, 238, 126, 0.32) 1px solid;
   }
   &:first-child,
   &:nth-child(3){
-    border-right: #feee7e 1px solid;
+    border-right: rgba(254, 238, 126, 0.32) 1px solid;
   }
 
 }
@@ -102,14 +99,32 @@
   display: block;
   padding-left: 15px;
 
-  background-color: #feca04;
+
+  &:hover {
+    background-color: #48667f;
+    color: @yellow-color;
+  }
+
+  &:active {
+    background-color: #466d7f;
+    olor: #fedc04;
+  }
 }
 
 .header__nav-additional-link {
   display: block;
   padding-left: 15px;
 
-  background-color: #e7fe98;
+
+  &:hover {
+    background-color: #48667f;
+    color: @yellow-color;
+  }
+
+  &:active {
+    background-color: #466d7f;
+    olor: #fedc04;
+  }
 }
 
 
@@ -146,6 +161,9 @@
     letter-spacing: 0.1em;
 
     color: #000000;
+    &:hover {
+      color: #4687b0;
+    }
 
   }
 
@@ -258,7 +276,10 @@
 
   .header__phone {
     margin-left: 378px;
+
   }
+
+
 
 
   .header__login {
@@ -286,11 +307,21 @@
     line-height: 30px;
     font-weight: bold;
 
-    color: #466182;
+    color: #3c5778;
     background-color: #fff;
   }
   .header__nav-main-link {
     padding-left: 5px;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #4687b0;
+    }
+
+    &:active {
+      background-color: #f5ffed;
+      color: #4896c0;
+    }
   }
   .header__nav-additional-item {
     width: 16.65%;
@@ -300,6 +331,17 @@
     font-size: 16px;
     color: #838383;
     background-color: #fff;
+  }
+  .header__nav-additional-link {
+    &:hover {
+      background-color: #ffffff;
+      color: #4687b0;
+    }
+
+    &:active {
+      background-color: #f5ffed;
+      color: #4896c0;
+    }
   }
 }
 
@@ -355,7 +397,8 @@
 
   .header__nav--opened .header__nav-main-item {
     width: 320px;
-
+    border-right: none;
+    border-bottom: rgba(254, 202, 4, 0.31) 1px solid;
     font-size: 16px;
     line-height: 48px;
   }
@@ -374,6 +417,7 @@
 
     width: 320px;
     padding-left: 0;
+    border-bottom: rgba(254, 202, 4, 0.31) 1px solid;
 
 
     font-family: 'Cuprum', 'Arial', sans-serif;
@@ -407,6 +451,10 @@
     text-decoration: none;
 
     color: #ffffff;
+
+    &:hover {
+      color: #ffd800;
+    }
   }
 
   .header__nav--opened .header__btn {
