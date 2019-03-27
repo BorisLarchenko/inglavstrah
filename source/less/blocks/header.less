@@ -186,6 +186,21 @@
     letter-spacing: 0;
 
     color: #305a7f;
+
+    &:hover {
+      color: #4687b0;
+    }
+    &:active {
+      color: #509ecd;
+    }
+  }
+
+  .header__login-text:hover .header__login-svg-desc1 {
+    fill: #4687b0;
+  }
+
+  .header__login-text:active .header__login-svg-desc1 {
+    fill: #509ecd;
   }
 
   .header__login-svg-desc {
@@ -194,10 +209,13 @@
     width: 16px;
     height: 14px;
     padding-left: 4px;
+
+
   }
 
   .header__login-svg-desc1 {
     fill: #305a7f;
+
   }
 
   .header__button {
@@ -216,6 +234,14 @@
     background-color: #305a7f;
     border: 1px solid #305a7f;
     border-radius: 0 10px 10px;
+
+    &:hover {
+       background-color: #4687b0;
+      transition: background-color 100ms linear;
+    }
+    &:active {
+      background-color: #509ecd;
+    }
   }
 
   .header__nav-main-item {
