@@ -12,6 +12,8 @@ var plumber = require('gulp-plumber');
 var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
+var posthtml = require('gulp-posthtml');
+var include = require('posthtml-include');
 
 gulpfile.task('clean-prod', function () {
   return del('./build');
@@ -52,6 +54,9 @@ gulpfile.task("serve-prod", ["style-prod"], function () {
 
 gulpfile.task('copy-html-js', function(){
   return gulpfile.src('source/*.html')
+    .pipe(posthtml([
+      include()
+    ]))
     .pipe(plumber())
     .pipe(useref())
     // Minifies only if it's a JavaScript file
@@ -67,10 +72,10 @@ gulpfile.task('copy-fonts' , function () {
 gulpfile.task("build", function (done) {
   run(
     "clean-prod",
-    "copy-html-js",
     'copy-fonts',
     "images-prod",
     "style-prod",
+    "copy-html-js",
     done
   );
 });
