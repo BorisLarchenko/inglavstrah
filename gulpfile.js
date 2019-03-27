@@ -68,7 +68,7 @@ gulpfile.task('copy-fonts' , function () {
   return gulpfile.src('./source/fonts/**/*')
     .pipe(gulpfile.dest('./build/fonts'));
 });
-//TODO: make posthtml available to make includes svg and html in the project
+//DONE make posthtml available to make includes svg and html in the project
 gulpfile.task("build", function (done) {
   run(
     "clean-prod",
