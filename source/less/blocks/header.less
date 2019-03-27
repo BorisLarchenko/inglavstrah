@@ -50,6 +50,10 @@
   display: none;
 }
 
+.header__phone--nav {
+  display: none;
+}
+
 .header__nav-main {
   display: flex;
   flex-direction: row;
@@ -363,5 +367,23 @@
 
   .header__nav--opened .header__nav-wrapper {
     position: absolute;
+
+    background-color: #466182;
+  }
+
+  .header__nav--opened .header__phone--nav {
+    display: block;
+
+    width: 40%;
+    margin: 19px auto;
+    margin-bottom: 15px;
+    font-family: 'cuprumbold', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-decoration: none;
+
+    color: #ffffff;
+
   }
 }
