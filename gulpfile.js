@@ -47,17 +47,18 @@ gulpfile.task("serve-prod", ["style-prod"], function () {
   server.init({
     server: "./build"});
   gulpfile.watch("./source/less/**/*.less", ["style-prod"]);
-  gulpfile.watch("./source/*.html", ['copy-html-js']).on('change', server.reload);
+  gulpfile.watch(["./source/*.html" , './source/html-modules/*.html'], ['copy-html-js']).on('change', server.reload);
   gulpfile.watch("source/img/**/*.{png,jpg,svg}", {cwd:'./'}, ['images-prod']);
   gulpfile.watch("./source/**/*.js", ['copy-html-js']).on('change', server.reload);
 });
 
 gulpfile.task('copy-html-js', function(){
   return gulpfile.src('source/*.html')
+    .pipe(plumber())
     .pipe(posthtml([
       include()
     ]))
-    .pipe(plumber())
+
     .pipe(useref())
     // Minifies only if it's a JavaScript file
     .pipe(gulpIf('*.js', uglify()))
