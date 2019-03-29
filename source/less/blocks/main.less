@@ -1,18 +1,42 @@
+//Trying to use desctop first here
+//Write all styles for desctop
 .main {
+
+
+
   
 }
 
 .main__test{
 	padding-top: 60px;
-	background-color: #1ef6d4;
+  min-height: 801px;
+  background: transparent url("../../img/main-test-bg-desc.jpg") no-repeat center;
+  background-size: cover;
 }
 
-@media (min-width: @tabletWidth)  {
+.main__title {
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+.main__test-description {
+  font-family: '', 'Arial', sans-serif;
+}
+
+
+//Write all styles for tablet
+@media (max-width: @desctopWidth)  {
   .main {
   }
 }
 
-@media (min-width: @desctopWidth) {
+//Write all styles for mobile
+@media (max-width: @tabletWidth) {
   .main {
+  }
+
+  .main__test {
+    min-height: 425px;
+    background: transparent url("../../img/main-test-bg-mob.jpg") no-repeat center;
+    background-size: cover;
   }
 }
