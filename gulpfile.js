@@ -14,6 +14,8 @@ var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
+var sourcemaps = require('gulp-sourcemaps');
+var csso = require('gulp-csso');
 
 gulpfile.task('clean-prod', function () {
   return del('./build');
@@ -32,13 +34,20 @@ gulpfile.task("images-prod", function () {
 gulpfile.task('style-prod', function () {
   return gulpfile.src('./source/less/style.less')
     .pipe(plumber())
+    .pipe(sourcemaps.init())
     .pipe(less())
     .pipe(postcss([
       autoprefixer()
     ]))
+    // .pipe(sourcemaps.write(''))
     .pipe(gulpfile.dest('./build/css'))
+
     .pipe(rename('style.min.css'))
-    .pipe(minifyCss())
+    .pipe(csso({
+      restructure: false,
+      sourceMap: true,
+    }))
+    .pipe(sourcemaps.write(''))
     .pipe(gulpfile.dest('./build/css/'))
     .pipe(server.stream());
 });
@@ -46,7 +55,7 @@ gulpfile.task('style-prod', function () {
 gulpfile.task("serve-prod", ["style-prod"], function () {
   server.init({
     server: "./build"});
-  gulpfile.watch("./source/less/**/*.less", ["style-prod"]);
+  gulpfile.watch("./source/less/**/*.less", ["style-prod"]).on('change', server.reload);
   gulpfile.watch(["./source/*.html" , './source/html-modules/*.html'], ['copy-html-js']).on('change', server.reload);
   gulpfile.watch("source/img/**/*.{png,jpg,svg}", {cwd:'./'}, ['images-prod']);
   gulpfile.watch("./source/**/*.js", ['copy-html-js']).on('change', server.reload);
