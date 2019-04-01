@@ -2,7 +2,9 @@
 //Write all styles for desctop
 .main {
 
-
+  * {
+    outline: 1px solid red;
+  }
 
   
 }
@@ -13,6 +15,18 @@
   background-size: cover;
 }
 
+.main__advantages{
+  padding-top: 170px;
+  background: transparent url("../img/main-adv-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.main__howto {
+  padding-top: 180px;
+  min-height: 900px;
+  background-color: rgba(173, 191, 214, 0.47);
+}
+
 .main__title {
   width: 570px;
 
@@ -20,6 +34,55 @@
   line-height: 62px;
   font-size: 56px;
   letter-spacing: 0;
+}
+
+.main__title--colored {
+  width: 630px;
+  margin-left: 118px;
+
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  color: #fff;
+}
+
+.main__advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 805px;
+
+}
+
+.main__advantages-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 185px;
+}
+
+.main__howto-slider {
+  margin-left: 118px;
+}
+
+.main__advantages-item-title {
+  display: block;
+
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 38px;
+  line-height: 82px;
+
+}
+.main__advantages-item-title--special {
+  color: @yellow-color;
+}
+
+.main__advantages-item {
+
+
+  width: 355px;
+  margin-bottom: 65px;
+
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .main__test-description {
@@ -65,7 +128,7 @@
 }
 
 .main__test-wrapper {
-  padding-bottom: 55px;
+  padding-bottom: 190px;
 }
 
 //Write all styles for tablet
