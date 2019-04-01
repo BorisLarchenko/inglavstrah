@@ -17,6 +17,8 @@
 }
 
 .main__title {
+  width: 560px;
+
   font-family: 'cuprumbold', 'Arial', sans-serif;
   line-height: 62px;
   font-size: 56px;
@@ -32,9 +34,7 @@
   font-family: 'cuprumbold', 'Arial', sans-serif;
 }
 
-.main__title {
-  width: 560px;
-}
+
 
 //Write all styles for tablet
 @media (max-width: @desctopWidth)  {
@@ -46,7 +46,15 @@
   }
 
   .main__title {
-    width: 360px;
+    width: 460px;
+
+    line-height: 45px;
+    font-size: 45px;
+    letter-spacing: -0.02em;
+  }
+
+  .main__test-description {
+    font-size: 30px;
   }
 }
 
@@ -56,11 +64,28 @@
   }
 
   .main__test {
+    padding-top: 50px;
+
     min-height: 425px;
     background: transparent url("../img/main-test-bg-mob.jpg") no-repeat center;
     background-size: cover;
   }
+
   .main__title {
-    width: 190px;
+    width: 290px;
+
+    line-height: 30px;
+    font-size: 30px;
+    letter-spacing: -0.02em;
   }
+
+  .main__test-description {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: @mobileWidth) {
+
+
 }
