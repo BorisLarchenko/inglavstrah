@@ -33,6 +33,7 @@
 .main__btn {
   padding: 20px 100px;
   margin-top: 60px;
+  margin-bottom: 90px;
 
   font-size: 22px;
 
@@ -41,6 +42,9 @@
 }
 
 .main__test-info {
+  display: flex;
+  flex-direction: column;
+
   width: 260px;
 
   font-family: 'Cuprum', 'Arial', sans-serif;
@@ -90,6 +94,34 @@
     border-radius: 0 15px 15px;
 
   }
+
+  .main__test-info {
+    flex-direction: row;
+
+
+    width: 270px;
+
+    font-size: 13px;
+    line-height: 16px;
+
+    background-color: #bbbbbb;
+  }
+
+  .main__test-price {
+    width: 230px;
+
+    font-size: 65px;
+    line-height: 65px;
+    letter-spacing: -0.05em;
+    color: @yellow-color;
+  }
+
+  .main__test-price-sign {
+    font-size: 40px;
+  }
+  .main__test-words {
+    margin-top: 30px;
+  }
 }
 
 //Write all styles for mobile
@@ -115,6 +147,10 @@
 
   .main__test-description {
     font-size: 20px;
+  }
+
+  .main__test-info {
+    margin-top: 180px;
   }
 
 }
