@@ -32,10 +32,21 @@
   font-family: 'cuprumbold', 'Arial', sans-serif;
 }
 
+.main__title {
+  width: 560px;
+}
 
 //Write all styles for tablet
 @media (max-width: @desctopWidth)  {
   .main {
+  }
+  .main__test {
+    padding-top: 85px;
+    min-height: 801px;
+  }
+
+  .main__title {
+    width: 360px;
   }
 }
 
@@ -48,5 +59,8 @@
     min-height: 425px;
     background: transparent url("../img/main-test-bg-mob.jpg") no-repeat center;
     background-size: cover;
+  }
+  .main__title {
+    width: 190px;
   }
 }
