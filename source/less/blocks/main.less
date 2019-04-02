@@ -9,13 +9,13 @@
   
 }
 
-.main__test{
+.main__test {
   padding-top: 167px;
   background: transparent url("../img/main-test-bg-desc2.jpg") no-repeat center;
   background-size: cover;
 }
 
-.main__advantages{
+.main__advantages {
   padding-top: 170px;
   background: transparent url("../img/main-adv-bg.jpg") no-repeat center;
   background-size: cover;
@@ -23,8 +23,17 @@
 
 .main__howto {
   padding-top: 180px;
+  background: transparent url("../img/main-slider-bg-desc.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.main__benefits {
+  padding-top: 180px;
   min-height: 900px;
-  background-color: rgba(173, 191, 214, 0.47);
+  background:
+  transparent url("../../img/benefits-car-bg2.png") no-repeat  center 715px,
+  transparent url("../../img/benefits-bg.jpg") no-repeat center;
+  background-size: 50%, cover;
 }
 
 .main__title {
@@ -34,6 +43,42 @@
   line-height: 62px;
   font-size: 56px;
   letter-spacing: 0;
+}
+
+.main__benefits-title {
+  width: auto;
+  text-align: center;
+  font-size: 50px;
+}
+
+.main__benefits-info {
+  width: 355px;
+  margin-top: 75px;
+
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.main__benefits-info:not(:first-child) {
+  margin-left: 120px;
+}
+.main__benefits-info-title {
+  display: block;
+
+  font-family: 'cuprumbold', 'Arial', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.main__benefits-info-additional {
+  display: block;
+
+  margin-bottom: 35px;
+
+  font-family: 'cuprumbold', 'Arial', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: #4e87cb;
 }
 
 .main__title--colored {
@@ -105,8 +150,7 @@
   display: flex;
   flex-direction: column;
 
-  width: 260px;
-
+  width: 230px;
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 20px;
   line-height: 27px;
@@ -131,6 +175,11 @@
   padding-bottom: 190px;
 }
 
+.main__benefits-info-wrapper {
+  display: flex;
+}
+
+
 //Write all styles for tablet
 @media (max-width: @desctopWidth)  {
   .main {
@@ -146,6 +195,10 @@
     line-height: 45px;
     font-size: 45px;
     letter-spacing: -0.02em;
+  }
+
+  .main__benefits-title {
+    width: auto;
   }
 
   .main__test-description {
@@ -183,7 +236,7 @@
     font-size: 40px;
   }
   .main__test-words {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 }
 
