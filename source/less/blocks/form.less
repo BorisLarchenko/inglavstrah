@@ -1,0 +1,71 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form-btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 90px;
+}
+
+.form__btn {
+  margin: 0;
+
+
+  background-color: #fff;
+  &:hover {
+    background: linear-gradient(to right,#fff 15%, #fffccc 50%,#fff);
+  }
+}
+
+.form__personal {
+  width: 331px;
+
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #828282;
+}
+
+.form__personal-link {
+  font-family: 'Roboto','Arial',sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: .01em;
+  color: @gray-color;
+  border-bottom: 1px dashed @gray-color;
+}
+
+.form__text {
+  margin-top: 40px;
+  border: none;
+  border-bottom: 1px solid @gray-color;
+
+  background-color: transparent;
+  font-family: 'robotolight', 'Arial', sans-serif;
+  font-size: 20px;
+  line-height: 35px;
+  color: @gray-color;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+//Write all styles for big-tablet and small desctop
+@media (max-width: @desctopWidth)  {
+  .form {}
+}
+
+//Write all styles for tablet
+@media (max-width: @mediumWidth)  {
+  .form {}
+}
+
+//Write all styles for mobile
+@media (max-width: @tabletWidth) {
+  .form {}
+}
