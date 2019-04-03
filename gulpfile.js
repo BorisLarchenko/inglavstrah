@@ -2,7 +2,6 @@ var gulpfile = require('gulp');
 var less = require('gulp-less');
 var rename = require("gulp-rename");
 var server = require("browser-sync").create();
-var  minifyCss = require("gulp-minify-css");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var del = require("del");
