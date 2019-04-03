@@ -1,0 +1,141 @@
+.footer {
+  * {
+    outline: 1px solid red;
+  }
+  min-height: 375px;
+}
+
+.footer__contacts {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 70px;
+  padding-bottom: 55px;
+}
+
+.footer__text {
+  font-family: 'robotolight', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.footer__call {
+  width: 160px;
+  margin-left: 94px;
+}
+
+.footer__write {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-left: 138px;
+  width: 340px;
+}
+
+
+.footer__btn {
+  position: relative;
+
+  width: 158px;
+  margin-top: 10px;
+
+  background-color: #32aee1;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    display: block;
+    width: 20px;
+    height: 20px;}
+}
+
+.footer__btn--telegram {
+  &::before {
+    background: transparent url("../../img/telegram-plane.svg") center no-repeat;
+  }
+}
+.footer__btn--viber{
+  background-color: #7b519d;
+  &::before {
+    background: transparent url("../../img/viber.svg") center no-repeat;
+  }
+}
+.footer__btn--facebook{
+  background-color: #0070ff;
+  &::before {
+    background: transparent url("../../img/facebook-messenger.svg") center no-repeat;
+  }
+}
+.footer__btn--skype{
+  background-color: #5082ba;
+  &::before {
+    background: transparent url("../../img/skype.svg") center no-repeat;
+  }
+}
+.footer__btn--vk{
+  &::before {
+    background: transparent url("../../img/vk.svg") center no-repeat;
+  }
+}
+
+
+.footer__come {
+  margin-left: 118px;
+  width: 285px;
+  line-height: 26px;
+}
+
+
+
+
+.footer__title {
+  display: block;
+
+  width: 100%;
+
+  font-size: 25px;
+  line-height: 22px;
+  color: #4e87cb;
+}
+
+.footer__list {
+  font-family: 'robotolight', 'Arial', sans-serif;
+  font-size: 17px;
+  color: #525252;
+}
+
+.footer__item-link {
+  font: inherit;
+  color: inherit;
+}
+
+.footer__list {
+  margin-left: 45px;
+  width: 830px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__come-link {
+  margin-top: 20px;
+}
+
+.footer__copyright {
+  padding-bottom: 25px;
+}
+
+//Write all styles for big-tablet and small desktop
+@media (max-width: @desctopWidth)  {
+  .footer {}
+}
+
+//Write all styles for tablet
+@media (max-width: @mediumWidth)  {
+  .footer {}
+}
+
+//Write all styles for mobile
+@media (max-width: @tabletWidth) {
+  .footer {}
+}
