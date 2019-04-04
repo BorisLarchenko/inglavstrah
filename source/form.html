@@ -19,21 +19,29 @@
 					<div class="test__form-wrapper">
 						<p class="test__pagination">Шаг 1<span class="test__pagination--grey">/7</span></p>
 						<p class="test__step-title">Мощность двигателя</p>
-						<label>
-							<input type="radio" name="power" value="less50"> До 50 лс.
-						</label>
-						<label>
-							<input type="radio" name="power" value="more50"> 51-70 лс.
-						</label>
-						<label>
-							<input type="radio" name="power" value="more50"> 71-100 лс.
-						</label>
-						<label>
-							<input type="radio" name="power" value="more50"> 101-150 лс.
-						</label>
-						<label>
-							<input type="radio" name="power" value="more50"> Свыше 150 лс.
-						</label>
+						<div class="test__radio-wrapper">
+							<label class="test__input-aria">
+								<input class="test__radio" type="radio" name="power" value="less50">
+								<span class="test__radio-circle"> До 50 лс.</span>
+							</label>
+							<label class="test__input-aria">
+								<input class="test__radio" type="radio" name="power" value="more50">
+								<span class="test__radio-circle"> 51-70 лс.</span>
+							</label>
+							<label class="test__input-aria">
+								<input class="test__radio" type="radio" name="power" value="more50">
+								<span class="test__radio-circle"> 71-100 лс.</span>
+							</label>
+							<label class="test__input-aria">
+								<input class="test__radio" type="radio" name="power" value="more50">
+								<span class="test__radio-circle"> 101-150 лс.</span>
+							</label>
+							<label class="test__input-aria">
+								<input class="test__radio" type="radio" name="power" value="more50">
+								<span class="test__radio-circle"> Свыше 150 лс.</span>
+							</label>
+						</div>
+
 						<button class="btn test__btn" type="button">Следующий шаг</button>
 						<button class="btn test__btn" type="button">Шаг назад</button>
 						<p class="main__test-info">
@@ -44,8 +52,8 @@
 					<div class="test__form-wrapper">
 						<p class="test__pagination">Шаг</p>
 						<p class="test__title">Мощность двигателя</p>
-						<label>
-							<input type="radio"> До 50-ти лошадиных сил
+						<label class="test__input-aria">
+							<input class="test__radio" type="radio"> До 50-ти лошадиных сил
 							<input type="radio"> До 50-ти лошадиных сил
 						</label>
 					</div>
