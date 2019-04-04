@@ -4,19 +4,56 @@
 	<meta charset="UTF-8">
 	<meta	name="viewport"	content="width=device-width,initial-scale=1">
 	<title>form-test</title>
-	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-	<link rel="icon" href="img/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+	<link rel="icon" href="./img/favicon.png" type="image/x-icon">
 
 	<link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
 	<include src="source/html-modules/header.html"></include>
-	<main class="form-main">
-		<section class="from-main__test">
+	<main class="main">
+		<section class="main__form-test test">
 			<div class="container">
-				<h2>hello my friend</h2>
+				<h2 class="test__title">Тест ОСАГО</h2>
+				<form class="test__form" action="http://scooterlabs.com/echo" method="post">
+					<div class="test__form-wrapper">
+						<p class="test__pagination">Шаг 1<span class="test__pagination--grey">/7</span></p>
+						<p class="test__step-title">Мощность двигателя</p>
+						<label>
+							<input type="radio" name="power" value="less50"> До 50 лс.
+						</label>
+						<label>
+							<input type="radio" name="power" value="more50"> 51-70 лс.
+						</label>
+						<label>
+							<input type="radio" name="power" value="more50"> 71-100 лс.
+						</label>
+						<label>
+							<input type="radio" name="power" value="more50"> 101-150 лс.
+						</label>
+						<label>
+							<input type="radio" name="power" value="more50"> Свыше 150 лс.
+						</label>
+						<button class="btn test__btn" type="button">Следующий шаг</button>
+						<button class="btn test__btn" type="button">Шаг назад</button>
+						<p class="main__test-info">
+							<span class="main__test-price">350<span class="main__test-price-sign">₽</span></span>
+							<span class="main__test-words"> Прошедшим тест — скидка	от стоимости полиса ОСАГО</span>
+						</p>
+					</div>
+					<div class="test__form-wrapper">
+						<p class="test__pagination">Шаг</p>
+						<p class="test__title">Мощность двигателя</p>
+						<label>
+							<input type="radio"> До 50-ти лошадиных сил
+							<input type="radio"> До 50-ти лошадиных сил
+						</label>
+					</div>
+
+
+				</form>
 			</div>
-			
+
 		</section>
 
 	</main>
