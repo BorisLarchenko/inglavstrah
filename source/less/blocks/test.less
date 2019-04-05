@@ -92,11 +92,52 @@
   flex-wrap: wrap;
   width: 995px;
   justify-content: space-between;
+  margin-top: 55px;
+  margin-bottom: 52px;
 }
+
+
+.test__btn {
+  padding: 25px 82px;
+
+  font-size: 30px;
+  border-radius: 0 22px 22px;
+}
+
+.test__btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 500px;
+
+}
+
+.test__info {
+  flex-direction: column;
+}
+
+.test__btn-price-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.test__price {
+  font-size: 104px;
+  line-height: 85px;
+}
+
 
 //Write all styles for small desktop and big tablet
 @media (max-width: @desctopWidth)  {
   .test {
+  }
+  .test__info {
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .test__words {
+    margin-top: -10px;
   }
 }
 
