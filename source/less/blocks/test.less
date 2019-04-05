@@ -184,6 +184,36 @@
 }
 
 
+.test__form-select {
+
+  min-width: 40%;
+  padding: 18px 22px;
+  padding-right: 40px;
+  border: 1px solid @gray-color;
+
+  font-family: 'robotobold', 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+
+  appearance: none;
+  background: url('../../img/02-form-main/angle-down.svg') 98% 50% no-repeat;
+
+  &:active {
+    background: url('../../img/02-form-main/angle-up.svg') 98% 50% no-repeat;
+  }
+
+}
+
+.test__form-option {
+  font-family: 'robotobold', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  background-color: @light-grey;
+  color: #000;
+}
+
 //Write all styles for small desktop and big tablet
 @media (max-width: @desctopWidth)  {
   .test {
