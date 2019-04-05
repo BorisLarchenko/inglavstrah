@@ -160,17 +160,17 @@
 
 				</div>
 
-					<div class="test__form-wrapper test__form-step5">
+					<div class="test__form-wrapper test__form-step5" style="display: none">
 						<p class="test__pagination">Шаг 5<span class="test__pagination--grey">/7</span></p>
 						<p class="test__step-title">Стаж безаварийности</p>
 						<div class="test__radio-wrapper">
-							<select class="test__form-select" name="year">
-								<option class="test__form-option" value="2000">Выберите из списка</option>
-								<option class="test__form-option" value="3000">7 лет — класс 10 | 0.65</option>
-								<option class="test__form-option" value="4000">8 лет — класс 11 | 0.6</option>
-								<option class="test__form-option" value="5000">9 лет — класс 12 | 0.55</option>
-								<option class="test__form-option" value="3000">10 лет и больше — класс 13 | 0.5</option>
-								<option class="test__form-option" value="4000">1 дтп — класс 2 | 1.4</option>
+							<select class="test__form-select" name="years-without-break">
+								<option class="test__form-option" value="nothing">Выберите из списка</option>
+								<option class="test__form-option" value="7">7 лет — класс 10 | 0.65</option>
+								<option class="test__form-option" value="8">8 лет — класс 11 | 0.6</option>
+								<option class="test__form-option" value="9">9 лет — класс 12 | 0.55</option>
+								<option class="test__form-option" value="10">10 лет и больше — класс 13 | 0.5</option>
+								<option class="test__form-option" value="one-accident">1 дтп — класс 2 | 1.4</option>
 							</select>
 						</div>
 						<div class="test__btn-price-wrapper">
@@ -221,7 +221,37 @@
 
 
 					</div>
+					<div class="test__form-wrapper test__form-step7">
+						<p class="test__pagination">Шаг 7<span class="test__pagination--grey">/7</span></p>
+						<p class="test__step-title">Благодарим за прохождение теста!</p>
+						<div class="test__radio-wrapper test__input-wrapper">
+							<p class="test__price-text">Ориентировочная стоимость полиса ОСАГО составляет от 4950 до 5300 руб.</p>
+							<div class="test__form-select-wrapper">
+								<include src="build/img/02-form-main/call.svg"></include>
+								<input class="test__form-select test__form-phone" type="tel" name="tel" pattern="^\+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required title="+7-910-920-21-12" placeholder="Ваш номер телефона">
 
+							</div>
+							<p class="test__price-text">Ваш номер необходим для сохраниения скидки</p>
+
+						</div>
+						<div class="test__btn-price-wrapper">
+							<div class="form-btn-wrapper test__subimt-wrapper">
+								<button class="btn test__btn" type="submit">Получить скидку</button>
+								<p class="form__personal">Нажимая на кнопку, вы принимаете <a class="form__personal-link" href="#">Соглашение</a>
+									на обработку персональных данных.</p>
+							</div>
+
+							<p class="main__test-info test__info">
+								<span class="main__test-price test__price">350<span class="main__test-price-sign">₽</span></span>
+								<span class="main__test-words test__words"> Прошедшим тест — скидка	от стоимости полиса ОСАГО</span>
+							</p>
+						</div>
+
+
+
+
+
+					</div>
 
 
 
