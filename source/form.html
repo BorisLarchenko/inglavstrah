@@ -58,7 +58,7 @@
 
 
 					</div>
-					<div class="test__form-wrapper test__form-step2">
+					<div class="test__form-wrapper test__form-step2" style="display: none">
 						<p class="test__pagination">Шаг 2<span class="test__pagination--grey">/7</span></p>
 						<p class="test__step-title">Допущенные к управлению водители</p>
 						<div class="test__radio-wrapper">
@@ -74,6 +74,36 @@
 						<div class="test__btn-price-wrapper">
 							<div class="test__btn-wrapper">
 								<button class="btn test__btn" type="button">Следующий шаг</button>
+								<button class="btn-back test__btn-back" type="button">Шаг назад</button>
+							</div>
+
+							<p class="main__test-info test__info">
+								<span class="main__test-price test__price">350<span class="main__test-price-sign">₽</span></span>
+								<span class="main__test-words test__words"> Прошедшим тест — скидка	от стоимости полиса ОСАГО</span>
+							</p>
+						</div>
+
+
+
+
+
+					</div>
+					<div class="test__form-wrapper test__form-step3">
+						<p class="test__pagination">Шаг 3<span class="test__pagination--grey">/7</span></p>
+						<p class="test__step-title">Возраст допущенных водителей</p>
+						<div class="test__radio-wrapper">
+							<label class="test__input-aria">
+								<input class="test__radio" type="radio" name="age" value="less22">
+								<span class="test__radio-circle">До 22 лет</span>
+							</label>
+							<label class="test__input-aria">
+								<input class="test__radio" type="radio" name="age" value="more22">
+								<span class="test__radio-circle">Более 22 лет</span>
+							</label>
+						</div>
+						<div class="test__btn-price-wrapper">
+							<div class="test__btn-wrapper">
+								<button class="btn test__btn btn--disabled" type="button" data-title="Сначала выберите значение">Следующий шаг</button>
 								<button class="btn-back test__btn-back" type="button">Шаг назад</button>
 							</div>
 
