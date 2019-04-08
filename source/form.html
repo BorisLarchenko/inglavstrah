@@ -257,37 +257,52 @@
 				</form>
 				<form class="test__form" action="http://scooterlabs.com/echo" method="post">
 					<div class="test__form-wrapper test__form-step7">
-						<p class="test__pagination">Шаг 7<span class="test__pagination--grey">/7</span></p>
-						<p class="test__step-title">Благодарим за прохождение теста!</p>
-						<div class="test__radio-wrapper test__input-wrapper">
-							<p class="test__price-text">Вышлите код проверки, пришедший вам по смс</p>
-							<div class="test__radio-wrapper test__radio-wrapper--nomargin">
-								<div class="test__form-select-wrapper">
-									<include src="build/img/02-form-main/call.svg"></include>
-									<input class="test__form-select test__form-phone" type="tel" name="tel" pattern="^\+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required title="+7-910-920-21-12" placeholder="Ваш номер телефона">
-
-								</div>
-
-								<div class="test__form-select-wrapper">
-									<include src="build/img/02-form-main/unlock.svg"></include>
-									<input class="test__form-select test__form-phone" type="number" name="code"  placeholder="Код проверки">
-
-								</div>
+					<p class="test__pagination">Шаг 7<span class="test__pagination--grey">/7</span></p>
+					<p class="test__step-title">Благодарим за прохождение теста!</p>
+					<div class="test__radio-wrapper test__input-wrapper">
+						<p class="test__price-text">Вышлите код проверки, пришедший вам по смс</p>
+						<div class="test__radio-wrapper test__radio-wrapper--nomargin">
+							<div class="test__form-select-wrapper">
+								<include src="build/img/02-form-main/call.svg"></include>
+								<input class="test__form-select test__form-phone" type="tel" name="tel" pattern="^\+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required title="+7-910-920-21-12" placeholder="Ваш номер телефона">
 
 							</div>
-<!--							<p class="test__phone-text">Ваш номер необходим для сохраниения скидки</p>-->
+
+							<div class="test__form-select-wrapper">
+								<include src="build/img/02-form-main/unlock.svg"></include>
+								<input class="test__form-select test__form-phone" type="number" name="code"  placeholder="Код проверки">
+
+							</div>
 
 						</div>
-						<div class="test__btn-price-wrapper">
-							<div class="form-btn-wrapper test__subimt-wrapper--last">
-								<button class="btn test__btn" type="submit">Получить скидку</button>
-								<button class="btn-back test__btn-back" type="button">Выслать повторно</button>
-							</div>
+						<!--							<p class="test__phone-text">Ваш номер необходим для сохраниения скидки</p>-->
 
-							<p class="main__test-info test__info">
-								<span class="main__test-price test__price">350<span class="main__test-price-sign">₽</span></span>
-								<span class="main__test-words test__words"> Прошедшим тест — скидка	от стоимости полиса ОСАГО</span>
-							</p>
+					</div>
+					<div class="test__btn-price-wrapper">
+						<div class="form-btn-wrapper test__subimt-wrapper--last">
+							<button class="btn test__btn" type="submit">Получить скидку</button>
+							<button class="btn-back test__btn-back" type="button">Выслать повторно</button>
+						</div>
+
+						<p class="main__test-info test__info">
+							<span class="main__test-price test__price">350<span class="main__test-price-sign">₽</span></span>
+							<span class="main__test-words test__words"> Прошедшим тест — скидка	от стоимости полиса ОСАГО</span>
+						</p>
+					</div>
+
+
+
+
+
+				</div>
+					<div class="test__form-wrapper test__form-step7">
+						<p class="test__step-title">Поздравляем!</p>
+						<p class="test__price-text">В течение 10 минут мы уведомим вас о получении скидки по указанному номеру телефона!</p>
+						<div class="test__thanks-wrapper">
+
+							<include src="build/img/02-form-main/gift.svg"></include>
+							<p class="test__thanks-text">Дождитесь звонка и получите ТЕХОСМОТР в подарок за оформление ОСАГО-онлайн</p>
+
 						</div>
 
 
