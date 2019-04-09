@@ -1,18 +1,18 @@
-.reviews-list {
+.reviews__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 88.5%;
 }
 
-.reviews-item {
+.reviews__item {
   width: 44.5%;
-  margin-bottom: 65px;
+  margin-bottom: 45px;
   font-size: 18px;
   line-height: 25px;
 }
 
-.reviews-item-title {
+.reviews__item-title {
   display: block;
   font-family: 'Cuprum','Arial',sans-serif;
   font-size: 38px;
@@ -26,6 +26,38 @@
   font-size: 50px;
   line-height: 62px;
 }
+
+.reviews__item-name-date {
+  padding-left: 14%;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  margin-bottom: 12px;
+  font-family: 'cuprumbold', 'Arial', sans-serif;
+  font-size: 25px;
+  line-height: 22px;
+  color: #273c55;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -28px;
+    width: 57px;
+    height: 57px;
+    background-color: #ededed;
+    border-radius: 50%;
+  }
+}
+
+.reviews__item-date {
+  display: block;
+
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 17px;
+  line-height: 22px;
+  color: @gray-color;
+}
+
 
 //Write all styles for small desktop and big tablet
 @media (max-width: @desctopWidth)  {
