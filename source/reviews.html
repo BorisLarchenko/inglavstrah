@@ -46,21 +46,22 @@
 					<li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
 					<li class="pagination__item pagination__item-current" ><a class="pagination__link">3</a></li>
 					<li class="pagination__item"><a class="pagination__link" href="#">...</a></li>
-					
+
 					<li class="pagination__item"><a class="pagination__link" href="#" rel="next">Далее</a></li>
 <!-- TODO: ask about rel attribute and may be it is better to have button instead of link in this case-->
 <!-- TODO: how to make three dots in pagination ... and is that a link? I think it is a link!-->
 				</ul>
 			</div>
 		</section>
-		<section class="main__form-review form-review">
+		<section class="main__form-review form__review">
 			<div class="container">
-				<div class="main__contacts-form-wrapper">
+				<div class="form__review-wrapper">
 					<p class="main__contacts-slogan">Оставьте свой отзыв</p>
-					<form class="main__contacts-form form" action="https://echo.htmlacademy.ru/" method="post">
-						<input class="form__text" type="text" placeholder="Имя" name="user-name">
-						<input class="form__text" type="text" placeholder="Телефон или Email" name="phone-mail">
-						<input class="form__text" type="text" placeholder="Сообщение" name="user-message">
+					<form class="form__review-form form" action="https://echo.htmlacademy.ru/" method="post">
+<!--TODO text in form is Myriad Pro-->
+						<input class="form__text form__text--review" type="text" placeholder="Имя" name="user-name">
+						<input class="form__text form__text--review" type="text" placeholder="Город" name="town">
+						<input class="form__text form__text--review" type="text" placeholder="Сообщение" name="user-message">
 						<div class="form-btn-wrapper">
 							<button class="btn slider__btn form__btn" type="submit">Отправить</button>
 							<p class="form__personal">Нажимая на кнопку, вы принимаете <a class="form__personal-link" href="#">Соглашение</a>
