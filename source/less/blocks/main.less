@@ -1,12 +1,9 @@
 //Trying to use desctop first here
 //Write all styles for desctop
 .main {
-
   * {
     outline: 1px solid red;
   }
-
-  
 }
 
 .main__test {
@@ -27,8 +24,12 @@
 
 .main__howto {
   padding-top: 180px;
-  background: transparent url("../img/01-main-page/main-contacts-bg.jpg") no-repeat center;
-  background-size: cover;
+  background:
+
+          linear-gradient(90deg, @bg-color-blue (@dot-space - @dot-size), transparent 1%) center,
+          linear-gradient(@bg-color-blue (@dot-space - @dot-size), transparent 1%) center,
+          @dot-color-blue;
+  background-size: @dot-space @dot-space;
 }
 
 .main__benefits {
@@ -43,8 +44,12 @@
 .main__contacts {
   padding-top: 180px;
   //min-height: 830px;
-  background: url("../img/01-main-page/main-contacts-bg.jpg") no-repeat center;
-  background-size: cover;
+  background:
+
+          linear-gradient(90deg, @bg-color-blue (@dot-space - @dot-size), transparent 1%) center,
+          linear-gradient(@bg-color-blue (@dot-space - @dot-size), transparent 1%) center,
+          @dot-color-blue;
+  background-size: @dot-space @dot-space;
 }
 
 .main__form-test {
