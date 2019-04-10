@@ -51,15 +51,17 @@
 }
 
 .slider__slide {
-  display: flex;
+  display: flex !important;
   //justify-content: space-between;
   flex-wrap: wrap;
   align-items: self-start;
+
+  min-height: 660px;
 }
 
 .slider__slide--space {
   justify-content: space-between;
-  padding-right: 5%;
+  //padding-right: 5%;
   background: url("../img/01-main-page/slide3-bg1.png") no-repeat right -13% center,
               url("../img/01-main-page/slide3-bg2.png") no-repeat right 10% center;
 }
