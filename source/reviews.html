@@ -47,7 +47,7 @@
 					<li class="pagination__item pagination__item-current" ><a class="pagination__link">3</a></li>
 					<li class="pagination__item"><a class="pagination__link" href="#">...</a></li>
 
-					<li class="pagination__item"><a class="pagination__link" href="#" rel="next">Далее</a></li>
+					<li class="pagination__item"><a class="pagination__link" href="#">Далее</a></li>
 <!-- TODO: ask about rel attribute and may be it is better to have button instead of link in this case-->
 <!-- TODO: how to make three dots in pagination ... and is that a link? I think it is a link!-->
 				</ul>
@@ -57,15 +57,16 @@
 			<div class="container">
 				<div class="form__review-wrapper">
 					<p class="main__contacts-slogan">Оставьте свой отзыв</p>
-					<form class="form__review-form form" action="https://echo.htmlacademy.ru/" method="post">
+<!--In order to have the normal form delete classes: form--unauthorised from the form and 	btn--disabled from the button-->
+					<form class="form__review-form form form--unauthorised" action="https://echo.htmlacademy.ru/" method="post" data-title="Сначала авторизуйтесь">
 <!--TODO text in form is Myriad Pro-->
 						<input class="form__text form__text--review" type="text" placeholder="Имя" name="user-name">
 						<input class="form__text form__text--review" type="text" placeholder="Город" name="town">
 						<input class="form__text form__text--review" type="text" placeholder="Сообщение" name="user-message">
 						<div class="form-btn-wrapper">
-							<button class="btn slider__btn form__btn" type="submit">Отправить</button>
-							<p class="form__personal">Нажимая на кнопку, вы принимаете <a class="form__personal-link" href="#">Соглашение</a>
-								на обработку персональных данных.</p>
+							<button class="btn btn__review test__btn btn--disabled form__btn--unauth" type="button" data-title="Сначала авторизуйтесь">Отправить</button>
+							<p class="form__review form__review--unauthorised"> <a class="form__personal-link" href="#">Авторизуйтесь,</a>
+								чтобы оставить отзыв</p>
 						</div>
 
 					</form>

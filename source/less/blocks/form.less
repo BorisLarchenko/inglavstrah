@@ -69,6 +69,46 @@
 
 }
 
+.form__review--unauthorised {
+  display: none;
+}
+
+.form--unauthorised .form__review--unauthorised {
+  display: block;
+  color: @yellow-color;
+}
+
+.form--unauthorised .form__personal-link {
+  color: inherit;
+  border-color: @yellow-color;
+}
+
+.form--unauthorised:hover::before {
+  display: block;
+}
+
+.form--unauthorised::before {
+  content: attr(data-title);
+  position: absolute;
+  top: 62px;
+  left: 212px;
+  z-index: 1;
+  display: none;
+  width: 70%;
+  padding: 6px 5px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #828282;
+  border: 1px solid #888;
+  background-color: #fff;
+}
+
+//Hide tooltip on button
+.form--unauthorised .form__btn--unauth::before {
+  content: none;
+}
+
+
 //Write all styles for big-tablet and small desctop
 @media (max-width: @desctopWidth)  {
   .form {}

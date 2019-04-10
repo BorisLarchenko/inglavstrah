@@ -12,12 +12,11 @@
   &::after {
     content: "";
     position: absolute;
-    left: 3px;
+    left: 0px;
+    height: 50px;
+    border-bottom: 10px solid @yellow-color;
     bottom: 0;
-
-    height: 10px;
-    background-color: @yellow-color;
-    border-bottom-left-radius: 30px 20px;
+    border-radius: 0 0 0 20px;
 
   }
 }
@@ -61,7 +60,7 @@
 .test__form-step7 {
   &::after {
     width: 100%;
-    border-bottom-right-radius: 30px 20px;
+    border-radius: 0 0 20px 20px;
   }
 }
 
