@@ -19,7 +19,9 @@
 						<p class="main__contacts-slogan">Список магазинов</p>
 
 						<div class="shops__town-wrapper">
-							<p class="main__contacts-town shops__town">
+<!--Add/delete class '.shops__town--open' in order to show/hide
+.shops__town-list-->
+							<p class="main__contacts-town shops__town shops__town--open">
 								г. Воронеж
 								<a class="main__contacts-link">Другой город</a>
 							</p>
@@ -32,7 +34,7 @@
 
 
 						<ul class="shops__list">
-							<li class="shops__item"> <span class="shops__name">Урывского</span> Урывского	2в, мкр. Процессор" (м-н)"Пятерочка"	<br>+7 (473) 22-88-507</li>
+							<li class="shops__item"><span class="shops__name">Урывского</span> Урывского	2в, мкр. Процессор" (м-н)"Пятерочка"	<br>+7 (473) 22-88-507</li>
 							<li class="shops__item"><span class="shops__name">Машмет</span> ост. Шубина маг."ЦентрТорг" ул.Новосибирская 23/1
 								<br>+7 (473) 22-88-507</li>
 							<li class="shops__item"><span class="shops__name">Остружева</span> тц.ПЕРЕСТРОЙКА 1-й этаж, Ленинский пр-т 156 "б"
@@ -43,69 +45,60 @@
 						</ul>
 					</div>
 					<div class="shops__map">
-						<p class="main__contacts-slogan">Список магазинов</p>
-						<p class="main__contacts-town shops__town">
-							г. Воронеж
-							<a class="main__contacts-link">Другой город</a>
-						</p>
-						<ul class="shops__list">
-							<li class="shops__item"> <span class="shops__name">Урывского</span> Урывского	2в, мкр. Процессор" (м-н)"Пятерочка"	<br>+7 (473) 22-88-507</li>
-							<li class="shops__item"><span class="shops__name">Машмет</span> ост. Шубина маг."ЦентрТорг" ул.Новосибирская 23/1
-								<br>+7 (473) 22-88-507</li>
-							<li class="shops__item"><span class="shops__name">Остружева</span> тц.ПЕРЕСТРОЙКА 1-й этаж, Ленинский пр-т 156 "б"
-								<br>+7 (473) 22-88-507</li>
-							<li class="shops__item"><span class="shops__name">Север</span> маг."ПятьюПять" ул. Владимира Невского 13"г"
-								<br>+7 (473) 22-88-507</li>
-							<li class="shops__item"><span class="shops__name">Урывского</span> Урывского	2в, мкр. Процессор" (м-н)"Пятерочка"<br>	+7 (473) 22-88-507</li>
+						<p class="main__contacts-slogan">Карта</p>
+
+
+
+						<img src="https://via.placeholder.com/712?text=Google map 712x712" alt="Карта">
+
+
+					</div>
+				</div>
+				<div class="shops__wrapper">
+					<div class="shops__group">
+						<p class="main__contacts-slogan">Урывского</p>
+						<ul class="breadcrumbs">
+							<li class="breadcrumbs__item">
+								<a class="breadcrumbs__link main__contacts-link" href="#">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a class="breadcrumbs__link main__contacts-link" href="#">Контакты</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a class="breadcrumbs__link main__contacts-link">Воронеж, Урывского</a>
+							</li>
+							
 						</ul>
+						<p class="main__contacts-town">
+							г. Воронеж
+							<a class="main__contacts-link" href="#">Другой город</a>
+						</p>
+						<p class="main__contacts-address">
+							Урывского 2в, мкр. Процессор" (м-н)"Пятерочка"
+							+7 (473) 22-88-507
+							<a class="main__contacts-link" href="#">Другой адрес</a>
+						</p>
+						<button class="btn main__contacts-btn">Смотреть на карте</button>
+
+					</div>
+					<div class="shops__map">
+						<p class="main__contacts-slogan">Карта</p>
+
+
+
+						<img src="https://via.placeholder.com/712?text=Google map 712x712" alt="Карта">
+
+
 					</div>
 				</div>
 
-
-
-
-				<h2 class="reviews__title">Отзывы</h2>
-				<ul class="reviews__list">
-					<li class="reviews__item">
-						<p class="reviews__item-name-date reviews__item-name-date--pic">Александр, г. Брянск
-							<time class="reviews__item-date" datetime="2018-05-29 10:00">29.05.2018 г.</time>
-						</p>
-						Скоростное оформлениеи вашего полиса ОСАГО Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <button class="btn-back reviews__btn-full" type="button">... Читать полностью</button>
-					</li>
-					<li class="reviews__item  reviews__item--brief">
-						<p class="reviews__item-name-date">Андрей, г. Краснодар
-							<time class="reviews__item-date" datetime="2018-05-29 10:00">29.05.2018 г.</time>
-						</p>
-						Скоростное оформлениеи вашего полиса ОСАГО Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <button class="btn-back reviews__btn-full" type="button">... Читать полностью</button>
-					</li>
-					<li class="reviews__item">
-						<p class="reviews__item-name-date">Ирина, г. Воронеж
-							<time class="reviews__item-date" datetime="2018-05-29 10:00">29.05.2018 г.</time>
-						</p>
-						Скоростное оформлениеи вашего полиса ОСАГО Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <button class="btn-back reviews__btn-full" type="button">... Читать полностью</button>
-					</li>
-					<li class="reviews__item">
-						<p class="reviews__item-name-date">Данил, с. Новая Усмань
-							<time class="reviews__item-date" datetime="2018-05-29 10:00">29.05.2018 г.</time>
-						</p>
-						Скоростное оформлениеи вашего полиса ОСАГО Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <button class="btn-back reviews__btn-full" type="button">... Читать полностью</button>
-					</li>
-				</ul>
-				<ul class="pagination reviews__pages">
-					<li class="pagination__item"><a class="pagination__link" href="#">1</a></li>
-					<li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-					<li class="pagination__item pagination__item-current" ><a class="pagination__link">3</a></li>
-					<li class="pagination__item"><a class="pagination__link" href="#">...</a></li>
-
-					<li class="pagination__item"><a class="pagination__link" href="#">Далее</a></li>
-					<!-- TODO: ask about rel attribute and may be it is better to have button instead of link in this case-->
-					<!-- TODO: how to make three dots in pagination ... and is that a link? I think it is a link!-->
-				</ul>
 			</div>
 		</section>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79486.44512956915!2d31.220498957787136!3d51.49575914343342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d5488971ee3597%3A0x2a2348d3e76038b5!2z0KfQtdGA0L3QuNCz0L7Qsiwg0KfQtdGA0L3QuNCz0L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAxNDAwMA!5e0!3m2!1sru!2sua!4v1554903097441!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
 	</main>
 	<include src="source/html-modules/footer.html"></include>
-
+	<!--build:js js/contacts.min.js -->
+		<script src="js/modules/contacts.js"></script>
+	<!-- endbuild -->
 </body>
 </html>

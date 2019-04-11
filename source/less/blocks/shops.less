@@ -3,7 +3,7 @@
 }
 
 .shops__group {
-  width: 36%;
+  width: 38%;
 }
 
 .shops__map {
@@ -11,7 +11,6 @@
 }
 
 .shops__list {
-  padding: 15px 0 15px 45px;
   height: 445px;
   overflow-y: auto;
 }
@@ -23,14 +22,29 @@
 
 
 .shops__item {
-  margin-bottom: 35px;
+  //margin-bottom: 35px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 45px;
 
   font-family: 'robotolight','Arial',sans-serif;
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0.02em;
   color: #fff;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+  }
 }
+
+//if it is needed to add links in li tags
+/*.shops__item a {
+  all: inherit;
+  padding: 0;
+}*/
 .shops__item:last-child {
   margin-bottom: 0;
 }
@@ -61,12 +75,17 @@
   position: absolute;
   z-index: 1;
 
+  display: none;
   padding-top: 10px;
   padding-bottom: 15px;
   width: 200px;
 
   background-color: #314762;
   box-shadow: 0px 14px 28px 0px rgba(0,0,0,0.25);
+}
+
+.shops__town--open + .shops__town-list {
+  display: block;
 }
 
 .shops__town-item {

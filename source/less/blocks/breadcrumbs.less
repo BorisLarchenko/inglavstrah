@@ -1,0 +1,46 @@
+//Write all styles for desktop
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs__link {
+  padding-right: 50px;
+  padding-bottom: 5px;
+  width: auto;
+  border: none;
+}
+
+.breadcrumbs__item::after {
+  content: '>';
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 25px;
+
+
+  font-family: 'Roboto','Arial',sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: .01em;
+  color: #828282;
+}
+
+.breadcrumbs__item:last-of-type::after {
+  content: none;
+}
+
+//Write all styles for big-tablet and small desktop
+@media (max-width: @desctopWidth)  {
+  .breadcrumbs {}
+}
+
+//Write all styles for tablet
+@media (max-width: @mediumWidth)  {
+  .breadcrumbs {}
+}
+
+//Write all styles for mobile
+@media (max-width: @tabletWidth) {
+  .breadcrumbs {}
+}
