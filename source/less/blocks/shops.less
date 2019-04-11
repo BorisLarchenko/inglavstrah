@@ -6,16 +6,33 @@
   width: 36%;
 }
 
-.shops__list {
-  padding-left: 45px;
+.shops__map {
+  width: 55%;
 }
 
+.shops__list {
+  padding: 15px 0 15px 45px;
+  height: 445px;
+  overflow-y: auto;
+}
+
+.shops__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 .shops__item {
+  margin-bottom: 35px;
+
   font-family: 'robotolight','Arial',sans-serif;
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0.02em;
   color: #fff;
+}
+.shops__item:last-child {
+  margin-bottom: 0;
 }
 
 .shops__name {
@@ -29,7 +46,42 @@
 }
 
 .shops__town {
-  margin-bottom: 45px;
+  right: 20px;
+
+  margin-top: 55px;
+  margin-bottom: 15px;
+  width: 190px;
+  padding: 20px;
+
+  cursor: pointer;
+}
+
+.shops__town-list {
+  top: 100%;
+  position: absolute;
+  z-index: 1;
+
+  padding-top: 10px;
+  padding-bottom: 15px;
+  width: 200px;
+
+  background-color: #314762;
+  box-shadow: 0px 14px 28px 0px rgba(0,0,0,0.25);
+}
+
+.shops__town-item {
+
+  padding-left: 45px;
+  padding-right: 20px;
+
+  font-family: 'Cuprum`','Arial',sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  color: #fff;
+
+  &:hover {
+    color: @yellow-color;
+  }
 }
 
 
