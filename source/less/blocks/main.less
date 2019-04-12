@@ -1,10 +1,10 @@
 //Trying to use desctop first here
 //Write all styles for desctop
-.main {
-  * {
-    outline: 1px solid red;
-  }
-}
+// .main {
+//   * {
+//     outline: 1px solid red;
+//   }
+// }
 
 .main__test {
   padding-top: 167px;
@@ -23,7 +23,7 @@
 //}
 
 .main__howto {
-  padding-top: 180px;
+  padding: 110px 0 150px;
   background:
 
           linear-gradient(90deg, @bg-color-blue (@dot-space - @dot-size), transparent 1%) center,
@@ -127,15 +127,19 @@
 }
 
 .main__contacts-link {
-  display: block;
-  width: 125px;
+  display: inline-block;
 
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 18px;
   line-height: 22px;
-  letter-spacing: 0.01em;
+  letter-spacing: .01em;
   color: @gray-color;
   border-bottom: 1px dashed @gray-color;
+  &:hover{
+    color: white;
+    border-color: white;
+    transition: .3s;
+  }
 }
 
 .main__contacts-btn {
@@ -198,8 +202,8 @@
 
 .main__title--colored {
   top: 40px;
-  width: 630px;
-  margin-left: 118px;
+  width: 1180px;
+  margin: 0 auto;
 
   font-family: 'Cuprum', 'Arial', sans-serif;
   color: #fff;
@@ -223,7 +227,8 @@
 }
 
 .main__howto-slider {
-  margin-left: 118px;
+  width: 1180px;
+  margin: 0 auto;
 }
 
 .main__advantages-item-title {

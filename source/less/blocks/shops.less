@@ -13,6 +13,27 @@
 .shops__list {
   height: 445px;
   overflow-y: auto;
+  direction: rtl;
+}
+.shops__list::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+.shops__list::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, .1);
+  border-radius: 0;
+}
+.shops__list::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, .2);
+}
+.shops__list::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 0;
+  background: rgba(255, 255, 255, .3);
+  transition: background 0.2s ease;
+}
+.shops__list::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, .4);
 }
 
 .shops__wrapper {
