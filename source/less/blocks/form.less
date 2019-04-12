@@ -10,7 +10,6 @@
 
   background: url("../../img/03-contacts/car_bg--small.png") no-repeat center right 20%,
   url("../img/02-form-main/formpage-bg-small.png") no-repeat center;
-;
   background-size: 35%, cover;
 }
 
@@ -149,12 +148,34 @@
 
 .form__contacts-slogan {
   color: #000;
+  &--color {
+    margin-bottom: 85px;
+
+    font-family: 'cuprumbold', 'Arial', sans-serif;
+    color: @yellow-color;
+  }
 }
 
 .form__contacts-text {
   font-size: 18px;
   line-height: 30px;
 }
+
+.form__contacts-thanks {
+  margin-bottom: 25px;
+
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.form__contacts-thanks-text {
+  margin-bottom: 130px;
+
+  font-family: 'robotolight', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 
 //Write all styles for big-tablet and small desctop
 @media (max-width: @desctopWidth)  {
