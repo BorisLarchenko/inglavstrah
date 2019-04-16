@@ -4,3 +4,4 @@ build/
 .gitconfig
 .ssh/
 mockups/
+.lesshst
