@@ -8,6 +8,8 @@
   min-height: 100px;
 }
 
+
+
 .modal__auth,
 .modal__forgot-pass {
   width: 400px;
@@ -18,6 +20,11 @@
   background-color: #fff;
   box-shadow: 0 10px 28px 0 rgba(54,80,107,.5);
   border-radius: 20px;
+}
+
+.modal__form {
+  padding-bottom: 50px;
+  border-bottom: 1px solid @light-grey;
 }
 
 .modal__title {
@@ -89,14 +96,97 @@
   padding-right: 80px;
 }
 
+.modal__checkbox {
+  display: none;
+}
+
+
+
 .modal_checkbox-text {
+  padding-left: 35px;
   font-size: 16px;
   line-height: 22px;
   color: #999;
+
+  &::before {
+    position: absolute;
+    left: 0;
+
+    content: '';
+    width: 24px;
+    height: 24px;
+    border: 1px solid #999999;
+  }
+}
+
+.modal__check-svg {
+  position: absolute;
+  left: 2px;
+  top: 0;
+  display: none;
+  width: 20px;
+}
+
+.modal__checkbox:checked + .modal__check-svg {
+  display: block;
+}
+
+.modal__check-svg1 {
+  fill: #314762;
 }
 
 .modal__checkbox-wrapper {
   margin-top: -15px;
+  margin-bottom: 55px;
+}
+.modal__reg-link-wrapper {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.modal__reg-link {
+  display: inline-block;
+
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+
+  &:hover {
+    color: @yellow-color;
+  }
+
+  &:hover .modal__text--underline {
+    border-bottom-color: @yellow-color;
+  }
+
+}
+
+.modal__text--underline {
+  border-bottom: 1px dotted @gray-color;
+}
+
+.modal__aouth-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__aouth-social {
+  margin-top: 10px ;
+}
+
+.modal__social-link:hover {
+  .icon__fb-svg1,
+  .icon__vk-svg1,
+  .icon__googl-svg1 {
+      fill: orange;
+    }
+}
+
+.modal__aouth-text {
+  font-size: 18px;
+  line-height: 22px;
 }
 
 //Write all styles for big-tablet and small desktop
