@@ -273,7 +273,46 @@
 
 	<div class="modal modal--reg">
 		<section class="modal__reg"></section>
-		<section class="modal__auth"></section>
+		<section class="modal__auth">
+			<p class="modal__hi">Здравствуйте, Алекс!</p>
+			<div class="modal__form">
+				<p class="modal__pass-text modal__pass-text--bottom">
+					Теперь вы имеете возможность пользоваться нашими сервисами абсолютно бесплатно
+				</p>
+				<p class="modal__pass-text modal__pass-text-grey">
+					Вы можете кастомизировать свой личный кабинет для своего удобства
+				</p>
+
+				<button class="btn btn__review btn__modal" type="button">Личный кабинет</button>
+				<div class="modal__reg-link-wrapper">
+					<a class="modal__reg-link" href="#">Вернуться
+						<span class="modal__text--underline">
+							 на главную
+						</span>
+					</a>
+				</div>
+
+			</div>
+			<p class="modal__aouth-social">
+				<span class="modal__aouth-text">Поделиться в:</span>
+				<a class="modal__social-link" href="#" data-title="Facebook">
+					<include src="build/img/icons/facebook-f.svg"></include>
+				</a>
+				<a class="modal__social-link" href="#" data-title="Вконтакте">
+					<include src="build/img/icons/vk.svg"></include>
+				</a>
+				<a class="modal__social-link" href="#" data-title="Google+">
+					<include src="build/img/icons/google-plus-g.svg"></include>
+				</a>
+			</p>
+
+
+			<button class="modal__close close">
+
+				<span class="visually-hidden">Закрыть форму регистрации</span>
+				<include src="build/img/icons/close.svg"></include>
+			</button>
+		</section>
 	</div>
 
 	<!--build:js js/main.min.js -->

@@ -5,6 +5,7 @@
     }*/
 
   background-color: #7b519d;
+ //background-color: black;
   min-height: 100px;
 }
 
@@ -205,6 +206,7 @@
 }
 
 .modal__aouth-text {
+  width: 58%;
   font-size: 18px;
   line-height: 22px;
 }
@@ -231,6 +233,31 @@
   line-height: 18px;
   color: #999;
 
+}
+
+.modal__hi {
+  margin-top: 18px;
+  margin-bottom: 5px;
+  padding-top: 110px;
+  font-size: 28px;
+  line-height: 62px;
+  color: @yellow-color;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -44px;
+    content: '';
+    width: 90px;
+    height: 90px;
+    background: url("../img/04-reviews/user-pic-small.png") center no-repeat;
+    background-size: 100%;
+  }
+}
+
+.modal__pass-text--bottom {
+  margin-bottom: 10px;
 }
 //Write all styles for big-tablet and small desktop
 @media (max-width: @desctopWidth)  {
