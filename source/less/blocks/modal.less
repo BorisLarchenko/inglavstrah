@@ -176,7 +176,27 @@
   margin-top: 10px ;
 }
 
+.modal__social-link::before {
+  content: attr(data-title);
+  position: absolute;
+  top: 42px;
+  left: -20px;
+  display: none;
+  padding: 2px 5px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #828282;
+  border: 1px solid #888;
+}
+
 .modal__social-link:hover {
+  &::before {
+    display: block;
+  }
+
+
+
+
   .icon__fb-svg1,
   .icon__vk-svg1,
   .icon__googl-svg1 {
