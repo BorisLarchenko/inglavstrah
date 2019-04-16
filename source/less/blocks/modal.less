@@ -1,20 +1,102 @@
 //Write all styles for desktop
 .modal {
-    * {
+    /** {
       outline: 1px solid red;
-    }
+    }*/
+
   background-color: #7b519d;
   min-height: 100px;
 }
 
 .modal__auth,
 .modal__forgot-pass {
-  width: 50%;
-  padding: 0 94px;
+  width: 400px;
+  margin: 0 auto;
+  padding: 33px 40px;
+  padding-bottom: 52px;
   min-height: 550px;
   background-color: #fff;
   box-shadow: 0 10px 28px 0 rgba(54,80,107,.5);
   border-radius: 20px;
+}
+
+.modal__title {
+  margin-bottom: 50px;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 40px;
+  line-height: 62px;
+  text-align: center;
+}
+
+
+
+.modal__select-wrapper {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.modal__phone {
+  width: 100%;
+  background-color: transparent;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 40px;
+  padding-right: 20px;
+  font-size: 16px;
+  line-height: 22px;
+
+  border: 2px solid @light-grey;
+
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 22px;
+    color: #325a7e;
+  }
+}
+
+.modal_pass-svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  margin-top: -11px;
+  width: 22px;
+}
+
+.modal_pass-svg1 {
+  fill: #325a7e;
+}
+
+
+.modal__pass-link {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -28px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: #d4d4d4;
+  &:hover {
+    color: #000;
+  }
+
+}
+
+.modal__phone--short {
+  padding-right: 80px;
+}
+
+.modal_checkbox-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #999;
+}
+
+.modal__checkbox-wrapper {
+  margin-top: -15px;
 }
 
 //Write all styles for big-tablet and small desktop
