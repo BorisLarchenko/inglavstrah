@@ -185,7 +185,7 @@
 				<div class="modal__checkbox-wrapper">
 					<input class="modal__checkbox" type="checkbox" id="rememberMe" name="rememberMe" checked>
 					<include src="build/img/icons/check.svg"></include>
-					<label class="modal_checkbox-text" for="rememberMe">
+					<label class="modal__checkbox-text" for="rememberMe">
 						Запомнить пароль
 					</label>
 				</div>
@@ -299,14 +299,46 @@
 
 
 				</div>
-
-				<div class="modal__checkbox-wrapper">
-					<input class="modal__checkbox" type="checkbox" id="rememberMe" name="rememberMe" checked>
-					<include src="build/img/icons/check.svg"></include>
-					<label class="modal_checkbox-text" for="rememberMe">
-						Запомнить пароль
+<!--In order to open/close other fields add/remove class .modal__show-hide--open for the div-->
+				<div class="modal__show-hide modal__show-hide--open">
+					<label class="modal__checkbox-text modal__checkbox-text--show">
+						Показать все поля
 					</label>
+					<div class="modal__additional-fields">
+						<label class="modal__checkbox-text modal__checkbox-text--show">
+							Свернуть
+						</label>
+
+						<div class="modal__input-wrapper">
+
+							<div class="modal__select-wrapper modal__select-wrapper--reg">
+								<include src="build/img/icons/user.svg"></include>
+								<input class="modal__phone modal__phone--short" type="text" name="name"  placeholder="Ваше имя">
+							</div>
+
+							<div class="modal__select-wrapper modal__select-wrapper--reg">
+								<include src="build/img/02-form-main/call.svg"></include>
+								<input class="modal__phone" type="tel" name="tel" pattern="^\+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required title="+7-910-920-21-12" placeholder="Ваш номер телефона">
+							</div>
+
+							<div class="modal__select-wrapper modal__select-wrapper--reg">
+								<include src="build/img/05-modal/lock.svg"></include>
+								<input class="modal__phone modal__phone--short" type="password" name="pass"  placeholder="Придумайте пароль">
+							</div>
+
+							<div class="modal__select-wrapper modal__select-wrapper--reg">
+								<include src="build/img/05-modal/lock.svg"></include>
+								<input class="modal__phone modal__phone--short" type="password" name="pass"  placeholder="Подтвердите пароль">
+							</div>
+
+
+						</div>
+					</div>
+
+
 				</div>
+
+
 
 				<button class="btn btn__review btn__modal" type="submit">Загеристрироваться</button>
 				<div class="modal__reg-link-wrapper">

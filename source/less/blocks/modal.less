@@ -117,7 +117,7 @@
 
 
 
-.modal_checkbox-text {
+.modal__checkbox-text {
   padding-left: 35px;
   font-size: 16px;
   line-height: 22px;
@@ -131,6 +131,25 @@
     width: 24px;
     height: 24px;
     border: 1px solid #999999;
+  }
+}
+
+.modal__checkbox-text--show {
+  padding-right: 25px;
+  padding-left: 0px;
+
+  &::before {
+    content: none;
+  }
+  &::after {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: url("../../img/02-form-main/angle-down.svg") no-repeat center;
   }
 }
 
@@ -274,9 +293,32 @@
   }
 }
 
+.modal__additional-fields {
+  display: none;
+}
+
+.modal__show-hide {
+  margin-top: -15px;
+  margin-bottom: 50px;
+}
+
+.modal__show-hide--open.modal__show-hide {
+  margin-bottom: 15px;
+}
+
+.modal__show-hide--open > .modal__checkbox-text {
+  display: none;
+}
+
+.modal__show-hide--open .modal__additional-fields {
+  display: block;
+}
+
 .modal__pass-text--bottom {
   margin-bottom: 10px;
 }
+
+
 //Write all styles for big-tablet and small desktop
 @media (max-width: @desctopWidth)  {
   .modal {}
