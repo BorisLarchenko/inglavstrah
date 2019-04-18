@@ -44,9 +44,29 @@
   }
 }
 
-.request__input-svg {
+.request__input-svg-wrapper {
   right: 20px;
   left: auto;
+  z-index: 1;
+  &::before {
+    content: "Ваши данные защищены";
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    z-index: 2;
+    display: none;
+    width: 235px;
+    padding: 6px 20px;
+    font-size: 16px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    line-height: 30px;
+    color: #828282;
+    border: 1px solid #888;
+    background-color: #fff;
+  }
+  &:hover::before {
+    display: inline-block;
+  }
 }
 .request__input-svg .modal_pass-svg1 {
   fill: @gray-color;
