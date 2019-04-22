@@ -21,7 +21,7 @@ gulpfile.task('clean-prod', function () {
 });
 
 gulpfile.task("images-prod", function () {
-  return gulpfile.src("./source/img/**/*.{png,jpg,svg}")
+  return gulpfile.src("./source/img/**/*.{png,jpg,svg,gif}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
