@@ -1,10 +1,10 @@
 //Trying to use desctop first here
 //Write all styles for desctop
- .main {
-   * {
-     outline: 1px solid red;
-   }
- }
+ // .main {
+ //   * {
+ //     outline: 1px solid red;
+ //   }
+ // }
 
 .main__test {
   padding-top: 167px;
@@ -23,7 +23,7 @@
 //}
 
 .main__howto {
-  padding: 110px 0 150px;
+  padding: 110px 0 20px;
   background:
 
           linear-gradient(90deg, @bg-color-blue (@dot-space - @dot-size), transparent 1%) center,
@@ -95,15 +95,15 @@
 
 .main__contacts-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .main__contacts-map {
-  width: 472px;
+  width: calc((100% - 25px) / 2);
 }
 
 .main__contacts-form-wrapper {
-  width: 590px;
-  margin-left: 235px;
+  width: calc((100% - 25px) / 2);
 }
 
 .main__contacts-slogan {
@@ -240,8 +240,8 @@
 }
 
 .main__howto-slider {
-  width: 1180px;
-  margin: 0 auto;
+  width: calc(100% - 120px);
+  margin-left: 120px;
 }
 
 .main__advantages-item-title {
