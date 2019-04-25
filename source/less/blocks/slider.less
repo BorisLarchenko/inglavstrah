@@ -59,21 +59,14 @@
   flex-wrap: wrap;
   align-items: self-start;
 
-  // min-height: 660px;
+   min-height: 510px;
 }
 
 .slider__slide--space {
   justify-content: space-between;
-  //padding-right: 5%;
-  background: url("../img/01-main-page/slide3-bg1.png") no-repeat right -13% center,
-              url("../img/01-main-page/slide3-bg2.png") no-repeat right 10% center;
 }
 
-.slider__slide--bg2 {
-
-  background: url("../img/01-main-page/slide2-bg1.png") no-repeat right -13% center,
-              url("../img/01-main-page/slide3-bg2.png") no-repeat right 10% top 20%;
-}
+.slider__slide--bg2 {}
 
 .slider__slide--bg1 {}
 
@@ -85,13 +78,24 @@
   right: calc(((-100vw + 9px + 1390px) / 2) - 395px);
   top: 50%;
   margin-top: -75px;
+  z-index: 1;
+  &--3 {
+    right: calc(((-100vw + 9px + 1390px) / 2) - 585px);
+  }
 }
 
 .slider__slide-bag-pic{
   position: absolute;
-  //right: calc(((-100vw + 9px + 1390px) / 2) - 395px);
-  bottom: -258px;
+  bottom: -178px;
   right: 209px;
+  &--2 {
+    right: 100px;
+    top: 50px;
+  }
+  &--3 {
+    right: -100px;
+    top: 80px;
+  }
 }
 
 .slider__slide--space .slider__info {
@@ -105,6 +109,7 @@
 
 .slider__slide--space .slider__info:not(:first-child) {
   margin-left: 50px;
+  z-index: 1;
 }
 
 .slider__info--first {
@@ -147,6 +152,7 @@
 
 .slider__info--last {
   margin-right: 5%;
+  margin-top: 0;
 }
 
 .slider__info-title--colored {
@@ -184,6 +190,17 @@
 
   .slider__slide-car-pic {
     right: calc(((-100vw + 9px + 1280px)/2) - 480px);
+    &--3 {
+      right: calc(((-100vw + 9px + 1280px)/2) - 780px);
+    }
+  }
+  .slider__slide-bag-pic{
+    &--2 {
+      right: 50px;
+    }
+    &--3 {
+      right: -50px;
+    }
   }
 }
 
