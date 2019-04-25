@@ -55,18 +55,24 @@
 .form__text {
   margin-top: 30px;
   border: none;
-  border-bottom: 1px solid @gray-color;
+  border-bottom: 1px solid @gray-form-border-color;
 
   background-color: transparent;
   font-family: 'robotolight', 'Arial', sans-serif;
   font-size: 20px;
   line-height: 35px;
-  color: @gray-color;
+  color: #ffffff;
 
   outline: none;
 
   &:first-child {
     margin-top: 0;
+  }
+  &:focus {
+    &::placeholder {
+      color: @gray-form-text-color;
+    }
+    border-color: #ffffff;
   }
 }
 
