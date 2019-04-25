@@ -333,7 +333,7 @@
   display: flex;
 }
 
-@media (max-width: @desctopWidth)  {
+@media (max-width: (@desctopWidth - 1px))  {
   .main__title {
     width: 46%; // 567px/1232px
     &--nowidth {
@@ -348,6 +348,13 @@
     left: -30px;
   }
 
+  .main__benefits {
+    padding-top: 140px;
+  }
+
+  .main__benefits-title {
+    width: auto;
+  }
 }
 
 
