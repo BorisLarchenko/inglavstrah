@@ -170,7 +170,11 @@
   line-height: 62px;
   font-size: 56px;
   letter-spacing: 0;
+  &--nowidth {
+    width: auto;
+  }
 }
+
 
 .main__benefits-title {
   width: auto;
@@ -223,7 +227,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 61% // 803px/1390px
+  width: 58% // 803px/1390px
 
 }
 
@@ -232,6 +236,17 @@
   justify-content: space-between;
 
   padding-bottom: 185px;
+}
+
+.main__advantages-picture {
+  width: 41%; //567px/1390px
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main__advantages-img {
+  left: -123px;
 }
 
 .container--car {
@@ -261,7 +276,7 @@
 .main__advantages-item {
 
 
-  width: 41.2%; // 331px/803px = 41,2%
+  width: 44%; // 331px/803px = 41,2% a bit more))
   margin-bottom: 65px;
 
   font-size: 18px;
@@ -318,6 +333,16 @@
 }
 
 @media (max-width: @desctopWidth)  {
+  .main__title {
+    width: 46%; // 567px/1232px
+    &--nowidth {
+      width: auto;
+    }
+  }
+
+  .main__advantages-img {
+    left: -30px;
+  }
 
 }
 
@@ -337,6 +362,9 @@
     line-height: 45px;
     font-size: 45px;
     letter-spacing: -0.02em;
+    &--nowidth {
+      width: auto;
+    }
   }
 
   .main__benefits-title {
