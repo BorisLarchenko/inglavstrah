@@ -16,6 +16,7 @@
 			<div class="container">
 				<h2 class="test__title">Тест ОСАГО</h2>
 				<form class="test__form" action="http://scooterlabs.com/echo" method="post">
+
 					<div class="test__form-wrapper test__form-step1">
 						<p class="test__pagination">Шаг 1<span class="test__pagination--grey">/7</span></p>
 						<p class="test__step-title">Мощность двигателя</p>
@@ -59,7 +60,7 @@
 
 
 					</div>
-					<div class="test__form-wrapper test__form-step2">
+					<div class="test__form-wrapper">
 						<p class="test__pagination">Шаг 2<span class="test__pagination--grey">/7</span></p>
 						<p class="test__step-title">Допущенные к управлению водители</p>
 						<div class="test__radio-wrapper">
@@ -160,7 +161,6 @@
 
 
 				</div>
-
 					<div class="test__form-wrapper test__form-step5">
 						<p class="test__pagination">Шаг 5<span class="test__pagination--grey">/7</span></p>
 						<p class="test__step-title">Стаж безаварийности</p>
@@ -321,5 +321,11 @@
 
 	</main>
 	<include src="source/html-modules/footer.html"></include>
+
+<!--	<script src="js/main.min.js"></script>-->
+	<!--build:js js/form.min.js -->
+	<script src="js/modules/form.js"></script>
+	<!-- endbuild -->
+
 </body>
 </html>

@@ -24,7 +24,7 @@
     "gulp-posthtml": "3.0.4",
     "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "2.6.5",
-    "gulp-uglify": "^3.0.1",
+    "gulp-terser": "^1.1.7",
     "gulp-useref": "^3.1.6",
     "posthtml-include": "1.2.0",
     "run-sequence": "^2.2.1"
