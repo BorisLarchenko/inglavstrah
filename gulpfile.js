@@ -69,7 +69,7 @@ gulpfile.task('copy-html-js', function(){
 
     .pipe(useref())
     // Minifies only if it's a JavaScript file
-    .pipe(gulpIf('*.js', uglify()))
+    .pipe(gulpIf('**/*.js', uglify()))
     .pipe(gulpfile.dest('build'))
 });
 
