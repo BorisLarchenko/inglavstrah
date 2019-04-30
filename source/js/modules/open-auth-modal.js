@@ -28,7 +28,6 @@ for (let i = 0; i < allCloseButtons.length; i++) {
   allCloseButtons[i].addEventListener('click', function (evt) {
     evt.preventDefault();
     const activeElem = document.querySelectorAll('.modal--active');
-    console.log(activeElem);
     for (let n = 0; n < activeElem.length; n++) {
       activeElem[n].classList.remove('modal--active');
     }
@@ -60,7 +59,6 @@ for (let i = 0; i < allCloseButtons.length; i++) {
 
   //find back link in auth section .modal__reg-link
   const backLinkAuth = auth.querySelector('.modal__reg-link');
-  console.log(reg);
   backLinkAuth.addEventListener('click', function (evt) {
     evt.preventDefault();
     auth.classList.remove('modal--active');
@@ -68,6 +66,14 @@ for (let i = 0; i < allCloseButtons.length; i++) {
     regWrap.classList.add('modal--active');
     reg.classList.add('modal--active');
 
+  });
+
+  //find forgot password link .modal__pass-link in reg window
+  const alreaddyRegLink = reg.querySelector('.modal__reg-link');
+  alreaddyRegLink.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    reg.classList.remove('modal--active');
+    auth.classList.add('modal--active');
   });
 
 
@@ -82,7 +88,6 @@ for (let i = 0; i < allCloseButtons.length; i++) {
 
   const showAddInfo = reg.querySelector('.modal__show-hide');
   const lebelsArr = showAddInfo.querySelectorAll('.modal__checkbox-text');
-  console.log(lebelsArr);
   //add onclick event listeners to all lebelArr elements
   for (let i=0; i < lebelsArr.length; i++) {
     lebelsArr[i].addEventListener('click', function (evt) {
