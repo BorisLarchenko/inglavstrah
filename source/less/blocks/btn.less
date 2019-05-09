@@ -13,14 +13,13 @@
     background-color: @yellow-color;
     border-radius: 0 12px 12px;
     cursor: pointer;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: inherit;
     &:hover {
         background: linear-gradient(to right, @yellow-color 15%, #fff602 50%, @yellow-color);
-    }
-    &--link {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      color: inherit;
     }
   }
 
@@ -83,8 +82,10 @@
     font-size: 20px;
   }
 
-  .btn-grey {
+  .btn--grey {
+    cursor: pointer;
+    font-family: 'robotolight', 'Arial', sans-serif;
     font-size: 16px;
     line-height: 30px;
-    color: #828282;
+    color: @gray-color;
   }

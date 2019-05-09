@@ -9,7 +9,7 @@ var imagemin = require("gulp-imagemin");
 var run = require("run-sequence");
 var plumber = require('gulp-plumber');
 var useref = require('gulp-useref');
-var uglify = require('gulp-uglify');
+var terser = require('gulp-terser');
 var gulpIf = require('gulp-if');
 var posthtml = require('gulp-posthtml');
 var include = require('posthtml-include');
@@ -69,7 +69,7 @@ gulpfile.task('copy-html-js', function(){
 
     .pipe(useref())
     // Minifies only if it's a JavaScript file
-    .pipe(gulpIf('*.js', uglify()))
+    .pipe(gulpIf('**/*.js', terser()))
     .pipe(gulpfile.dest('build'))
 });
 
