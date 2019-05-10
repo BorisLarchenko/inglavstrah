@@ -140,12 +140,18 @@
 }
 
 .full-request__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 12%; //145px/1204px;
 
   outline: 1px solid #00c400;
   //background-color: #7b519d;
 }
 
+.full-request__btn-down {
+  margin-top: auto;
+}
 
 //Write all styles for big-tablet and small desktop
 @media (max-width: @desctopWidth)  {
