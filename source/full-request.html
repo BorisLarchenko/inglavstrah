@@ -17,62 +17,231 @@
 		<div class="container">
 			<h2 class="test__title full-request__title">Оформление ОСАГО</h2>
 			<form class="test__form test__form--ruler" action="http://scooterlabs.com/echo" method="post">
+
+
+
 				<div class="test__form-wrapper test__form-step1">
 					<p class="test__pagination">1 <span class="test__pagination--grey">/ 4</span>
 					 <span class="full-request__pagination-title">Автомобиль</span></p>
 					<p class="test__step-title full-request__step-title">Выберите марку автомобиля</p>
-					<ul class="pagination full-request__pages">
-						<li class="pagination__item full-request__item">
-							<button class="btn--grey full-request__btn-back" type="button">Автомобиль:  Toyota</button>
-							<button class="modal__close close--full-pagination">
 
-								<span class="visually-hidden">Выбрать другую марку автомобиля</span>
-								<include src="build/img/icons/close.svg"></include>
-							</button>
-							</li>
-					</ul>
 
-					<div class="test__radio-wrapper full-request__radio-wrapper">
-						<label class="test__input-aria full-request__input-aria">
-							<input class="test__radio" type="radio" name="year" value="2018">
-							<span class="test__radio-circle"> 2018</span>
-						</label>
-						<label class="test__input-aria full-request__input-aria">
-							<input class="test__radio" type="radio" name="year" value="2017">
-							<span class="test__radio-circle"> 2017</span>
-						</label>
-						<label class="test__input-aria full-request__input-aria">
-							<input class="test__radio" type="radio" name="year" value="2016">
-							<span class="test__radio-circle"> 2016</span>
-						</label>
-						<label class="test__input-aria full-request__input-aria">
-							<input class="test__radio" type="radio" name="year" value="2015">
-							<span class="test__radio-circle"> 2015</span>
-						</label>
-						<label class="test__input-aria full-request__input-aria">
-							<input class="test__radio" type="radio" name="year" value="2014">
-							<span class="test__radio-circle"> 2014</span>
-						</label>
-						<label class="test__input-aria full-request__input-aria">
-							<input class="test__radio" type="radio" name="year" value="2013">
-							<span class="test__radio-circle"> 2013</span>
-						</label>
-						<label class="test__input-aria full-request__input-aria">
-							<input class="test__radio" type="radio" name="year" value="2012">
-							<span class="test__radio-circle"> 2012</span>
-						</label>
-						<select class="full-request__form-select" name="year">
-							<option class="test__form-option full-request__form-option" value="nothing">2011 и старше</option>
-							<option class="test__form-option full-request__form-option" value="2005">2005</option>
-							<option class="test__form-option full-request__form-option" value="2006">2006</option>
-							<option class="test__form-option full-request__form-option" value="2007">2007</option>
-							<option class="test__form-option full-request__form-option" value="2008">2008</option>
-							<option class="test__form-option full-request__form-option" value="2009">2009</option>
-							<option class="test__form-option full-request__form-option" value="2010">2010</option>
-							<option class="test__form-option full-request__form-option" value="2011">2011</option>
 
-						</select>
+					<div class="test__radio-wrapper full-request__data-wrapper">
+						<div class="full-request__wrapper">
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">A</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Audi</button> </td>
+								</tr>
+							</table>
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">B</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">BMW</button> </td>
+								</tr>
+							</table>
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">C</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Chevrolet</button> </td>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Citroen</button> </td>
+								</tr>
+							</table>
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">F</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Ford</button></td>
+								</tr>
+							</table>
+						</div>
+						<div class="full-request__wrapper">
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">H</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Honda</button> </td>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Hyundai</button> </td>
+								</tr>
+							</table>
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">I</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Infiniti</button> </td>
+								</tr>
+							</table>
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">J</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Juguar</button> </td>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Jeep</button> </td>
+								</tr>
+							</table>
+						</div>
+						<div class="full-request__wrapper">
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">K</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Kia</button> </td>
+								</tr>
+							</table>
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">L</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Land Rover</button> </td>
+								</tr>
+
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Lexus</button> </td>
+								</tr>
+							</table>
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">M</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Mazda</button> </td>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Mercedes-Benz</button> </td>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Mitsubishi</button> </td>
+								</tr>
+							</table>
+						</div>
+						<div class="full-request__wrapper">
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">N</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Nissan</button> </td>
+								</tr>
+							</table>
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">O</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Opel</button> </td>
+								</tr>
+							</table>
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">P</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Peugeut</button> </td>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Porshe</button> </td>
+								</tr>
+							</table>
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">R</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Renault</button></td>
+								</tr>
+							</table>
+						</div>
+						<div class="full-request__wrapper">
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">S</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Skoda</button> </td>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">SsangYong</button> </td>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Subaru</button> </td>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Suzuki</button> </td>
+								</tr>
+							</table>
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">T</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Toyota</button> </td>
+								</tr>
+							</table>
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">U</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">UAZ</button> </td>
+								</tr>
+							</table>
+						</div>
+
+
+						<div class="full-request__wrapper">
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">V</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Volkswagen</button> </td>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">Volvo</button> </td>
+								</tr>
+							</table>
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">В</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">ВАЗ Лада</button> </td>
+								</tr>
+							</table>
+							<table class="full-request__table--first">
+								<tr>
+									<th class="full-request__header btn--grey">Г</th>
+								</tr>
+								<tr>
+									<td class="full-request__data"><button class="btn--data" type="button">ГАЗ</button> </td>
+								</tr>
+							</table>
+						</div>
+
+
 					</div>
+
+
+
 					<div class="test__btn-price-wrapper">
 						<div class="test__btn-wrapper">
 							<button class="btn test__btn" type="button">Следующий шаг</button>
@@ -85,6 +254,9 @@
 						</p>
 					</div>
 				</div>
+
+
+
 				<div class="test__form-wrapper test__form-step2">
 					<p class="test__pagination">1 <span class="test__pagination--grey">/ 4</span>
 						<span class="full-request__pagination-title">Автомобиль</span></p>
@@ -329,9 +501,6 @@
 						</p>
 					</div>
 				</div>
-
-
-
 				<div class="test__form-wrapper test__form-step5">
 
 					<p class="test__pagination">1 <span class="test__pagination--grey">/ 4</span>
@@ -380,9 +549,6 @@
 						</div>
 					</div>
 				</div>
-
-
-
 				<div class="test__form-wrapper test__form-step6">
 					<p class="test__pagination">1 <span class="test__pagination--grey">/ 4</span>
 						<span class="full-request__pagination-title">Автомобиль</span></p>

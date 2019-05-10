@@ -29,6 +29,11 @@
   width: 100%;
 }
 
+.full-request__data-wrapper {
+  .full-request__radio-wrapper;
+  justify-content: space-between;
+}
+
 .full-request__input-aria {
   margin-right: 0;
 }
@@ -99,6 +104,12 @@
     margin-bottom: 58px;
     width: 52%;
   }
+  &--first {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+  }
 }
 
 .full-request__header {
@@ -111,7 +122,7 @@
   padding-right: 5px;
   text-align: left;
   font-size: 18px;
-  line-height: 10px;
+  line-height: 30px;
 
   &--width1 {
     width: 19%;
@@ -123,6 +134,13 @@
 
 .full-request__data-source {
   margin-left: auto;
+}
+
+.full-request__wrapper {
+  width: 12%; //145px/1204px;
+
+  outline: 1px solid #00c400;
+  //background-color: #7b519d;
 }
 //Write all styles for big-tablet and small desktop
 @media (max-width: @desctopWidth)  {
