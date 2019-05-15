@@ -4,10 +4,11 @@
 	<!--Add/remove class .modal--active in order to show/hide auth-wrapper-->
 	<section class="modal__auth">
 		<h2 class="modal__title">Авторизация</h2>
-		<form class="modal__form" action="http://scooterlabs.com/echo" method="post">
+		<form class="modal__form">
+
 			<div class="modal__select-wrapper">
 				<include src="build/img/02-form-main/call.svg"></include>
-				<input class="modal__phone" type="tel" name="tel" pattern="^\+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required title="+7-910-920-21-12" placeholder="Ваш номер телефона">
+				<input class="modal__phone" type="tel" placeholder="Ваш номер телефона">
 			</div>
 
 			<div class="modal__select-wrapper">
@@ -62,7 +63,7 @@
 			</p>
 			<div class="modal__select-wrapper modal__select-wrapper--pass">
 				<include src="build/img/02-form-main/call.svg"></include>
-				<input class="modal__phone" type="tel" name="tel" pattern="^\+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required title="+7-910-920-21-12" placeholder="Ваш номер телефона">
+				<input class="modal__phone mask" type="tel" name="tel" pattern="^\+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required title="+7-910-920-21-12" placeholder="Ваш номер телефона">
 			</div>
 			<p class="modal__pass-text modal__pass-text-grey">
 				На ваш номер в течение минуты поступит смс с новым кодом доступа
@@ -112,7 +113,7 @@
 
 				<div class="modal__select-wrapper modal__select-wrapper--reg">
 					<include src="build/img/02-form-main/call.svg"></include>
-					<input class="modal__phone" type="tel" name="tel" pattern="^\+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required title="+7-910-920-21-12" placeholder="Ваш номер телефона">
+					<input class="modal__phone mask" type="tel" name="tel" pattern="^\+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required title="+7-910-920-21-12" placeholder="Ваш номер телефона">
 				</div>
 
 				<div class="modal__select-wrapper modal__select-wrapper--reg">
