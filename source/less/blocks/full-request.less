@@ -12,6 +12,34 @@
 
 .full-request__step-title {
   margin-top: -10px;
+  &--icons {
+    display: inline-block;
+    padding: 0 40px;
+  }
+  .modal__pass-svg {
+    width: 25px;
+    height: 25px;
+    margin-top: -12px;
+  }
+  .modal__pass-svg1 {
+    fill: #000000;
+  }
+}
+
+.full-request__step-title .icon__input-svg-wrapper:hover::before {
+  display: block;
+}
+
+.full-request__step-title .icon__input-svg-wrapper::before {
+  content: attr(data-title);
+
+  top: 35px;
+  left: 20px;
+  z-index: 2;
+  display: none;
+  width: 375px;
+  padding: 15px 25px;
+
 }
 
 .full-request__pages {
@@ -182,20 +210,22 @@
 
   line-height: 21px;
   font-size: 17px;
+
+    .full__request-lock-svg {
+      width: 57px;
+      margin-top: -28px;
+    }
+
+    .full__request-lock-svg1 {
+      fill: @yellow-color;
+    }
 }
 
 .full-request__btn-wrapper {
   width: 79%;
 }
 
-.full__request-lock-svg {
-  width: 57px;
-  margin-top: -28px;
-}
 
-.full__request-lock-svg1 {
-  fill: @yellow-color;
-}
 //Write all styles for big-tablet and small desktop
 @media (max-width: @desctopWidth)  {
   .full-request {}

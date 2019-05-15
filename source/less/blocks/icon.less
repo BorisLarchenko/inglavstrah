@@ -26,6 +26,7 @@
 }
 
 .icon__date-svg {}
+
 .icon__input-svg-wrapper{
   right: 5px;
   left: auto;
@@ -33,7 +34,7 @@
   height: 22px;
   fill: @gray-color;
   &::before {
-    content: "Номер вашего автомобиля нужен для автоматического заполнения формы. Если у вас новый автомобиль или вы забыли номер, начните расчет ОСАГО с выбора марки";
+    content: attr(data-title);;
     position: absolute;
     top: 30px;
     left: 45px;
