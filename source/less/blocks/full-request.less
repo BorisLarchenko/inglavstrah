@@ -42,6 +42,22 @@
 
 }
 
+.full-request__text .icon__input-svg-wrapper:hover::before {
+  display: block;
+}
+
+.full-request__text .icon__input-svg-wrapper::before {
+  content: attr(data-title);
+
+  top: 35px;
+  left: -261px;
+  z-index: 2;
+  display: none;
+  width: 375px;
+  //padding: 15px 25px;
+
+}
+
 .full-request__pages {
   justify-content: flex-start;
   width: auto;
@@ -198,6 +214,20 @@
       transition: 0.3s;
     }
     border-bottom: 1px solid black;
+  }
+
+  &--inner {
+    widht: 100%;
+    outline: none;
+    border: none;
+    &:focus::placeholder {
+      color: rgba(0, 0, 0, 0.12);
+    }
+      &::placeholder {
+
+        transition: 0.3s;
+      }
+
   }
 }
 
