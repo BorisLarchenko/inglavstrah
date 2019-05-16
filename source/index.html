@@ -179,9 +179,24 @@
 	<!--build:js js/main.min.js -->
 	<script src="libs/jquery.js"></script>
 	<script src="libs/slick/slick/slick.min.js"></script>
+	<script src="libs/jquery.maskedinput.min.js"></script>
 	<script src="js/modules/header-menu-open.js"></script>
 	<script src="js/modules/index.js"></script>
 	<script src="js/modules/open-auth-modal.js"></script>
 	<!-- endbuild -->
+		
+		<!-- ДОБАВЬ ТО ЧТО НИЖЕ В COMMON.JS И ПОДКЛЮЧАЙ НА ВСЕХ СТРАНИЦАХ -->
+		<script>
+			// Overflow hidden when mobile menu is open
+				$('.header__toggle-btn').click(function(e) {
+				   $('body').toggleClass('overflow-hidden');
+				 });
+
+			// Mask for tel inputs
+				$(function(){
+			   	$("input.mask").mask("+7 (999) 999-9999");
+			  });
+		</script>
+
 </body>
 </html>
