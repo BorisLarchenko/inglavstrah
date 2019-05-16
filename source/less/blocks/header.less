@@ -362,7 +362,7 @@
           margin-left: auto;
           &-text{
             line-height: 0;
-            .header__login-svg-desc{
+            .header__login-svg-desc svg{
               margin: 0;
               height: auto;
               width: 20px;
@@ -378,10 +378,15 @@
           justify-content: flex-end;
           align-items: center;
           .header__phone--nav,
-          .header__btn,
-          .header__btn .header__phone-svg{
+          .header__btn {
             display: block;
           }
+          .header__btn .header__phone-svg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
           .header__phone--nav{
             margin-left: 15px;
             color: #000000;
@@ -411,7 +416,9 @@
             justify-content: center;
             padding: 0;
             .header__phone-svg{
-              width: 14px;
+              svg {
+                width: 14px;
+              }
             }
             &:hover{
               background: #4687b0;
