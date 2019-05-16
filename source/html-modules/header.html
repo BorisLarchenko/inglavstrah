@@ -25,7 +25,9 @@
 		</div>
 
 		<nav class="header__nav">
-			<button class="header__toggle-btn" type="button"></button>
+			<a class="logo" href="index.html">
+				<include src="build/img/01-main-page/logo.svg"></include>
+			</a>
 			<div class="header__nav-wrapper">
 				<ul class="header__nav-main">
 					<li class="header__nav-main-item"><a class="header__nav-main-link"> Рассчитать ОСАГО </a></li>
@@ -44,8 +46,17 @@
 				<a class="header__phone--nav" href="tel:+7473288507">
 					<span class="header__phone-text--nav">+7 (473) 22-88-507</span>
 				</a>
-				<button class="btn header__btn">Заказать звонок</button>
+				<button class="btn header__btn">
+					<include src="build/img/01-main-page/phone.svg"></include>
+					<span>Заказать звонок</span>
+				</button>
 			</div>
+			<a class="header__login" href="#">
+				<span class="header__login-text">
+					<include src="build/img/01-main-page/sign-in.svg"></include>
+				</span>
+			</a>
+			<button class="header__toggle-btn" type="button"></button>
 		</nav>
 	</div>
 </header>

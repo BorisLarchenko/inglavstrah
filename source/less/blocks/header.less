@@ -1,5 +1,31 @@
 .header {
-  z-index: 1
+  z-index: 1;
+  .header__nav{
+    .logo,
+    .header__login{
+      display: none;
+    }
+  }
+  &__btn{
+    .header__phone-svg{
+      display: none;
+    }
+  }
+  &.fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100500;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.11);
+    & + .main{
+      margin-top: 146px;
+    }
+    .header__nav-wrapper{
+      display: none;
+    }
+  }
 }
 
 .header__toggle-btn {
@@ -69,7 +95,7 @@
   line-height: 43px;
   color: #fff;
 
-  background-color: #466182;
+  background-color: @blue-bg;
 
   &:first-child,
   &:nth-child(2){
@@ -108,6 +134,14 @@
 }
 
 @media (min-width: @tabletWidth)  {
+
+  .header{
+    &.fixed{
+      & + .main{
+        margin-top: 147px;
+      }
+    }
+  }
 
   .header__login-text:hover .header__login-svg-desc1 {
     fill: #4687b0;
@@ -304,6 +338,84 @@
       border-right: none;
     }
   }
+
+  .header{
+    &.fixed{
+      background: white;
+      padding: 15px 0;
+      & + .main{
+        margin-top: 106px;
+      }
+      .header__wrapper,
+      .header__btn span{
+        display: none;
+      }
+      .header__nav{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .logo{
+          margin-right: 15px;
+          line-height: 0;
+        }
+        .header__login{
+          margin-left: auto;
+          &-text{
+            line-height: 0;
+            .header__login-svg-desc{
+              margin: 0;
+              height: auto;
+              width: 20px;
+            }
+          }
+        }
+        .logo,
+        .header__login{
+          display: block;
+        }
+        .header__nav-wrapper{
+          display: flex;
+          justify-content: flex-end;
+          .header__phone--nav,
+          .header__btn,
+          .header__btn .header__phone-svg{
+            display: block;
+          }
+          .header__phone--nav{
+            margin-left: 20px;
+          }
+          .header__nav-additional-item{
+            & + .header__nav-additional-item{
+              margin-left: 10px
+            }
+          }
+          .header__nav-main-item{
+            & + .header__nav-main-item{
+              margin-left: 10px
+            }
+          }
+
+          .header__btn{
+            background-color: @blue-bg;
+            min-width: 30px;
+            height: 30px;
+            margin-left: 10px;
+            border-radius: 0 10px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            .header__phone-svg{
+              width: 14px;
+            }
+            &:hover{
+              background: #4687b0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: @desctopWidth) {
@@ -382,7 +494,7 @@
     background-color: #466182;
   }
 
-  .header__nav--opened .header__nav-wrapper {
+  .header .header__nav--opened .header__nav-wrapper {
     position: absolute;
     
     width: 100%;
@@ -419,7 +531,7 @@
   .header__wrapper{
     justify-content: flex-end;
   }
-  .logo{
+  .header__wrapper .logo{
     margin-right: auto;
   }
 }
