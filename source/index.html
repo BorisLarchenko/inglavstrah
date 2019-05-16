@@ -176,37 +176,28 @@
 	<include src="source/html-modules/footer.html"></include>
 	<include src="source/html-modules/modal-auth-reg.html"></include>
 
-	<!--build:js js/main.min.js -->
+	<!--build:js js/libs.min.js -->
 	<script src="libs/jquery.js"></script>
 	<script src="libs/slick/slick/slick.min.js"></script>
 	<script src="libs/jquery.maskedinput.min.js"></script>
 	<script src="libs/jquery.waypoints.min.js"></script>
+	<!-- endbuild -->
+
+
+	<!--build:js js/custom.min.js -->
 	<script src="js/modules/header-menu-open.js"></script>
 	<script src="js/modules/index.js"></script>
 	<script src="js/modules/open-auth-modal.js"></script>
 	<!-- endbuild -->
-		
-		<!-- ДОБАВЬ ТО ЧТО НИЖЕ В COMMON.JS И ПОДКЛЮЧАЙ НА ВСЕХ СТРАНИЦАХ -->
-		<script>
-			// Overflow hidden when mobile menu is open
-				$('.header__toggle-btn').click(function(e) {
-				   $('body').toggleClass('overflow-hidden');
-				 });
 
-			// Mask for tel inputs
-				$(function(){
-			   	$("input.mask").mask("+7 (999) 999-9999");
-			  });
+	<!--build:js js/common.min.js -->
+	<script src="js/common/all-pages.js"></script>
+	<!-- endbuild -->
 
-			// Header fixed
-				var waypoint = new Waypoint({
-			  element: $('header'),
-			  handler: function(direction) {
-			    $('header').toggleClass('fixed')
-			  }, 
-			  offset: -75
-			})
-		</script>
+
+
+	<!-- ДОБАВЬ ТО ЧТО НИЖЕ В COMMON.JS И ПОДКЛЮЧАЙ НА ВСЕХ СТРАНИЦАХ -->
+
 
 </body>
 </html>
