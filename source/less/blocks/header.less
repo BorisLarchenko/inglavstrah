@@ -376,22 +376,27 @@
         .header__nav-wrapper{
           display: flex;
           justify-content: flex-end;
+          align-items: center;
           .header__phone--nav,
           .header__btn,
           .header__btn .header__phone-svg{
             display: block;
           }
           .header__phone--nav{
+            margin-left: 15px;
+            color: #000000;
+          }
+          .header__nav-additional {
             margin-left: 20px;
           }
           .header__nav-additional-item{
             & + .header__nav-additional-item{
-              margin-left: 10px
+              margin-left: 20px
             }
           }
           .header__nav-main-item{
             & + .header__nav-main-item{
-              margin-left: 10px
+              margin-left: 20px
             }
           }
 
@@ -418,11 +423,46 @@
   }
 }
 
+
+
+
 @media (min-width: @desctopWidth) {
   .header__nav-additional-item + .header__nav-additional-item{
     margin-left: 70px;
   }
+
+  .header{
+    &.fixed {
+      .header__nav{
+        .header__nav-wrapper{
+          .header__nav-additional {
+            margin-left: 30px;
+          }
+
+          .header__nav-additional-item {
+            & + .header__nav-additional-item {
+              margin-left: 30px
+            }
+          }
+
+          .header__nav-main-item {
+            & + .header__nav-main-item {
+              margin-left: 30px
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+  .header.fixed .header__nav .header__nav-wrapper .header__phone--nav {
+    margin-left: 40px;
+  }
 }
+
+
+
 
 @media (max-width: 1279px) {
   .header__nav--opened {
