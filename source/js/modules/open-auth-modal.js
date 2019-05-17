@@ -1,6 +1,6 @@
 (function () {
 //  find Enter entity block that asks authorisation
-  const login = document.querySelector('.header__login');
+  const loginArr = document.querySelectorAll('.header__login');
 //  find overlay window
   const overlay = document.querySelector('.modal__overlay');
 
@@ -13,12 +13,15 @@
 // ==================
 
 //  activate overlay, authWrap and auth while clicking login
-  login.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    overlay.classList.add('modal--active');
-    authWrap.classList.add('modal--active');
-    auth.classList.add('modal--active');
-  });
+  for(let i = 0; i < loginArr.length; i++) {
+    loginArr[i].addEventListener('click', function (evt) {
+      evt.preventDefault();
+      overlay.classList.add('modal--active');
+      authWrap.classList.add('modal--active');
+      auth.classList.add('modal--active');
+    });
+
+  }
 
 //  find all modal__close buttons
   const allCloseButtons = document.querySelectorAll('.modal__close');
@@ -47,7 +50,7 @@ for (let i = 0; i < allCloseButtons.length; i++) {
     evt.preventDefault();
     auth.classList.add('modal--active');
     forgotPass.classList.remove('modal--active');
-  })
+  });
   //start working with registration window=======
   //find registration blocks============
   const regWrap = document.querySelector('.modal--reg');
