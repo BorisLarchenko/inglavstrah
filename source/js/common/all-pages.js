@@ -23,7 +23,9 @@ var waypoint = new Waypoint({
 var interview = new Waypoint.Inview({
   element: $('main'),
   entered: function(direction) {
-    $('header').removeClass('fixed')
+    if (direction === 'up') {
+      $('header').removeClass('fixed')
+    }
   }
 });
 
