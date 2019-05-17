@@ -10,29 +10,16 @@ $(function(){
 });
 
 // Header fixed
-/*
-var waypoint = new Waypoint({
-    element: $('header'),
-    handler: function(direction) {
-      $('header').toggleClass('fixed')
+  var interview = new Waypoint.Inview({
+    element: $('main'),
+    entered: function(direction) {
+      if (direction === 'up') {
+        $('header').removeClass('fixed')
+      };
     },
-    offset: -75
-  });
-*/
-
-var interview = new Waypoint.Inview({
-  element: $('main'),
-  entered: function(direction) {
-    if (direction === 'up') {
-      $('header').removeClass('fixed')
+    exit: function(direction) {
+      if (direction === 'down') {
+        $('header').addClass('fixed')
+      };
     }
-  }
-});
-
-var waypoint = new Waypoint.Inview({
-  element: $('header'),
-  exited: function(direction) {
-      $('header').addClass('fixed')
-  }
-});
-
+  });
