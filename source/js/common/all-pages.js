@@ -10,6 +10,7 @@ $(function(){
 });
 
 // Header fixed
+/*
 var waypoint = new Waypoint({
     element: $('header'),
     handler: function(direction) {
@@ -17,3 +18,19 @@ var waypoint = new Waypoint({
     },
     offset: -75
   });
+*/
+
+var interview = new Waypoint.Inview({
+  element: $('main'),
+  entered: function(direction) {
+    $('header').removeClass('fixed')
+  }
+});
+
+var waypoint = new Waypoint.Inview({
+  element: $('header'),
+  exited: function(direction) {
+      $('header').addClass('fixed')
+  }
+});
+
