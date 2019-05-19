@@ -1,5 +1,5 @@
 <header class="header">
-	<!-- add/delete class ".header__in" to show logined user name and avatar in menue-->
+	<!-- add/delete class ".header__in" to show logined user name and avatar in menu-->
 	<div class="container container--header header__in">
 		<h1 class="visually-hidden">Страховой магазин ИНГЛАВСТРАХ</h1>
 		<div class="header__wrapper">
@@ -28,20 +28,18 @@
 
 
 
-				<a class="header__logined" href="#">
-
+				<a class="header__logined" href="cabinet.php">
 					<span class="header__login-text header__login-avatar">
 						Александр
+					</span>
+					<span class="header__login-avatar header__login-avatar--show">
+
 					</span>
 				</a>
 
 
-
-
 				<a class="header__login" href="#">
-					<span class="header__login-avatar header__login-avatar--show">
 
-					</span>
 					<include src="build/img/01-main-page/user.svg"></include>
 					<span class="header__login-text">Войти
 						<span class="header__login-svg-desc">
@@ -49,6 +47,9 @@
 						</span>
 					</span>
 				</a>
+
+
+
 			</div>
 		</div>
 
@@ -86,17 +87,24 @@
 
 
 
-				<a class="header__login" href="#">
+
+
+			<a class="header__logined" href="cabinet.php">
 					<span class="header__login-avatar header__login-avatar--show">
 
-						</span>
+					</span>
+			</a>
+
+
+			<a class="header__login" href="#">
+
 					<span class="header__login-text">
 						<span class="header__login-svg-desc">
 							<include src="build/img/01-main-page/sign-in.svg"></include>
 						</span>
 					</span>
 				</a>
-			
+
 
 
 			<button class="header__toggle-btn" type="button"></button>
