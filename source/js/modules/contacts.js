@@ -6,6 +6,19 @@
     shopsTown.classList.toggle('shops__town--open');
   });
 
+  //find all addresses in ul li and find blocks to switch
+  const blocksArr1 = document.querySelectorAll('.shops .shops__wrapper');
+  const adressArr = blocksArr1[0].querySelectorAll('.shops__list .shops__item');
+  //add listenters to ul li elements to switch blocks
+
+  console.log(adressArr);
+  for (let i = 0; i < adressArr.length; i++) {
+    adressArr[i].addEventListener('click', function () {
+      blocksArr1[0].classList.add('shops__wrapper--close');
+      blocksArr1[1].classList.remove('shops__wrapper--close');
+
+    })
+  }
 
   //find elements
   const btnTest = document.querySelector('.review-thanks-open');
