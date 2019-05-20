@@ -1,6 +1,16 @@
 (function () {
 //  find Enter entity block that asks authorisation
-  const loginArr = document.querySelectorAll('.header__login');
+  let loginArr = document.querySelectorAll('.header__login');
+
+//  find additional elements that ask for authorization
+  const loginAdditinalElem = document.querySelector('.form__review .form__personal-link');
+  console.log(loginAdditinalElem);
+  if (loginAdditinalElem !== undefined && loginAdditinalElem !== null) {
+     loginArr = Array.from(loginArr);
+     loginArr.push(loginAdditinalElem);
+     console.log(loginArr);
+  }
+
 //  find overlay window
   const overlay = document.querySelector('.modal__overlay');
 
