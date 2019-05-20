@@ -7,7 +7,6 @@
   //check if additional elements are existed
   if (loginAdditinalElem !== undefined && loginAdditinalElem !== null) {
      loginArr.push(loginAdditinalElem);
-     console.log(loginArr);
   }
 
 //  find overlay window
