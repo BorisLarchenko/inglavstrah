@@ -1,12 +1,11 @@
 (function () {
 //  find Enter entity block that asks authorisation
-  let loginArr = document.querySelectorAll('.header__login');
+  const loginArr = Array.from(document.querySelectorAll('.header__login'));
 
 //  find additional elements that ask for authorization
   const loginAdditinalElem = document.querySelector('.form__review .form__personal-link');
-  console.log(loginAdditinalElem);
+  //check if additional elements are existed
   if (loginAdditinalElem !== undefined && loginAdditinalElem !== null) {
-     loginArr = Array.from(loginArr);
      loginArr.push(loginAdditinalElem);
      console.log(loginArr);
   }
