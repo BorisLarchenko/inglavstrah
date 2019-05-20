@@ -33,17 +33,24 @@
 
 
 
+
+
 						<ul class="shops__list">
 <!--TODO: make a tooltip while hovering li-->
-							<li class="shops__item"><span class="shops__name">Урывского</span> Урывского	2в, мкр. Процессор" (м-н)"Пятерочка"	<br>+7 (473) 22-88-507</li>
-							<li class="shops__item"><span class="shops__name">Машмет</span> ост. Шубина маг."ЦентрТорг" ул.Новосибирская 23/1
+							<li class="shops__item" data-title="Подробнее"><span class="shops__name">Урывского</span> Урывского	2в, мкр. Процессор" (м-н)"Пятерочка"	<br>+7 (473) 22-88-507</li>
+							<li class="shops__item" data-title="Подробнее"><span class="shops__name">Машмет</span> ост. Шубина маг."ЦентрТорг" ул.Новосибирская 23/1
 								<br>+7 (473) 22-88-507</li>
-							<li class="shops__item"><span class="shops__name">Остружева</span> тц.ПЕРЕСТРОЙКА 1-й этаж, Ленинский пр-т 156 "б"
+							<li class="shops__item" data-title="Подробнее"><span class="shops__name">Остружева</span> тц.ПЕРЕСТРОЙКА 1-й этаж, Ленинский пр-т 156 "б"
 								<br>+7 (473) 22-88-507</li>
-							<li class="shops__item"><span class="shops__name">Север</span> маг."ПятьюПять" ул. Владимира Невского 13"г"
+							<li class="shops__item" data-title="Подробнее"><span class="shops__name">Север</span> маг."ПятьюПять" ул. Владимира Невского 13"г"
 								<br>+7 (473) 22-88-507</li>
-							<li class="shops__item"><span class="shops__name">Урывского</span> Урывского	2в, мкр. Процессор" (м-н)"Пятерочка"<br>	+7 (473) 22-88-507</li>
+							<li class="shops__item" data-title="Подробнее"><span class="shops__name">Урывского</span> Урывского	2в, мкр. Процессор" (м-н)"Пятерочка"<br>	+7 (473) 22-88-507</li>
 						</ul>
+
+
+
+
+
 					</div>
 					<div class="shops__map">
 <!--TODO: make a grey map-->
@@ -157,9 +164,15 @@
 		</section>
 	</main>
 	<include src="source/html-modules/footer.html"></include>
+	<include src="source/html-modules/modal-auth-reg.html"></include>
 
-	<script src="js/main.min.js"></script>
-	<!--build:js js/contacts.min.js -->
+	<script src="js/libs.min.js"></script>
+
+	<script src="js/common.min.js"></script>
+
+
+
+	<!--build:js js/custom-contacts.min.js -->
 	<script src="js/modules/contacts.js"></script>
 	<!-- endbuild -->
 </body>

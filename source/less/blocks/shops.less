@@ -65,6 +65,24 @@
   }
 }
 
+//start tooltip for hovered li
+.shops__item::before {
+  content: attr(data-title);
+  position: absolute;
+  top: 10px;
+  right: 13px;
+  z-index: 1;
+  display: none;
+  font-size: 18px;
+  line-height: 30px;
+  color: @light-blue;
+}
+.shops__item:hover::before {
+  display: block;
+}
+//end tooltip for hovered li
+
+
 //if it is needed to add links in li tags
 /*.shops__item a {
   all: inherit;
