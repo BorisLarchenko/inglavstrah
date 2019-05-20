@@ -129,6 +129,20 @@
 
   }
 
+
   .btn--delete {
-    border: 1px solid black;
+    z-index: 1;
+    width: 120px;
+    top: -10px;
+    padding-left: 10px;
+    justify-content: flex-start;
+    display: inline-flex;
+    border: 1px solid @light-grey;
+    align-items: center;
+    cursor: pointer;
+    .close__cross-svg {
+      position: absolute;
+      right: 0;
+      fill: @gray-color;
+    }
   }

@@ -1568,7 +1568,9 @@
 						<p class="test__step-title full-request__step-title full-request__step-title--icons">
 							<include src="build/img/icons/user.svg"></include>
 							Водитель 2
-							<button class="btn--grey btn--delete" type="button">Удалить</button>
+							<button class="btn--grey btn--delete" type="button">Удалить
+								<include src="build/img/icons/close.svg"></include>
+							</button>
 
 
 						</p>
@@ -1670,9 +1672,15 @@
 </main>
 <include src="source/html-modules/footer.html"></include>
 
+<include src="source/html-modules/modal-auth-reg.html"></include>
+
+<script src="js/libs.min.js"></script>
+
+<script src="js/common.min.js"></script>
 
 
-<!--build:js js/full-request-form.min.js -->
+
+<!--build:js js/custom-full-request-form.min.js -->
 <script src="js/modules/full-request-form-steps.js"></script>
 <!-- endbuild -->
 
