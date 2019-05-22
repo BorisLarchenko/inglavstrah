@@ -84,6 +84,17 @@
   align-items: baseline;
   width: 88%;
   justify-content: space-between;
+
+  &--four-cols {
+    width: 100%;
+    margin-bottom: 0;
+    .full-request__text {
+      width: 22%;
+    }
+  }
+  &--short {
+    width: 74%;
+  }
 }
 
 
@@ -308,13 +319,19 @@
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
-  width: 26%;
+  width: 27%;
+  .btn-back {
+    z-index: 1;
+  }
 }
 
 .full-request__name {
   color: #305a7f;
   font-size: 18px;
   line-height: 22px;
+  &--grey {
+    color: @gray-color;
+  }
 }
 
 //Write all styles for big-tablet and small desktop
