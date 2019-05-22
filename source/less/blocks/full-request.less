@@ -217,7 +217,7 @@
       //color: #000000;
       transition: 0.3s;
     }
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
   }
 
   &--inner {
@@ -228,10 +228,11 @@
       color: rgba(0, 0, 0, 0.12);
     }
       &::placeholder {
-
         transition: 0.3s;
       }
-
+  }
+  &--long {
+    width: 64%;
   }
 }
 
@@ -301,6 +302,19 @@
   width: 22px;
   height: 22px;
   fill: #828282;
+}
+
+.full-request__name-other {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 26%;
+}
+
+.full-request__name {
+  color: #305a7f;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 //Write all styles for big-tablet and small desktop
