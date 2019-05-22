@@ -43,7 +43,6 @@
 
   //  find all buttons with car`s names in formStep1
   const carNameArrFull = formStep1Full.querySelectorAll('.btn--data');
-  console.log(carNameArrFull);
 
 // add evt listener on all carNameArr elements click to go to the second step
   for (let i = 0; i < carNameArrFull.length; i++) {
