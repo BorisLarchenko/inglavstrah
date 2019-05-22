@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<meta	name="viewport"	content="width=device-width,initial-scale=1">
 	<title>contacts</title>
-	<link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-	<link rel="icon" href="./img/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+	<link rel="icon" href="../img/favicon.png" type="image/x-icon">
 
-	<link rel="stylesheet" href="./css/style.min.css">
+	<link rel="stylesheet" href="../css/style.min.css">
 </head>
 <body>
 	<include src="source/html-modules/header.html"></include>
@@ -19,8 +19,6 @@
 						<p class="main__contacts-slogan">Список магазинов</p>
 
 						<div class="shops__town-wrapper">
-<!--Add/delete class '.shops__town--open' in order to show/hide
-.shops__town-list-->
 							<p class="main__contacts-town shops__town">
 								г. Воронеж
 								<a class="main__contacts-link">Другой город</a>
@@ -31,7 +29,6 @@
 							</ul>
 						</div>
 						<ul class="shops__list">
-<!--TODO: make a tooltip while hovering li-->
 							<li class="shops__item" data-title="Подробнее"><span class="shops__name">Урывского</span> Урывского	2в, мкр. Процессор" (м-н)"Пятерочка"	<br>+7 (473) 22-88-507</li>
 							<li class="shops__item" data-title="Подробнее"><span class="shops__name">Машмет</span> ост. Шубина маг."ЦентрТорг" ул.Новосибирская 23/1
 								<br>+7 (473) 22-88-507</li>
@@ -43,14 +40,7 @@
 						</ul>
 					</div>
 					<div class="shops__map">
-<!--TODO: make a grey map-->
-						<p class="main__contacts-slogan">Карта</p>
-
-
-
-						<img src="https://via.placeholder.com/712?text=Google map 712x712" alt="Карта">
-
-
+						<div id="map-general"></div>
 					</div>
 				</div>
 				<div class="shops__wrapper shops__wrapper--close">
@@ -88,32 +78,35 @@
 
 					</div>
 					<div class="shops__map">
-<!--TODO: make a small map						-->
-						<p class="shops__map-small">
-							<img src="https://via.placeholder.com/712x488?text=Google map 712x488" alt="Карта">
-						</p>
-						<!--TODO: check how slider working because of arrows it is not adaptive-->
-
-						<!-- <div class="shops__slider">
-							<img class="shops__slide" src="https://via.placeholder.com/185x125" alt="Карта">
-							<img class="shops__slide" src="https://via.placeholder.com/185x125" alt="Карта">
-							<img class="shops__slide" src="https://via.placeholder.com/185x125" alt="Карта">
-							<img class="shops__slide" src="https://via.placeholder.com/185x125" alt="Карта">
-
-							<img class="shops__slide" src="https://via.placeholder.com/185x125" alt="Карта">
-							<img class="shops__slide" src="https://via.placeholder.com/185x125" alt="Карта">
-							<img class="shops__slide" src="https://via.placeholder.com/185x125" alt="Карта">
-							<img class="shops__slide" src="https://via.placeholder.com/185x125" alt="Карта">
-
-						</div> -->
-
-
-
-
-
+						<div id="map-small"></div>
+						<div class="shops__slider">
+							<a href="img/03-contacts/shop-photo.jpg" data-fancybox="gallery">
+								<img src="img/03-contacts/shop-photo.jpg" alt="Photo">
+							</a>
+							<a href="img/03-contacts/shop-photo.jpg" data-fancybox="gallery">
+								<img src="img/03-contacts/shop-photo.jpg" alt="Photo">
+							</a>
+							<a href="img/03-contacts/shop-photo.jpg" data-fancybox="gallery">
+								<img src="img/03-contacts/shop-photo.jpg" alt="Photo">
+							</a>
+							<a href="img/03-contacts/shop-photo.jpg" data-fancybox="gallery">
+								<img src="img/03-contacts/shop-photo.jpg" alt="Photo">
+							</a>
+							<a href="img/03-contacts/shop-photo.jpg" data-fancybox="gallery">
+								<img src="img/03-contacts/shop-photo.jpg" alt="Photo">
+							</a>
+							<a href="img/03-contacts/shop-photo.jpg" data-fancybox="gallery">
+								<img src="img/03-contacts/shop-photo.jpg" alt="Photo">
+							</a>
+							<a href="img/03-contacts/shop-photo.jpg" data-fancybox="gallery">
+								<img src="img/03-contacts/shop-photo.jpg" alt="Photo">
+							</a>
+							<a href="img/03-contacts/shop-photo.jpg" data-fancybox="gallery">
+								<img src="img/03-contacts/shop-photo.jpg" alt="Photo">
+							</a>
+						</div>
 					</div>
 				</div>
-
 			</div>
 		</section>
 
@@ -163,12 +156,14 @@
 	<include src="source/html-modules/modal-auth-reg.html"></include>
 
 	<script src="js/libs.min.js"></script>
+	<script defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC6HjX8Vp_hwJmQisJGsQfaC8jXIokZUxA&extension=.js"></script>
 
 	<script src="js/common.min.js"></script>
 
 
 
 	<!--build:js js/custom-contacts.min.js -->
+	<script src="libs/jquery.fancybox.min.js"></script>
 	<script src="js/modules/contacts.js"></script>
 	<!-- endbuild -->
 </body>

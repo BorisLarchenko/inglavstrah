@@ -22,16 +22,13 @@
 /* Arrows */
 .slick-prev,
 .slick-next {
-    border-radius: 50%;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
     width: 40px;
     font-size: 0;
     cursor: pointer;
-    background: @yellow-color;
     top: 50%;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -40,10 +37,10 @@
     outline: none;
     z-index: 1;
     &:hover, &:focus {
-        background: linear-gradient(to right,#ffd800 15%,#fff602 50%,#ffd800);
+        
     }
     &.slick-disabled {
-        background: rgba(255, 216, 0, .5);
+        
     }
 }
 
@@ -56,19 +53,11 @@
 }
 
 .slick-prev {
-    left: -120px;
-    &:before {
-        background-image: url("../img/icons/chevron-left.svg");
-        margin-right: 4px;
-    }
+    left: 0;
 }
 
 .slick-next {
-    right: 0px;
-    &:before {
-        background-image: url("../img/icons/chevron-right.svg");
-        margin-left: 4px;
-    }
+    right: 0;
 }
 
 /* Dots */

@@ -44,7 +44,7 @@
 }
 
 .main__contacts {
-  padding-top: 180px;
+  padding: 120px 0 150px;
   //min-height: 830px;
   background:
 
@@ -116,14 +116,10 @@
 }
 
 .main__contacts-town {
-  margin-top: 75px;
-
-
   font-family: 'cuprumbold', 'Arial', sans-serif;
   font-size: 25px;
   line-height: 27px;
   color: @yellow-color;
-
 }
 
 .main__contacts-address {
@@ -260,6 +256,34 @@
 .main__howto-slider {
   width: calc(100% - 120px);
   margin-left: 120px;
+  .slick-prev,
+  .slick-next {
+      border-radius: 50%;
+      height: 40px;
+      background: @yellow-color;
+      &:hover, &:focus {
+        background: linear-gradient(to right,#ffd800 15%,#fff602 50%,#ffd800);
+      }
+      &.slick-disabled {
+        background: rgba(255, 216, 0, .5);
+      }
+  }
+  .slick-list{
+    overflow: visible !important;
+  }
+  .slick-prev {
+      left: -120px;
+      &:before {
+        background-image: url("../img/icons/chevron-left.svg");
+        margin-right: 4px;
+    }
+  }
+  .slick-next {
+    &:before {
+        background-image: url("../img/icons/chevron-right.svg");
+        margin-left: 4px;
+    }
+  }
 }
 
 .main__advantages-item-title {
