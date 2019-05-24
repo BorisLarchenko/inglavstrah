@@ -43,9 +43,8 @@
 })();
 
 $(document).ready(function(){
-
   // Maps
-    google.maps.event.addDomListener(window, 'load', init);
+    // google.maps.event.addDomListener(window, 'load', init);
     function init() {
       var mapOptions = {
             center: new google.maps.LatLng(51.671660, 39.233082),
@@ -433,5 +432,5 @@ $(document).ready(function(){
               icon: image
           });
     };
-
+    init();
 });
