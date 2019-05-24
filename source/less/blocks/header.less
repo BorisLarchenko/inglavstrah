@@ -20,7 +20,7 @@
     z-index: 2;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.11);
     & + .main{
-      margin-top: 146px;
+      margin-top: 143px;
     }
     .header__nav-wrapper{
       display: none;
@@ -44,10 +44,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-right: 80px;
-  padding-left: 15px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 10px 80px 10px 15px;
   background-color: #324a67;
 }
 
@@ -65,7 +62,8 @@
 }
 
 .header__in .header__logined {
-  display: block;
+  display: flex;
+  align-items: center;
   margin-left: 30px;
   .header__login-avatar--show {
     display: block;
@@ -75,18 +73,24 @@
 .header__phone {
   &-svg {
     fill: #fff;
+    display: flex;
   }
+}
+
+.header__tel-items{
+  line-height: 0;
 }
 
 .header__login {
   margin-left: 20px;
+  display: flex;
+  align-items: center;
   &-svg1 {
     fill: #fff;
   }
 }
 
-.header__phone-text, 
-.header__login-text, 
+.header__phone-text,  
 .header__login-svg-desc {
   display: none;
 }
@@ -94,7 +98,9 @@
 .header__button {
   display: none;
 }
-
+.header__login-name{
+  display: none;
+}
 .header__phone--nav {
   display: none;
 }
@@ -157,23 +163,13 @@
 }
 
 .header__login-avatar {
-  padding-left: 36px;
-
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -18px;
-    margin-top: -18px;
-    width: 36px;
-    height: 36px;
-    background-color: #ededed;
-    border-radius: 50%;
-    background: url(../img/04-reviews/user-pic-small.png) no-repeat center;
-    background-size: 36px 36px;
-  }
+  width: 36px;
+  height: 36px;
+  background-color: @lighter-grey;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .header__nav .header__logined {
@@ -184,23 +180,25 @@
 }
 
 .header.fixed .header__in {
-  .header__login-avatar--show {
-    display: block;
-    width: 36px;
-    height: 36px;
-    padding-left: 0;
-  }
+  // .header__login-avatar--show {
+  //   display: block;
+  //   width: 36px;
+  //   height: 36px;
+  //   padding-left: 0;
+  // }
   .header__login-svg {
     display: none;
   }
 }
-
+.header__login-text{
+  display: none;
+}
 @media (min-width: @tabletWidth)  {
 
   .header{
     &.fixed{
       & + .main{
-        margin-top: 147px;
+        margin-top: 144px;
       }
     }
   }
@@ -214,13 +212,9 @@
   }
 
   .header__login-svg-desc {
-    display: inline;
-
-    width: 16px;
-    height: 14px;
+    display: block;
     margin-left: 4px;
-
-
+    line-height: 0;
   }
 
   .header__login-svg-desc1 {
@@ -293,23 +287,15 @@
   .header__login-svg {
     display: none;
   }
+
+
   .header__login-text {
-    display: inline-block;
-
-    font-family: 'cuprum', 'Arial', sans-serif;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-family: 'cuprumbold','Arial',sans-serif;
     font-size: 18px;
-    line-height: 30px;
     letter-spacing: 0;
-
     color: #305a7f;
-
-    &:hover {
-      color: #4687b0;
-    }
-    &:active {
-      color: #509ecd;
-    }
   }
 
 
@@ -318,22 +304,33 @@
       display: none;
     }
     .header__logined {
-      display: inline-block;
-      .header__login-avatar--show {
-        display: none;
+      .header__login-name{
+        display: block;
+        font-family: 'cuprumbold','Arial',sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0;
+        color: #305a7f;
+        transition: .3s;
+        margin-left: 12px
+      }
+      &:hover .header__login-name{
+        color: #4687b0;
+      }
+      &:active .header__login-name{
+        color: #509ecd;
       }
     }
   }
 
-  .header__login-avatar {
-    padding-left: 48px;
-
-
-    &::before {
-      left: 0;
-      margin-left: 0;
+  .fixed{
+    .header__in{
+      .header__nav{
+        .header__logined {
+          display: block;
+        }
+      }
     }
-
   }
 
 
@@ -351,8 +348,8 @@
     padding: 0;
   }
   .header__wrapper {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-right: 0;
     padding-left: 0;
     background-color: #fff;
@@ -430,7 +427,7 @@
       background: white;
       padding: 15px 0;
       & + .main{
-        margin-top: 106px;
+        margin-top: 100px;
       }
       .header__wrapper,
       .header__btn span{
@@ -578,7 +575,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 12px;
+      top: 15px;
       left: 0;
       width: 28px;
       height: 14px;
