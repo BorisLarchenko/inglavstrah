@@ -214,7 +214,7 @@
 .modal__check-svg {
   position: absolute;
   left: 2px;
-  top: 0;
+  top: 1px;
   display: none;
   width: 20px;
 }
@@ -231,8 +231,17 @@
   margin-top: -15px;
   margin-bottom: 55px;
   &--form-contacts {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 0px;
+    .modal__checkbox:checked + .modal__check-svg {
+      fill: @light-blue;
+    }
+    .modal__checkbox-text{
+      cursor: pointer;
+    }
+    .modal__checkbox-text:before{
+      border-color: @light-blue;
+    }
   }
 }
 .modal__reg-link-wrapper {
