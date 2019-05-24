@@ -90,6 +90,12 @@
   &::placeholder {
     color: #000;
   }
+  &:focus {
+    &::placeholder {
+      color: @gray-color;
+    }
+    border-color: @gray-color;
+  }
 }
 
 .form__review-wrapper {
