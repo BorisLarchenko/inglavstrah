@@ -182,6 +182,10 @@
   &--down {
     margin-bottom: 80px;
   }
+  &--kbm {
+    width: 100%;
+    padding-bottom: 100px;
+  }
 }
 
 .full-request__header {
@@ -206,6 +210,10 @@
 
 .full-request__data-source {
   margin-left: auto;
+  &--kbm {
+    width: 325px;
+    line-height: 20px;
+  }
 }
 
 .full-request__wrapper {
@@ -308,7 +316,9 @@ span.full-request__text {
   display: flex;
   justify-content: space-between;
   width: 28%;
-
+  &--four-cols {
+    width: 22%;
+  }
 }
 
 .full-request__radio-info {
@@ -337,6 +347,30 @@ span.full-request__text {
   line-height: 22px;
   &--grey {
     color: @gray-color;
+  }
+}
+
+.full-request--kbm {
+  .test__form--ruler::after {
+
+    background-image: linear-gradient(to right,#fff 50%,#e6e6e6 50%,#e6e6e6 calc(50% + 3px),#fff calc(50% + 3px));
+  }
+  .icon__input-svg-wrapper {
+    z-index: 2;
+    right: auto;
+    left: 119px;
+  }
+  .full-request__date-radio-wrapper--four-cols {
+    padding-bottom: 52px;
+      .icon__input-svg-wrapper {
+        left: 80px;
+      }
+    }
+
+  .full-request__text--inner {
+    &:focus + .icon__input-svg-wrapper {
+      display: none;
+    }
   }
 }
 

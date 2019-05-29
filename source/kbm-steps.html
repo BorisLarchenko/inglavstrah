@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta	name="viewport"	content="width=device-width,initial-scale=1">
+	<title>kbm-steps</title>
+	<link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+	<link rel="icon" href="./img/favicon.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+<include src="source/html-modules/header.html"></include>
+<main class="main">
+
+	<section class="main__form-test test full-request full-request--kbm">
+		<div class="container">
+			<h2 class="test__title full-request__title">Оформление ОСАГО</h2>
+			<form class="test__form test__form--ruler" action="http://scooterlabs.com/echo" method="post">
+				<!--start step 1 from 4 steps-->
+				<div class="test__form-wrapper test__form-step5">
+					<p class="test__pagination">Шаг 1 <span class="test__pagination--grey">/ 2</span></p>
+
+					<p class="test__step-title full-request__step-title">Допущенные к управлению водители</p>
+
+					<div class="test__radio-wrapper full-request__radio-wrapper full-request__radio-wrapper--breadcrumbs-free">
+						<label class="test__input-aria full-request__input-aria full-request__input-aria--step5">
+							<input class="test__radio" type="radio" name="power" value="110">
+							<span class="test__radio-circle">Ограниченный круг</span>
+						</label>
+						<label class="test__input-aria full-request__input-aria full-request__input-aria--step5">
+							<input class="test__radio" type="radio" name="power" value="124">
+							<span class="test__radio-circle">Без ограничений</span>
+						</label>
+					</div>
+
+					<div class="test__btn-price-wrapper">
+						<div class="test__btn-wrapper">
+							<button class="btn test__btn test__btn--kbm" type="button">Далее</button>
+						</div>
+
+						<p class="main__test-info test__info full-request__info">
+							<include src="build/img/05-modal/lock.svg"></include>
+							Мы гарантируем <br> защиту ваших данных
+						</p>
+					</div>
+				</div>
+				<div class="test__form-wrapper test__form-step18">
+					<p class="test__pagination">Шаг 2 <span class="test__pagination--grey">/ 2</span></p>
+					<p class="test__step-title full-request__step-title full-request__step-title--icons">
+						<include src="build/img/icons/user.svg"></include>
+						Водитель
+					</p>
+					<ul class="pagination full-request__pages">
+						<li class="pagination__item full-request__item">
+							<button class="btn--grey full-request__btn-back" type="button">Ограниченный круг </button>
+						</li>
+					</ul>
+
+					<div class="test__radio-wrapper full-request__radio-wrapper full-request__input-wrapper">
+						<!--<input class="form__text" style="display: none" type="text" placeholder="Имя" name="user-name">-->
+						<input class="form__text full-request__text" type="text" placeholder="Фамилия" name="user-soname">
+						<input class="form__text full-request__text" type="text" placeholder="Имя" name="user-name">
+						<input class="form__text full-request__text" type="text" placeholder="Отчество" name="user-second-name">
+
+						<input class="form__text full-request__text" type="text" placeholder="Дата рождения" name="user-birthday">
+						<input class="form__text full-request__text" type="text" placeholder="Серия Номер вод. удост." name="user-passport">
+						<label class="form__text full-request__text">
+							<input class="full-request__text--inner" type="text" placeholder="Дата запроса" name="car-vin">
+
+
+							<span class="modal__pass-svg icon__input-svg-wrapper" data-title="Необходимо указывать дату СЛЕДУЮЩУЮ после окончания полиса, но не позднее 60 дней, от текущего дня. Для проверки текущего кбм, введите сегодняшнюю дату.">
+								<svg class="icon__input-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 32 32">
+<path d="M16.067 11.156c0.883 0 1.599-0.716 1.599-1.599 0-0.884-0.716-1.598-1.599-1.598s-1.599 0.714-1.599 1.598c0 0.883 0.716 1.599 1.599 1.599z" fill="#000000"></path>
+<path d="M17.153 13.289v-1.066h-3.199v1.066h1.066v9.063h-1.066v1.066h4.265v-1.066h-1.066z" fill="#000000"></path>
+<path d="M16 2.672c-7.361 0-13.328 5.968-13.328 13.328 0 7.362 5.968 13.328 13.328 13.328s13.328-5.966 13.328-13.328c0-7.361-5.968-13.328-13.328-13.328zM16 28.262c-6.761 0-12.262-5.501-12.262-12.262s5.5-12.262 12.262-12.262c6.761 0 12.262 5.501 12.262 12.262s-5.5 12.262-12.262 12.262z" fill="#000000"></path>
+
+								</svg>
+							</span>
+
+
+
+						</label>
+					</div>
+
+					<div class="test__btn-price-wrapper">
+						<div class="test__btn-wrapper full-request__btn-wrapper">
+							<button class="btn test__btn test__btn--kbm-less test__btn--kbm-Проверить КБМtton">Проверить КБМ</button>
+							<p class="form__personal">Нажимая на кнопку, вы принимаете <a class="form__personal-link form__personal-link--black" href="#">Соглашение</a>
+								на обработку персональных данных.</p>
+							<button class="btn-back test__btn-back" type="button">Шаг назад</button>
+						</div>
+
+						<p class="main__test-info test__info full-request__info">
+							<svg class="test__form-select-svg full__request-lock-svg modal__select-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+								<path class="modal__pass-svg1 full__request-lock-svg1 modal__select-svg1" d="M22.931 15.467v-6.397c0-3.827-3.103-6.931-6.93-6.931-3.828 0-6.932 3.103-6.932 6.931v6.398h-3.732v14.394h21.325v-14.394h-3.732zM10.136 9.069c0-3.234 2.631-5.864 5.865-5.864s5.863 2.631 5.863 5.864v6.398h-11.729v-6.398zM25.596 28.795h-19.192v-12.262h19.192v12.262z"></path>
+							</svg>
+
+							Мы гарантируем <br> защиту ваших данных
+						</p>
+					</div>
+				</div>
+				<div class="test__form-wrapper test__form-step18">
+					<p class="test__pagination">Шаг 2 <span class="test__pagination--grey">/ 2</span></p>
+					<p class="test__step-title full-request__step-title full-request__step-title--icons">
+						<include src="build/img/icons/user.svg"></include>
+						Собственник автомобиля
+					</p>
+					<ul class="pagination full-request__pages">
+						<li class="pagination__item full-request__item">
+							<button class="btn--grey full-request__btn-back" type="button">Без ограничений </button>
+						</li>
+					</ul>
+
+					<div class="test__radio-wrapper full-request__radio-wrapper full-request__input-wrapper full-request__input-wrapper--four-cols">
+						<!--<input class="form__text" style="display: none" type="text" placeholder="Имя" name="user-name">-->
+						<input class="form__text full-request__text" type="text" placeholder="Фамилия" name="user-soname">
+						<input class="form__text full-request__text" type="text" placeholder="Имя" name="user-name">
+						<input class="form__text full-request__text" type="text" placeholder="Отчество" name="user-second-name">
+						<input class="form__text full-request__text" type="text" placeholder="Дата рождения" name="user-second-name">
+
+
+						<input class="form__text full-request__text" type="text" placeholder="Серия Номер вод. удост." name="user-soname">
+						<div class="full-request__date-radio-wrapper full-request__date-radio-wrapper--four-cols">
+							<label class="test__input-aria full-request__input-aria">
+								<input class="test__radio" type="radio" name="year" value="2018">
+								<span class="test__radio-circle"> СТС</span>
+								<span class="icon__input-svg-wrapper full-request__radio-info" data-title="Необходимо указывать правильные данные для того, чтобы получить точный расчет стоимости ОСАГО. При расчете будет учитсываться вся история вождения, полученная из Российского Союза Автостраховщиков">
+									<svg class="icon__input-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 32 32">
+<path d="M16.067 11.156c0.883 0 1.599-0.716 1.599-1.599 0-0.884-0.716-1.598-1.599-1.598s-1.599 0.714-1.599 1.598c0 0.883 0.716 1.599 1.599 1.599z" fill="#000000"></path>
+<path d="M17.153 13.289v-1.066h-3.199v1.066h1.066v9.063h-1.066v1.066h4.265v-1.066h-1.066z" fill="#000000"></path>
+<path d="M16 2.672c-7.361 0-13.328 5.968-13.328 13.328 0 7.362 5.968 13.328 13.328 13.328s13.328-5.966 13.328-13.328c0-7.361-5.968-13.328-13.328-13.328zM16 28.262c-6.761 0-12.262-5.501-12.262-12.262s5.5-12.262 12.262-12.262c6.761 0 12.262 5.501 12.262 12.262s-5.5 12.262-12.262 12.262z" fill="#000000"></path>
+</svg>
+								</span>
+							</label>
+							<label class="test__input-aria full-request__input-aria">
+								<input class="test__radio" type="radio" name="year" value="2017">
+								<span class="test__radio-circle"> ПТС</span>
+								<span class="icon__input-svg-wrapper full-request__radio-info" data-title="Необходимо указывать правильные данные для того, чтобы получить точный расчет стоимости ОСАГО. При расчете будет учитсываться вся история вождения, полученная из Российского Союза Автостраховщиков">
+									<svg class="icon__input-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 32 32">
+<path d="M16.067 11.156c0.883 0 1.599-0.716 1.599-1.599 0-0.884-0.716-1.598-1.599-1.598s-1.599 0.714-1.599 1.598c0 0.883 0.716 1.599 1.599 1.599z" fill="#000000"></path>
+<path d="M17.153 13.289v-1.066h-3.199v1.066h1.066v9.063h-1.066v1.066h4.265v-1.066h-1.066z" fill="#000000"></path>
+<path d="M16 2.672c-7.361 0-13.328 5.968-13.328 13.328 0 7.362 5.968 13.328 13.328 13.328s13.328-5.966 13.328-13.328c0-7.361-5.968-13.328-13.328-13.328zM16 28.262c-6.761 0-12.262-5.501-12.262-12.262s5.5-12.262 12.262-12.262c6.761 0 12.262 5.501 12.262 12.262s-5.5 12.262-12.262 12.262z" fill="#000000"></path>
+</svg>
+								</span>
+							</label>
+						</div>
+						<label class="form__text full-request__text">
+							<input class="full-request__text--inner" type="text" placeholder="Номер VIN" name="car-vin">
+
+
+							<span class="modal__pass-svg icon__input-svg-wrapper" data-title="17 символов, Буквы Q, O, I
+отсутствуют в VIN">
+								<svg class="icon__input-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 32 32">
+<path d="M16.067 11.156c0.883 0 1.599-0.716 1.599-1.599 0-0.884-0.716-1.598-1.599-1.598s-1.599 0.714-1.599 1.598c0 0.883 0.716 1.599 1.599 1.599z" fill="#000000"></path>
+<path d="M17.153 13.289v-1.066h-3.199v1.066h1.066v9.063h-1.066v1.066h4.265v-1.066h-1.066z" fill="#000000"></path>
+<path d="M16 2.672c-7.361 0-13.328 5.968-13.328 13.328 0 7.362 5.968 13.328 13.328 13.328s13.328-5.966 13.328-13.328c0-7.361-5.968-13.328-13.328-13.328zM16 28.262c-6.761 0-12.262-5.501-12.262-12.262s5.5-12.262 12.262-12.262c6.761 0 12.262 5.501 12.262 12.262s-5.5 12.262-12.262 12.262z" fill="#000000"></path>
+
+								</svg>
+							</span>
+
+
+
+						</label>
+						<label class="form__text full-request__text">
+							<input class="full-request__text--inner" type="text" placeholder="Дата запроса" name="car-vin">
+
+
+							<span class="modal__pass-svg icon__input-svg-wrapper" data-title="Необходимо указывать дату СЛЕДУЮЩУЮ после окончания полиса, но не позднее 60 дней, от текущего дня. Для проверки текущего кбм, введите сегодняшнюю дату.">
+								<svg class="icon__input-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 32 32">
+<path d="M16.067 11.156c0.883 0 1.599-0.716 1.599-1.599 0-0.884-0.716-1.598-1.599-1.598s-1.599 0.714-1.599 1.598c0 0.883 0.716 1.599 1.599 1.599z" fill="#000000"></path>
+<path d="M17.153 13.289v-1.066h-3.199v1.066h1.066v9.063h-1.066v1.066h4.265v-1.066h-1.066z" fill="#000000"></path>
+<path d="M16 2.672c-7.361 0-13.328 5.968-13.328 13.328 0 7.362 5.968 13.328 13.328 13.328s13.328-5.966 13.328-13.328c0-7.361-5.968-13.328-13.328-13.328zM16 28.262c-6.761 0-12.262-5.501-12.262-12.262s5.5-12.262 12.262-12.262c6.761 0 12.262 5.501 12.262 12.262s-5.5 12.262-12.262 12.262z" fill="#000000"></path>
+
+								</svg>
+							</span>
+
+
+
+						</label>
+
+
+					</div>
+
+					<div class="test__btn-price-wrapper">
+						<div class="test__btn-wrapper full-request__btn-wrapper">
+							<button class="btn test__btn test__btn--kbm-less" type="button">Проверить КБМ </button>
+							<p class="form__personal">Нажимая на кнопку, вы принимаете <a class="form__personal-link form__personal-link--black" href="#">Соглашение</a>
+								на обработку персональных данных.</p>
+							<button class="btn-back test__btn-back" type="button">Шаг назад</button>
+						</div>
+
+						<p class="main__test-info test__info full-request__info">
+							<svg class="test__form-select-svg full__request-lock-svg modal__select-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+								<path class="modal__pass-svg1 full__request-lock-svg1 modal__select-svg1" d="M22.931 15.467v-6.397c0-3.827-3.103-6.931-6.93-6.931-3.828 0-6.932 3.103-6.932 6.931v6.398h-3.732v14.394h21.325v-14.394h-3.732zM10.136 9.069c0-3.234 2.631-5.864 5.865-5.864s5.863 2.631 5.863 5.864v6.398h-11.729v-6.398zM25.596 28.795h-19.192v-12.262h19.192v12.262z"></path>
+							</svg>
+
+							Мы гарантируем <br> защиту ваших данных
+						</p>
+					</div>
+				</div>
+
+
+
+
+
+				<div class="test__form-wrapper test__form-step18">
+
+					<p class="test__pagination">
+						<span class="btn--grey full-request__data-source full-request__data-source--kbm">Данные предоставлены
+Всероссийским Союзом Автостраховщиков</span>
+					</p>
+
+
+
+					<p class="test__step-title full-request__step-title">Результаты проверки КБМ</p>
+
+					<table class="full-request__table full-request__table--kbm">
+						<tr>
+							<th class="full-request__header btn--grey">Статус:</th>
+							<th class="full-request__header btn--grey">Пред. СК:</th>
+							<th class="full-request__header btn--grey">Пред. полис:</th>
+							<th class="full-request__header btn--grey">КБМ:</th>
+							<th class="full-request__header btn--grey">Класс:</th>
+						</tr>
+						<tr>
+							<td class="full-request__data full-request__data--width1">Найдено</td>
+							<td class="full-request__data full-request__data--width2">#25719030420 32346</td>
+							<td class="full-request__data">РЕСО</td>
+							<td class="full-request__data">0,85</td>
+							<td class="full-request__data">Класс 6</td>
+						</tr>
+					</table>
+
+
+
+					<div class="test__btn-price-wrapper">
+						<div class="test__btn-wrapper test__btn-wrapper--wide">
+							<button class="btn test__btn test__btn--kbm-less" type="button">Рассчитать ОСАГО</button>
+						</div>
+					</div>
+				</div>
+
+			</form>
+
+		</div>
+
+	</section>
+
+</main>
+<include src="source/html-modules/footer.html"></include>
+
+<include src="source/html-modules/modal-auth-reg.html"></include>
+
+<script src="js/libs.min.js"></script>
+
+<script src="js/common.min.js"></script>
+
+<script src="js/custom.min.js"></script>
+
+
+
+
+</body>
+</html>
