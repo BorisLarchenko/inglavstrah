@@ -11,7 +11,6 @@
   const adressArr = blocksArr1[0].querySelectorAll('.shops__list .shops__item');
   //add listenters to ul li elements to switch blocks
 
-  console.log(adressArr);
   for (let i = 0; i < adressArr.length; i++) {
     adressArr[i].addEventListener('click', function () {
       blocksArr1[0].classList.add('shops__wrapper--close');

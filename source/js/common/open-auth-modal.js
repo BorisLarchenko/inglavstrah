@@ -2,7 +2,7 @@
 //  find Enter entity block that asks authorisation
   const loginArr = Array.from(document.querySelectorAll('.header__login'));
 
-  //write universal function that should check if element is present and do a callback
+  //write universal function that should check if element is present and do a callback and export it to window
   window.isElementPresent = function(classStr, cb) {
     const loginAdditinalElem = document.querySelector(classStr);
     //check if additional elements are existed
@@ -14,7 +14,6 @@
   //write cb function for '.form__review .form__personal-link' elem
   function pushToLoginArr(elem){
     loginArr.push(elem);
-    console.log(loginArr);
   }
   isElementPresent('.form__review .form__personal-link', pushToLoginArr);
 
