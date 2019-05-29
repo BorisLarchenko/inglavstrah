@@ -2,12 +2,28 @@
 //  find Enter entity block that asks authorisation
   const loginArr = Array.from(document.querySelectorAll('.header__login'));
 
-//  find additional elements that ask for authorization
-  const loginAdditinalElem = document.querySelector('.form__review .form__personal-link');
+  //write universal function that should check if element is present and do a callback
+  window.isElementPresent = function(classStr, cb) {
+    const loginAdditinalElem = document.querySelector(classStr);
+    //check if additional elements are existed
+    if (loginAdditinalElem !== undefined && loginAdditinalElem !== null) {
+      cb(loginAdditinalElem);
+    }
+  };
+
+  //write cb function for '.form__review .form__personal-link' elem
+  function pushToLoginArr(elem){
+    loginArr.push(elem);
+    console.log(loginArr);
+  }
+  isElementPresent('.form__review .form__personal-link', pushToLoginArr);
+
+  //  find additional elements that ask for authorization
+ /* const loginAdditinalElem = document.querySelector('.form__review .form__personal-link');
   //check if additional elements are existed
   if (loginAdditinalElem !== undefined && loginAdditinalElem !== null) {
      loginArr.push(loginAdditinalElem);
-  }
+  }*/
 
 //  find overlay window
   const overlay = document.querySelector('.modal__overlay');
