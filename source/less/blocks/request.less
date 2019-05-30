@@ -15,6 +15,11 @@
 .request__title {
   font-family: 'cuprumbold', 'Arial', sans-serif;
   font-size: 45px;
+  &--mot {
+    font-size: 43px;
+    line-height:  50px;
+    margin-bottom: 0;
+  }
 }
 
 .request__text {
@@ -23,6 +28,11 @@
   margin-bottom: 10px;
 
   font-size: 18px;
+
+  &--mot {
+    margin-bottom: 50px;
+    width: 100%;
+  }
 }
 
 .request__input-wrapper {
@@ -88,6 +98,16 @@
 .request__mark-link {
   font-size: 20px;
   line-height: 30px;
+
+  &--mot {
+    font-size: 23px;
+    font-family: 'cuprumbold', 'Arial', sans-serif;
+    color: @yellow-color;
+    &:hover {
+      color: #ffbf10;
+      transition: 0.3s;
+    }
+  }
 }
 
 .request__step-list {

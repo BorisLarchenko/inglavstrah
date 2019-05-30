@@ -64,6 +64,13 @@
     url("../img/02-form-main/formpage-bg-small.png") no-repeat center;
     background-size: 606px 345px, cover;
   }
+  &--mot {
+    background:
+            linear-gradient(90deg, @bg-color-blue (@dot-space - @dot-size), transparent 1%) center,
+            linear-gradient(@bg-color-blue (@dot-space - @dot-size), transparent 1%) center,
+            @dot-color-blue;
+    background-size: @dot-space @dot-space;
+  }
 }
 
 .main__request {
@@ -262,6 +269,11 @@
   background: url("../img/01-main-page/benefits-car-bg2.png") no-repeat right 0px bottom -150px;
   background-size: 700px 286px;
 }
+.container--mot {
+  background: url("../img/08-mot/car-bg6.png") no-repeat right -60px bottom -250px;
+  background-size: 843px 402px;
+
+}
 
 .main__howto-slider {
   width: calc(100% - 120px);
@@ -419,13 +431,16 @@
   }
 
   .main__title {
-    width: 640px;
+    width: 450px;
 
     line-height: 45px;
     font-size: 45px;
     letter-spacing: -0.02em;
     &--nowidth {
       width: auto;
+    }
+    &--kbm {
+      width: 640px;
     }
   }
 
