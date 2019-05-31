@@ -115,10 +115,6 @@
 
 		</div>
 	</section>
-
-
-
-
 	<section class="main__advantages main__advantages--mot">
 		<div class="container main__advantages-wrapper">
 			<div class="main__advantages-picture">
@@ -150,80 +146,55 @@
 
 
 	<section id="checkBase" class="main__form-test main__request request">
-		<div class="container main__advantages-wrapper container--car">
+		<div class="container main__advantages-wrapper main__advantages-wrapper--mot container--car">
+			<div class="main__advantages-list request__step-list">
+				<p class="main__contacts-slogan form__contacts-slogan">Работаем официально</p>
+				<p class="form__contacts-text form__contacts-text--mot-bottom">И проводим техосмотр всех категорий автотранспорта</p>
+				<p class="form__contacts-text form__contacts-text--mot">Уже несколько лет мы оказываем  услуги автострахования и помогаем пройти техосмотр в Воронеже на любой вид транспорта и получить диагностическую карту без лишних забот и финансовых затрат.</p>
+				<p class="form__contacts-text form__contacts-text--mot">При прохождения техосмотра и оформлении диагностической карты в нашей компании вы можете проверить наличие действующей аккредитации пункта техосмотра, а при получении карты, удостовериться в наличии индивидуального номера из 15 цифр, «мокрой» печати и подписи эксперта, а также соответствие всей информации в базе ГИБДД и на карте.</p>
+
+			</div>
+
+
+
 			<section class="request__form">
-				<h2 class="modal__title request__title">Оформить ОСАГО</h2>
+				<h2 class="modal__title request__title">Проверить в базе ГИБДД</h2>
 				<form class="modal__form" action="http://scooterlabs.com/echo" method="post">
-					<p class="modal__pass-text request__text">
-						Номер вашего автомобиля:
-						<span class="modal__pass-svg icon__input-svg-wrapper" data-title="Номер вашего автомобиля нужен для автоматического заполнения формы. Если у вас новый автомобиль или вы забыли номер, начните расчет ОСАГО с выбора марки">
-							<svg class="icon__input-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 32 32">
-<path d="M16.067 11.156c0.883 0 1.599-0.716 1.599-1.599 0-0.884-0.716-1.598-1.599-1.598s-1.599 0.714-1.599 1.598c0 0.883 0.716 1.599 1.599 1.599z" fill="#000000"></path>
-<path d="M17.153 13.289v-1.066h-3.199v1.066h1.066v9.063h-1.066v1.066h4.265v-1.066h-1.066z" fill="#000000"></path>
-<path d="M16 2.672c-7.361 0-13.328 5.968-13.328 13.328 0 7.362 5.968 13.328 13.328 13.328s13.328-5.966 13.328-13.328c0-7.361-5.968-13.328-13.328-13.328zM16 28.262c-6.761 0-12.262-5.501-12.262-12.262s5.5-12.262 12.262-12.262c6.761 0 12.262 5.501 12.262 12.262s-5.5 12.262-12.262 12.262z" fill="#000000"></path>
-</svg>
-						</span>
-
+					<p class="modal__pass-text request__text request__text--mot1">
+						Номер диагностической карты:
 					</p>
+
+
+
 					<div class="modal__select-wrapper request__input-wrapper">
-						<span class="modal__pass-svg request__input-svg-wrapper">
-							<svg class="test__form-select-svg full__request-lock-svg modal__select-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
-<path class="modal__pass-svg1 full__request-lock-svg1 modal__select-svg1" d="M22.931 15.467v-6.397c0-3.827-3.103-6.931-6.93-6.931-3.828 0-6.932 3.103-6.932 6.931v6.398h-3.732v14.394h21.325v-14.394h-3.732zM10.136 9.069c0-3.234 2.631-5.864 5.865-5.864s5.863 2.631 5.863 5.864v6.398h-11.729v-6.398zM25.596 28.795h-19.192v-12.262h19.192v12.262z"></path>
-</svg>
 
-						</span>
-
-						<input class="modal__phone request__input" type="text" name="number" pattern="^[АВЕКМНОРСТУХ]\d{3}(?<!000)[АВЕКМНОРСТУХ]{2}\d{2,3}$" required="" title="А 123 АА 123" placeholder="А 123 АА 123">
-						<!--TODO: маска в поле ввода в числовом блоке не вводиться текст и наоборот-->
+						<input class="modal__phone request__input" type="text" name="number" required title="Номер карты" placeholder="xxxxx xxxxx xxxxx">
 					</div>
 
-					<button class="btn btn__review request__btn" type="submit">Рассчитать</button>
+					<button class="btn btn__review request__btn" type="submit">Проверить</button>
 
 
 				</form>
 				<div class="modal__reg-link-wrapper">
-					<a class="modal__reg-link request__mark-link" href="full-request.html">Или
+					<a class="modal__reg-link request__mark-link" href="full-request.html">
 						<span class="modal__text--underline">
-							выбрать марку
+							Получить
 						</span>
+						диагностическую карту
 					</a>
 				</div>
 
 			</section>
 
-			<ul class="main__advantages-list request__step-list">
-				<li class="main__advantages-item request__step-item">
-					<span class="request__step-item-title">Шаг 1</span>
-					<p class="request__step-item-text">
-						Рассчитайте стоимость
-						и получите скидку 5% на полис ОСАГО
 
-					</p>
-				</li>
-				<li class="main__advantages-item request__step-item">
-					<span class="request__step-item-title">Шаг 2</span>
-					<p class="request__step-item-text">
-						Оформите полис онлайн  и получите техобслуживание в подарок
 
-					</p>
-				</li>
-				<li class="main__advantages-item request__step-item">
-					<span class="request__step-item-title">Шаг 3</span>
-					<p class="request__step-item-text">
-						Внесите оплату картой или любым другим, удобным для вас, способом
-
-					</p>
-				</li>
-				<li class="main__advantages-item request__step-item">
-					<span class="request__step-item-title">Шаг 4</span>
-					<p class="request__step-item-text">
-						Получите свой полис ОСАГО в ближайшем страховом магазине
-
-					</p>
-				</li>
-			</ul>
 		</div>
 	</section>
+
+
+
+
+
 </main>
 <include src="source/html-modules/footer.html"></include>
 <include src="source/html-modules/modal-auth-reg.html"></include>
