@@ -2,7 +2,7 @@
   function testMot(elem) {
     console.log(`Hello from Technical Checkup`);
     const button3 = document.querySelector('.request__form-wrapper .request__btn');
-    console.log(elem);
+
 
     const section1 = document.querySelector('.request__form-wrapper .request__form');
 
@@ -13,10 +13,22 @@
       section1.classList.add('request__form--mot-invisible');
       section2.classList.remove('request__form--mot-invisible');
     });
+
+    const containerFirst = elem.querySelector('.container--mot');
+    const containerSecond = elem.querySelector('.container--mot + .container');
+    const button1 = elem.querySelector('.request__btn');
+    console.log(containerFirst);
+    console.log(button1);
+    button1.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      containerFirst.classList.add('container--mot-invisible');
+      containerSecond.classList.remove('container--mot-invisible');
+    });
+
+
   //  =======================
     //find full form in full-request page
     const form = elem.querySelector('.test__form');
-    console.log(form);
 //  find first step div in form
     const formStep1 = form.querySelector('.test__form-step1');
 //  find button .btn--all-cars in formStep1
