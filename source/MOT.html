@@ -155,26 +155,20 @@
 
 			</div>
 
-
-
-			<section class="request__form">
-				<h2 class="modal__title request__title">Проверить в базе ГИБДД</h2>
+			<div class="request__form-wrapper">
+				<section class="request__form">
+				<h2 class="modal__title modal__title--mot request__title">Проверить в базе ГИБДД</h2>
 				<form class="modal__form" action="http://scooterlabs.com/echo" method="post">
 					<p class="modal__pass-text request__text request__text--mot1">
 						Номер диагностической карты:
 					</p>
-
-
-
 					<div class="modal__select-wrapper request__input-wrapper">
 
 						<input class="modal__phone request__input" type="text" name="number" required title="Номер карты" placeholder="xxxxx xxxxx xxxxx">
 					</div>
-
 					<button class="btn btn__review request__btn" type="submit">Проверить</button>
-
-
 				</form>
+
 				<div class="modal__reg-link-wrapper">
 					<a class="modal__reg-link request__mark-link" href="full-request.html">
 						<span class="modal__text--underline">
@@ -183,9 +177,50 @@
 						диагностическую карту
 					</a>
 				</div>
+			</section>
+
+
+
+				<section class="request__form request__form--mot2">
+				<h2 class="modal__title modal__title--mot modal__title--mot2 request__title">Карта найдена</h2>
+				<div class="modal__form modal__form--mot-table">
+					<p class="modal__pass-text request__text request__text--mot1">
+						<span class="request__text--mot-grey">Номер карты:</span> 087000011803148
+					</p>
+					<p class="modal__pass-text request__text request__text--mot1">
+						<span class="request__text--mot-grey">Дата выдачи:</span> 21.03.2018
+					</p>
+					<p class="modal__pass-text request__text request__text--mot1">
+						<span class="request__text--mot-grey">Срок действия:</span> 21.03.2018
+					</p>
+					<p class="modal__pass-text request__text request__text--mot1">
+						<span class="request__text--mot-grey">VIN:</span> JSAJTDA4V00213347
+					</p>
+					<p class="modal__pass-text request__text request__text--mot1">
+						<span class="request__text--mot-grey">Марка:</span> Suzuki
+					</p>
+					<p class="modal__pass-text request__text request__text--mot1">
+						<span class="request__text--mot-grey">Модель:</span> Grand Vitara
+					</p>
+					<p class="modal__pass-text request__text request__text--mot1">
+						<span class="request__text--mot-grey">Рег. номер:</span> 0300CX36
+					</p>
+					<p class="modal__pass-text request__text request__text--mot1">
+						<span class="request__text--mot-grey">Эксперт:</span> Котельников
+					</p>
+					<p class="modal__pass-text request__text request__text--mot1">
+						<span class="request__text--mot-grey">Оператор:</span> 08700 ООО “ТО МАКС-ЧЕРНОЗЕМЬЕ”
+					</p>
+
+					<button class="btn btn__review request__btn request__btn--mot" type="submit">Пройти техосмотр</button>
+				</div>
 
 			</section>
 
+
+
+
+			</div>
 
 
 		</div>
