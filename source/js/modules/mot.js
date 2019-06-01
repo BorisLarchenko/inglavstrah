@@ -223,6 +223,30 @@
 //==========================================
 
 
+    //8 block working with 8 step =======================
+    //find next step div in form
+    const formStep9 = form.querySelector('.test__form-wrapper:nth-child(10)');
+    //find forward button in current step div
+    const buttonForward8 = form.querySelector('.test__form-wrapper:nth-child(9) .test__btn');
+
+// add evt listener on forward button click to go to the current step div
+    buttonForward8.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      formStep8.classList.remove('test__form-step8');
+      formStep9.classList.add('test__form-step9');
+    });
+
+//  find back button in current step div
+    const buttonBack8 = form.querySelector('.test__form-wrapper:nth-child(9) .btn-back');
+
+    //add evt listener on backward button ckick to go to the prev step div
+    buttonBack8.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      formStep8.classList.remove('test__form-step8');
+      formStep7.classList.add('test__form-step7');
+    });
+//==========================================
+
 
   }
   window.isElementPresent('.main__form-test--mot', testMot);

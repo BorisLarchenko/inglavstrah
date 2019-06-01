@@ -212,8 +212,8 @@
 .test__form--mot.test__form--ruler {
   &::after {
     background-image: linear-gradient(to right,
-    #ffffff 33%, @lighter-grey 33%, @lighter-grey calc(33% + 3px), #ffffff calc(33% + 3px),
-    #ffffff 66%, @lighter-grey 66%, @lighter-grey calc(66% + 3px), #ffffff calc(66% + 3px));
+    #ffffff 33.33%, @lighter-grey 33.33%, @lighter-grey calc(33.33% + 3px), #ffffff calc(33.33% + 3px),
+    #ffffff 66.66%, @lighter-grey 66.66%, @lighter-grey calc(66.66% + 3px), #ffffff calc(66.66% + 3px));
   }
   .test__form-step1::after {
     .step-length(1; 100%/24);
@@ -238,6 +238,9 @@
   }
   .test__form-step8::after {
     .step-length(8; 100%/24);
+  }
+  .test__form-step9::after {
+    .step-length(16; 100%/24);
   }
 }
 
