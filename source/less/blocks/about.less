@@ -4,8 +4,57 @@
   //padding-top: 167px;
   background: transparent url("../img/09-about/first-sec-bg.jpg") no-repeat center;
   //background-size: cover;
+  color: white;
 }
 
+.about__info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.about__network-wrapper {
+  width: 69%;
+}
+.about__stat {
+  margin-top: 70px;
+  width: 24%;
+  &-item {
+    margin-bottom: 45px;
+  }
+}
+.about__stat-header {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  color: @yellow-color;
+}
+
+.about__stat-text {
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.about__network-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.about__network-text {
+  width: 47%;
+}
+
+.about__network-title {
+  margin-top: 70px;
+  margin-bottom: 45px;
+
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 38px;
+  line-height: 40px;
+}
+
+.about__network-text {
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.87);
+}
 
 //Write all styles for big-tablet and small desktop
 @media (max-width: @desctopWidth)  {
