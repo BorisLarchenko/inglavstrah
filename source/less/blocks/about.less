@@ -3,9 +3,23 @@
 .about__info {
   //padding-top: 167px;
   background: transparent url("../img/09-about/first-sec-bg.jpg") no-repeat center;
-  //background-size: cover;
+  background-size: cover;
   color: white;
 }
+
+.about__partners {
+  padding-top: 140px;
+  min-height: 800px;
+}
+
+.about__partners-bg {
+  position: absolute;
+  right: -450px;
+  top: 42%;
+  margin-top: -110px;
+  z-index: 0;
+}
+
 
 .about__info-wrapper {
   display: flex;
@@ -56,9 +70,75 @@
   color: rgba(255, 255, 255, 0.87);
 }
 
+.about__partners-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__partners-all {
+  width: 58.5%;
+}
+
+.about__partners-advantages {
+  width: 29.1%;
+}
+
+.about__partners-logo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 135px;
+  margin-bottom: 40px;
+}
+
+.about__partners-logo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+
+  width: 29.5%;
+  .about__partners-link {
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    .about__partners-image {
+      filter: grayscale(100%);
+      transition: 0.4s;
+    }
+    &:hover {
+      .about__partners-image {
+        filter: grayscale(0);
+        transition: 0.4s;
+      }
+    }
+  }
+
+}
+
+.about__partners-text {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 23px;
+  line-height: 30px;
+  color: white;
+}
+
 //Write all styles for big-tablet and small desktop
 @media (max-width: @desctopWidth)  {
-  .about {}
+
+  .main__title--about {
+    width: 100%;
+  }
+  .about__partners-bg {
+    position: absolute;
+    right: -560px;
+    top: 42%;
+    margin-top: -110px;
+  }
 }
 
 //Write all styles for tablet

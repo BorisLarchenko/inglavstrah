@@ -30,7 +30,8 @@
           linear-gradient(90deg, @bg-color-blue (@dot-space - @dot-size), transparent 1%) center,
           linear-gradient(@bg-color-blue (@dot-space - @dot-size), transparent 1%) center,
           @dot-color-blue;
-  background-size: @dot-space @dot-space;
+
+  background-size:  @dot-space @dot-space,;
 }
 
 .main__benefits {
@@ -187,8 +188,11 @@
     padding-bottom: 38px;
   }
   &--about {
-
+    width: 100%;
     color: #ffffff;
+  }
+  &--about-partners {
+    letter-spacing: -0.02em;
   }
 }
 

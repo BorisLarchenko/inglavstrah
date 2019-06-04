@@ -51,6 +51,9 @@
   margin-top: 95px;
   font-size: 20px;
   border-radius: 0 15px 15px;
+  &--about {
+    margin-top: 35px;
+  }
 }
 
 .main__howto .slider__slide {
@@ -123,6 +126,11 @@
   margin-top: 40px;
   flex-direction: column;
 }
+
+.slider__info--about {
+  margin-left: 0;
+  margin-bottom: 200px;
+}
 .slider__info--second {
   width: 200px;
   margin-left: 130px;
@@ -186,6 +194,12 @@
   .slider__info--first {
     margin-left: 60px;
   }
+  .slider__info--about {
+    margin-left: 0;
+    .main__test-words {
+      margin-top: 0;
+    }
+  }
   .slider__slide--space .slider__info:not(:first-child) {
     margin-left: 20px;
   }
@@ -217,6 +231,9 @@
     &--3 {
       right: calc(((-100vw + 9px + 1280px)/2) - 780px);
     }
+  }
+  .slider__info--about .slider__price {
+    line-height: 35px;
   }
 }
 
