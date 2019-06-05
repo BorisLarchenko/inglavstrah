@@ -16,6 +16,13 @@
   padding-top: 170px;
   //background: transparent url("../img/01-main-page/main-adv-bg.jpg") no-repeat center;
   background-size: cover;
+  &--events {
+    background:
+            linear-gradient(90deg, @bg-color-white (@dot-space - @dot-size), transparent 1%) center,
+            linear-gradient(@bg-color-white (@dot-space - @dot-size), transparent 1%) center,
+            @dot-color;
+    background-size: @dot-space @dot-space;
+  }
 }
 
 //.main__advantages .main__advantages_lvl2{
@@ -248,8 +255,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 58% // 803px/1390px
+  width: 58% ;// 803px/1390px
 
+  &--events {
+    width: 89.79%;
+  }
 }
 
 .main__advantages-wrapper {
