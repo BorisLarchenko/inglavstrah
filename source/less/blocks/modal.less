@@ -82,6 +82,9 @@
     border-bottom: none;
     width: 435px;
   }
+  &--bye {
+    padding-bottom: 0;
+  }
 }
 
 .modal__title {
@@ -304,6 +307,9 @@
 
 .modal__aouth-social {
   margin-top: 10px ;
+  &--bye {
+    margin-top: 25px;
+  }
 }
 
 .modal__social-link::before {
@@ -445,8 +451,37 @@
     border-bottom: none;
   }
 }
+.modal__bye-title {
+  margin-bottom: 0;
+}
 
+.modal__bye-text {
+  padding: 0 25px;
+  margin-bottom: 45px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
 
+.modal__bye-title-inner {
+  font-family: 'cuprumbold', 'Arial', sans-serif;
+  font-size: 27px;
+  line-height: 42px;
+  &--margin {
+    margin-top: 91px;
+  }
+}
+.modal__bye-text-inner {
+  font-size: 17px;
+  line-height: 21px;
+}
+
+.modal__bye-price {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 122px;
+  letter-spacing: -0.05em;
+
+}
 //Write all styles for big-tablet and small desktop
 @media (max-width: @desctopWidth)  {
   .modal {}
