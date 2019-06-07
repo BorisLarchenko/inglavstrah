@@ -262,6 +262,10 @@
   &--events {
     width: 89.79%;
   }
+  &--gifts {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }
 
 .main__advantages-wrapper {
@@ -366,6 +370,27 @@
   line-height: 25px;
   &--events {
     margin-bottom: 60px;
+  }
+  &--gifts {
+    width: 32.65%;
+    margin-bottom: 50px;
+    margin-right: 1%;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+  &--flag {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 22px;
+      width: 105px;
+      height: 55px;
+      margin-top: -26px;
+      background: url("../../img/12-gifts/flag1.png") no-repeat center;
+      z-index: 1;
+    }
   }
 }
 
