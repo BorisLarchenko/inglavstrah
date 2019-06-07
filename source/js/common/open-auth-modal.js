@@ -132,5 +132,16 @@ for (let i = 0; i < allCloseButtons.length; i++) {
     window.location = '/index.html';
   });
 
+  //find bye modal
+  $(document).ready(function()
+  {
+    $(window).bind("beforeunload", function() {
+      const byeModal = document.querySelector('.modal__auth.modal__aouth--reg.modal__bye');
+      byeModal.classList.add('modal--active');
+      overlay.classList.add('modal--active');
+      return "Do you really want to close?";
+    });
+  });
+
 
 })();
