@@ -188,13 +188,11 @@
 			</a>
 		</p>
 
-
 		<button class="modal__close close">
 
 			<span class="visually-hidden">Закрыть форму регистрации</span>
 			<include src="build/img/icons/close.svg"></include>
 		</button>
-
 
 	</section>
 	<section class="modal__auth">
@@ -245,7 +243,6 @@
 	<p class="modal__bye-text">Вы не забыли получить бонусы от страхового магазина “Инглавстрах”?
 		Все, что вам для этого необходимо:</p>
 
-
 	<div class="modal__form modal__form--bye">
 		<div class="modal__input-wrapper">
 
@@ -269,24 +266,57 @@
 
 	</div>
 
-
 	<p class="modal__aouth-social modal__aouth-social--bye">
 		<a class="btn btn__review btn__modal btn__modal--bye" href="full-request.html">Рассчитать</a>
 
 		<button class="btn-back test__btn-back" type="button">Нет, спасибо</button>
 	</p>
 
+	<button class="modal__close close">
+
+		<span class="visually-hidden">Закрыть форму регистрации</span>
+		<include src="build/img/icons/close.svg"></include>
+	</button>
+</section>
+
+
+<section class="modal__auth modal__callback">
+	<h2 class="modal__title">Обратный звонок</h2>
+	<form class="modal__form modal__form--callback">
+
+		<div class="modal__select-wrapper">
+			<include src="build/img/icons/user.svg"></include>
+			<input class="modal__phone" type="text" placeholder="Имя">
+		</div>
+
+		<div class="modal__select-wrapper">
+			<include src="build/img/02-form-main/call.svg"></include>
+			<input class="modal__phone" type="tel" placeholder="Ваш номер телефона">
+		</div>
+
+		<div class="modal__select-wrapper">
+			<include src="build/img/icons/clock.svg"></include>
+			<input class="modal__phone" type="text" placeholder="Удобное время звонка">
+		</div>
+
+		<div class="modal__checkbox-wrapper">
+			<input class="modal__checkbox" type="checkbox" id="myData" name="rememberMe" checked>
+			<include src="build/img/icons/check.svg"></include>
+			<label class="modal__checkbox-text" for="myData">
+				Согласен на обработку персональных данных
+			</label>
+		</div>
+		<button class="btn btn__review btn__modal" type="submit">Заказать звонок</button>
+
+
+	</form>
 
 	<button class="modal__close close">
 
 		<span class="visually-hidden">Закрыть форму регистрации</span>
 		<include src="build/img/icons/close.svg"></include>
 	</button>
-
-
 </section>
-
-
 
 <!--Add/remove class .modal--active in order to show/hide overlay-->
 <div class="modal__overlay"></div>

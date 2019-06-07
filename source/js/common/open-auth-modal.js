@@ -132,7 +132,7 @@ for (let i = 0; i < allCloseButtons.length; i++) {
     window.location = '/index.html';
   });
 
-  //find bye modal
+  //find bye modal working with modal while closing browser tab
   $(document).ready(function()
   {
     $(window).bind("beforeunload", function() {
@@ -143,5 +143,14 @@ for (let i = 0; i < allCloseButtons.length; i++) {
     });
   });
 
+  //find callback button
+  const callback = document.querySelector('.btn--small.header__button');
+  const modalCallback = document.querySelector('.modal__auth.modal__callback');
+
+  callback.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modalCallback.classList.add('modal--active');
+    overlay.classList.add('modal--active');
+  });
 
 })();
