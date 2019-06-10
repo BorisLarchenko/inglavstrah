@@ -144,11 +144,11 @@ for (let i = 0; i < allCloseButtons.length; i++) {
   });*/
 
  //show bye-modal when mouse is outside the window
- /* $(document).mouseleave(function () {
+  $(document).mouseleave(function () {
     const byeModal = document.querySelector('.modal__auth.modal__aouth--reg.modal__bye');
     byeModal.classList.add('modal--active');
     overlay.classList.add('modal--active');
-  });*/
+  });
 
   //find callback button
   const callback = document.querySelector('.btn--small.header__button');
