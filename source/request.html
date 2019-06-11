@@ -32,7 +32,7 @@
 							<include src="build/img/05-modal/lock.svg"></include>
 						</span>
 
-						<input class="modal__phone request__input" type="text" name="number" pattern="^[АВЕКМНОРСТУХ]\d{3}(?<!000)[АВЕКМНОРСТУХ]{2}\d{2,3}$" required title="А 123 АА 123" placeholder="А 123 АА 123">
+						<input class="modal__phone request__input mask--text" type="text" name="number" required title="А 123 АА 123" placeholder="А 123 АА 123">
 <!--TODO: маска в поле ввода в числовом блоке не вводиться текст и наоборот-->
 					</div>
 
@@ -86,5 +86,8 @@
 
 </main>
 <include src="source/html-modules/footer.html"></include>
+<include src="source/html-modules/modal-auth-reg.html"></include>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.min.js"></script>
 </body>
 </html>

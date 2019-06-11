@@ -8,6 +8,9 @@ $('.header__toggle-btn').click(function(e) {
 $(function(){
   $("input.mask").mask("+7 (999) 999-9999");
 });
+$(function(){
+  $("input.mask--text").mask("a 99 aa 999");
+});
 
 // Header fixed
   var interview = new Waypoint.Inview({
