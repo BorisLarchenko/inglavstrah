@@ -73,6 +73,7 @@
     background: url("../../img/07-kbm/kbm-bg.png") no-repeat right 10% top 30%,
     url("../img/02-form-main/formpage-bg-small.png") no-repeat center;
     background-size: 606px 345px, cover;
+    padding: 200px 0;
   }
   &--mot {
     background:
@@ -81,6 +82,9 @@
             @dot-color-blue;
     background-size: @dot-space @dot-space;
   }
+}
+.main__form-test--kbm .main__btn{
+  margin: 0;
 }
 
 .main__request {
@@ -183,18 +187,14 @@
 
 
 .main__title {
-  width: 41%; // 567px/1390px
-
   font-family: 'cuprumbold', 'Arial', sans-serif;
   line-height: 62px;
   font-size: 56px;
-  letter-spacing: 0;
   &--nowidth {
     width: auto;
   }
   &--kbm {
-    width: 70%;
-    padding-bottom: 38px;
+    margin-bottom: 40px;
   }
   &--about {
     width: 100%;
@@ -414,9 +414,6 @@
   font-size: 22px;
 
   border-radius: 0 20px 20px;
-  &--kbm {
-    margin-top: 0;
-  }
 }
 
 .main__test-info {
@@ -466,15 +463,11 @@
 
 
   .main__title {
-    width: 46%; // 567px/1232px
     &--nowidth {
       width: auto;
     }
     &--colored {
         width: 1000px;
-    }
-    &--kbm {
-      width: 70%;
     }
   }
 
@@ -509,16 +502,11 @@
   }
 
   .main__title {
-    width: 450px;
-
     line-height: 45px;
     font-size: 45px;
     letter-spacing: -0.02em;
     &--nowidth {
       width: auto;
-    }
-    &--kbm {
-      width: 640px;
     }
   }
 
