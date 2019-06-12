@@ -1503,7 +1503,7 @@
 						<input class="form__text full-request__text" type="text" placeholder="Отчество" name="user-second-name">
 
 						<input class="form__text full-request__text" type="text" placeholder="Дата рождения" name="user-birthday">
-						<input class="form__text full-request__text" type="text" placeholder="Паспорт" name="user-passport">
+						<input class="form__text full-request__text mask--passport" type="text" placeholder="Паспорт" name="user-passport">
 						<input class="form__text full-request__text" type="text" placeholder="VIN" name="car-vin">
 					</div>
 
@@ -1742,7 +1742,13 @@
 
 					<div class="test__radio-wrapper full-request__radio-wrapper full-request__input-wrapper">
 						<!--<input class="form__text" style="display: none" type="text" placeholder="Имя" name="user-name">-->
-						<input class="form__text full-request__text" type="text" placeholder="Серия  номер паспорта" name="user-soname">
+
+						<div class="full-request__text-wrapper">
+							<input class="form__text full-request__text mask--four-numbers" type="text" placeholder="Серия " name="passport-id">
+							<input class="form__text full-request__text mask--six-numbers" type="text" placeholder="Номер паспорта" name="passport-number">
+						</div>
+
+
 						<input class="form__text full-request__text" type="text" placeholder="Дата выдачи" name="user-name">
 						<input class="form__text full-request__text" type="text" placeholder="Код подразделения" name="user-second-name">
 
@@ -1787,7 +1793,10 @@
 
 					<div class="test__radio-wrapper full-request__radio-wrapper full-request__input-wrapper full-request__input-wrapper--short">
 						<!--<input class="form__text" style="display: none" type="text" placeholder="Имя" name="user-name">-->
-						<input class="form__text full-request__text" type="text" placeholder="Серия  номер паспорта" name="user-soname">
+						<div class="full-request__text-wrapper">
+							<input class="form__text full-request__text mask--four-numbers" type="text" placeholder="Серия " name="passport-id">
+							<input class="form__text full-request__text mask--six-numbers" type="text" placeholder="Номер паспорта" name="passport-number">
+						</div>
 						<input class="form__text full-request__text" type="text" placeholder="Дата выдачи" name="user-name">
 						<input class="form__text full-request__text" type="text" placeholder="Код подразделения" name="user-second-name">
 
@@ -1858,7 +1867,7 @@
 						</p>
 						<div class="test__form-select-wrapper">
 							<include src="build/img/02-form-main/call.svg"></include>
-							<input class="test__form-select test__form-phone" type="tel" name="tel" required title="+7-910-920-21-12" placeholder="Ваш номер телефона">
+							<input class="test__form-select test__form-phone mask" type="tel" name="tel" required title="+7-910-920-21-12" placeholder="Ваш номер телефона">
 						</div>
 
 					</div>

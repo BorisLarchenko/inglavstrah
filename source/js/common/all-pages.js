@@ -20,6 +20,10 @@ $(function(){
   $("input.mask--six-numbers").mask("9 9 9 9 9 9");
 });
 
+//
+$(function(){
+  $("input.mask--passport").mask("9999  9 9 9 9 9 9");
+});
 
 // Header fixed
   var interview = new Waypoint.Inview({
