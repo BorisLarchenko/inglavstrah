@@ -12,6 +12,15 @@ $(function(){
   $("input.mask--text").mask("a 99 aa 999");
 });
 
+//mask--four-numbers
+$(function(){
+  $("input.mask--four-numbers").mask("9999");
+});
+$(function(){
+  $("input.mask--six-numbers").mask("9 9 9 9 9 9");
+});
+
+
 // Header fixed
   var interview = new Waypoint.Inview({
     element: $('main'),

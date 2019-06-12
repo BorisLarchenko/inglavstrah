@@ -65,7 +65,14 @@
 						<input class="form__text full-request__text" type="text" placeholder="Отчество" name="user-second-name">
 
 						<input class="form__text full-request__text" type="text" placeholder="Дата рождения" name="user-birthday">
-						<input class="form__text full-request__text" type="text" placeholder="Серия Номер вод. удост." name="user-passport">
+
+
+						<div class="full-request__text-wrapper">
+							<input class="form__text full-request__text mask--four-numbers" type="text" placeholder="Серия " name="driving-licence-id">
+							<input class="form__text full-request__text mask--six-numbers" type="text" placeholder="Номер вод. удост." name="driving-licence-number">
+						</div>
+
+
 						<label class="form__text full-request__text">
 							<input class="full-request__text--inner" type="text" placeholder="Дата запроса" name="car-vin">
 
@@ -122,7 +129,12 @@
 						<input class="form__text full-request__text" type="text" placeholder="Дата рождения" name="user-second-name">
 
 
-						<input class="form__text full-request__text" type="text" placeholder="Серия Номер вод. удост." name="user-soname">
+						<div class="full-request__text-wrapper">
+							<input class="form__text full-request__text mask--four-numbers" type="text" placeholder="Серия " name="passport-id">
+							<input class="form__text full-request__text mask--six-numbers" type="text" placeholder="Номер паспорта" name="passport-number">
+						</div>
+
+
 						<div class="full-request__date-radio-wrapper full-request__date-radio-wrapper--four-cols">
 							<label class="test__input-aria full-request__input-aria">
 								<input class="test__radio" type="radio" name="year" value="2018">

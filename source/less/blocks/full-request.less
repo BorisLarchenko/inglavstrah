@@ -23,7 +23,6 @@
   .modal__pass-svg {
     width: 25px;
     height: 25px;
-    margin-top: -12px;
   }
   .modal__pass-svg1 {
     fill: #000000;
@@ -89,6 +88,9 @@
     width: 100%;
     margin-bottom: 0;
     .full-request__text {
+      width: 22%;
+    }
+    .full-request__text-wrapper {
       width: 22%;
     }
   }
@@ -236,6 +238,19 @@
   margin-top: auto;
 }
 
+.full-request__text-wrapper {
+  display: flex;
+  width: 28%;
+  .full-request__text:first-child {
+    width: 25%;
+    padding-right: 10px;
+  }
+  .full-request__text:nth-child(2) {
+    width: 75%;
+  }
+
+}
+
 .full-request__text {
   width: 28%;
   color: #000000;
@@ -270,6 +285,8 @@
     width: 30%;
   }
 }
+
+
 span.full-request__text {
   width: auto;
 }
@@ -382,8 +399,8 @@ span.full-request__text {
   }
   .icon__input-svg-wrapper {
     z-index: 2;
-    right: auto;
-    left: 119px;
+    //right: auto;
+    //left: 119px;
   }
   .full-request__date-radio-wrapper--four-cols {
     padding-bottom: 52px;
@@ -391,12 +408,12 @@ span.full-request__text {
         left: 80px;
       }
     }
-
-  .full-request__text--inner {
+  //make i invisible
+  /*.full-request__text--inner {
     &:focus + .icon__input-svg-wrapper {
       display: none;
     }
-  }
+  }*/
 }
 
 //Write all styles for big-tablet and small desktop
