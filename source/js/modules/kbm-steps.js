@@ -1,7 +1,18 @@
 (function () {
   function testKbmSteps(elem){
-    console.log('hello kbm-steps!');
-    console.log(elem);
+    $('.calendar-label-date').calendar({
+      type: 'date',
+      startMode: 'year',
+      monthFirst: false,
+      text: {
+          days: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+          months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Окрябрь', 'Ноябрь', 'Декабрь'],
+          monthsShort: ['Янв', 'Фев', 'Март', 'Апр', 'Май', 'Июнь', 'Июль', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+          today: 'Сегодня',
+          now: 'Сейчас'
+        },
+    });
+    $('.ui.dropdown').dropdown();
     //find full form in full-request page
     const form = elem.querySelector('.test__form');
 
