@@ -1,9 +1,6 @@
 (function () {
   function testMot(elem) {
-    $('.ui.dropdown').dropdown({
-      // you can use any ui transition
-      transition: 'drop'
-    });
+    $('.ui.dropdown').dropdown();
 
     const button3 = document.querySelector('.request__form-wrapper .request__btn');
 
