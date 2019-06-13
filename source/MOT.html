@@ -913,8 +913,8 @@
 							<input class="test__radio" type="radio" name="year" value="2012">
 							<span class="test__radio-circle"> 2012</span>
 						</label>
-						<select class="full-request__form-select" name="year">
-							<option class="test__form-option full-request__form-option" value="nothing">2011 и старше</option>
+						<select class="ui dropdown not-filled full-request__form-select full-request__form-select--short" name="year">
+							<option class="test__form-option full-request__form-option" value="">2011 и старше</option>
 							<option class="test__form-option full-request__form-option" value="2005">2005</option>
 							<option class="test__form-option full-request__form-option" value="2006">2006</option>
 							<option class="test__form-option full-request__form-option" value="2007">2007</option>
@@ -922,7 +922,6 @@
 							<option class="test__form-option full-request__form-option" value="2009">2009</option>
 							<option class="test__form-option full-request__form-option" value="2010">2010</option>
 							<option class="test__form-option full-request__form-option" value="2011">2011</option>
-
 						</select>
 					</div>
 					<div class="test__btn-price-wrapper">
@@ -974,30 +973,16 @@
 						</label>
 
 						<span class="full-request__text">или</span>
-						<input class="full-request__form-select full-request__form-list" type="text"  name="additional-mark" list="cars" placeholder="Начните вводить название">
-						<!-- Список возможных значений -->
-						<datalist id="cars">
-							<option value="Ist"></option>
-							<option value="Kluger"></option>
-							<option value="Land Cruiser 100"></option>
-							<option value="Land Cruiser Prado"></option>
-							<option value="LiteAce"></option>
-							<option value="Sequoia"></option>
-						</datalist>
-						<!--TODO: ask how to do the input list with aouto complete better?-->
+						<select class="ui dropdown not-filled full-request__form-select full-request__form-list" name="additional-mark">
+							<option value="">Начните вводить название</option>
+							<option value="Ist">Ist</option>
+							<option value="Kluger">Kluger</option>
+							<option value="Land Cruiser 100">Land Cruiser 100</option>
+							<option value="Land Cruiser Prado">Land Cruiser Prado</option>
+							<option value="LiteAce">LiteAce</option>
+							<option value="Sequoia">Sequoia</option>
+						</select>
 
-						<!--Начните вводить название-->
-						<!--						<select class="full-request__form-select" name="year">-->
-						<!--							<option class="test__form-option full-request__form-option" value="nothing">2011 и старше</option>-->
-						<!--							<option class="test__form-option full-request__form-option" value="2005">2005</option>-->
-						<!--							<option class="test__form-option full-request__form-option" value="2006">2006</option>-->
-						<!--							<option class="test__form-option full-request__form-option" value="2007">2007</option>-->
-						<!--							<option class="test__form-option full-request__form-option" value="2008">2008</option>-->
-						<!--							<option class="test__form-option full-request__form-option" value="2009">2009</option>-->
-						<!--							<option class="test__form-option full-request__form-option" value="2010">2010</option>-->
-						<!--							<option class="test__form-option full-request__form-option" value="2011">2011</option>-->
-
-						<!--						</select>-->
 					</div>
 					<div class="test__btn-price-wrapper">
 						<div class="test__btn-wrapper">
@@ -1099,33 +1084,21 @@
 						</label>
 
 						<span class="full-request__text">или</span>
-						<input class="full-request__form-select full-request__form-list" type="text"  name="additional-mark" list="stops" placeholder="Другая">
-						<!-- Список возможных значений -->
-						<datalist id="stops">
-							<option value="Вариант1"></option>
-							<option value="Вариант2"></option>
-							<option value="Вариант3"></option>
-							<option value="Вариант4"></option>
-							<option value="Вариант5"></option>
-							<option value="Вариант6"></option>
-							<option value="Вариант7"></option>
-							<option value="Вариант8"></option>
-							<option value="Вариант9"></option>
-						</datalist>
-						<!--TODO: ask how to do the input list with aouto complete better?-->
 
-						<!--Начните вводить название-->
-						<!--						<select class="full-request__form-select" name="year">-->
-						<!--							<option class="test__form-option full-request__form-option" value="nothing">2011 и старше</option>-->
-						<!--							<option class="test__form-option full-request__form-option" value="2005">2005</option>-->
-						<!--							<option class="test__form-option full-request__form-option" value="2006">2006</option>-->
-						<!--							<option class="test__form-option full-request__form-option" value="2007">2007</option>-->
-						<!--							<option class="test__form-option full-request__form-option" value="2008">2008</option>-->
-						<!--							<option class="test__form-option full-request__form-option" value="2009">2009</option>-->
-						<!--							<option class="test__form-option full-request__form-option" value="2010">2010</option>-->
-						<!--							<option class="test__form-option full-request__form-option" value="2011">2011</option>-->
 
-						<!--						</select>-->
+						<select class="ui dropdown not-filled full-request__form-select full-request__form-list" name="additional-mark">
+							<option value="">Другая</option>
+							<option value="Вариант1">Вариант1</option>
+							<option value="Вариант2">Вариант2</option>
+							<option value="Вариант3">Вариант3</option>
+							<option value="Вариант4">Вариант4</option>
+							<option value="Вариант5">Вариант5</option>
+							<option value="Вариант6">Вариант6</option>
+							<option value="Вариант7">Вариант7</option>
+							<option value="Вариант8">Вариант8</option>
+							<option value="Вариант9">Вариант9</option>
+						</select>
+
 					</div>
 					<div class="test__btn-price-wrapper">
 						<div class="test__btn-wrapper">

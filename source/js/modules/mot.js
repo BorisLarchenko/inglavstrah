@@ -1,6 +1,10 @@
 (function () {
   function testMot(elem) {
-    console.log(`Hello from Technical Checkup`);
+    $('.ui.dropdown').dropdown({
+      // you can use any ui transition
+      transition: 'drop'
+    });
+
     const button3 = document.querySelector('.request__form-wrapper .request__btn');
 
 
