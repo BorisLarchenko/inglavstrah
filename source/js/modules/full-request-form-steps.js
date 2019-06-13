@@ -1,4 +1,8 @@
 (function () {
+  $('.ui.dropdown').dropdown({
+    // you can use any ui transition
+    transition: 'drop'
+  });
   //find full form in full-request page
   const form = document.querySelector('.full-request .test__form');
 //  find first step div in form
