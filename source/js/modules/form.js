@@ -1,4 +1,9 @@
 (function () {
+
+  $('.ui.dropdown').dropdown({
+    // you can use any ui transition
+    transition: 'drop'
+  });
   //find form
   const form = document.querySelector('.test__form');
   console.log(form);

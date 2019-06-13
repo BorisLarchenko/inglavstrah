@@ -163,8 +163,7 @@
 						<p class="test__pagination">Шаг 5<span class="test__pagination--grey">/7</span></p>
 						<p class="test__step-title">Стаж безаварийности</p>
 						<div class="test__radio-wrapper">
-<!--TODO: may be there is a way to do it better?-->
-							<select class="test__form-select" name="years-without-break">
+							<select class="ui search dropdown not-filled test__form-select" name="years-without-break">
 								<option class="test__form-option" value="nothing">Выберите из списка</option>
 								<option class="test__form-option" value="7">7 лет — класс 10 | 0.65</option>
 								<option class="test__form-option" value="8">8 лет — класс 11 | 0.6</option>
@@ -227,7 +226,7 @@
 								<span class="test__price-color-big">5300</span>
 								<span class="test__price-color">руб.</span>
 							</p>
-							<div class="test__form-select-wrapper">
+							<div class="test__form-select-wrapper test__form-select-wrapper--fixed">
 								<include src="build/img/02-form-main/call.svg"></include>
 								<input class="test__form-select test__form-phone" type="tel" name="tel" pattern="^\+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required title="+7-910-920-21-12" placeholder="Ваш номер телефона">
 
@@ -237,7 +236,7 @@
 						</div>
 						<div class="test__btn-price-wrapper">
 							<div class="form-btn-wrapper test__subimt-wrapper">
-								<button class="btn test__btn" type="submit">Получить скидку</button>
+								<button class="btn test__btn test__btn--form-less" type="submit">Получить скидку</button>
 								<p class="form__personal">Нажимая на кнопку, вы принимаете <a class="form__personal-link" href="#">Соглашение</a>
 									на обработку персональных данных.</p>
 							</div>
@@ -280,7 +279,7 @@
 					</div>
 					<div class="test__btn-price-wrapper">
 						<div class="form-btn-wrapper test__subimt-wrapper--last">
-							<button class="btn test__btn" type="submit">Получить скидку</button>
+							<button class="btn test__btn test__btn--from-less" type="submit">Получить скидку</button>
 							<button class="btn-back test__btn-back" type="button">Выслать повторно</button>
 						</div>
 
@@ -300,10 +299,6 @@
 
 						</div>
 
-
-
-
-
 					</div>
 
 				</form>
@@ -316,10 +311,12 @@
 	<include src="source/html-modules/footer.html"></include>
 	<include src="source/html-modules/modal-auth-reg.html"></include>
 
-	<!--	<script src="js/main.min.js"></script>-->
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.min.js"></script>
+
+	<script src="js/custom.min.js"></script>
 	<!--build:js js/form.min.js -->
 	<script src="js/modules/form.js"></script>
-	<script src="js/common/open-auth-modal.js"></script>
 	<!-- endbuild -->
 
 </body>
