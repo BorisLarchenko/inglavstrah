@@ -27,10 +27,17 @@
       formStepsArr[1].classList.add('test__kbm-step2');
     });
     for (let i = 1; i< formStepsArr.length-1; i++) {
+
       btnForwardArr[i].addEventListener('click', function (evt) {
         evt.preventDefault();
         formStepsArr[i].classList.remove('test__kbm-step2');
-        formStepsArr[i+1].classList.add('test__kbm-step2');
+        if (i === (formStepsArr.length-2)) {
+          formStepsArr[i+1].classList.add('test__kbm-step3');
+        }
+        else {
+          formStepsArr[i+1].classList.add('test__kbm-step2');
+
+        }
       });
     }
 
