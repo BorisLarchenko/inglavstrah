@@ -128,11 +128,11 @@
 
 
 						<div class="full-request__date-radio-wrapper full-request__date-radio-wrapper--four-cols">
-							<label class="test__input-aria full-request__input-aria">
+							<label class="test__input-aria test__input-aria--nopadding-right full-request__input-aria">
 								<input class="test__radio" type="radio" name="year" value="2018">
 								<span class="test__radio-circle"> VIN есть</span>
 							</label>
-							<label class="test__input-aria full-request__input-aria">
+							<label class="test__input-aria test__input-aria--nopadding-right full-request__input-aria">
 								<input class="test__radio" type="radio" name="year" value="2017">
 								<span class="test__radio-circle"> VIN нет</span>
 							</label>
@@ -197,22 +197,35 @@
 
 					<p class="test__step-title full-request__step-title">Результаты проверки КБМ</p>
 
-					<table class="full-request__table full-request__table--kbm">
-						<tr>
-							<th class="full-request__header btn--grey">Статус:</th>
-							<th class="full-request__header btn--grey">Пред. СК:</th>
-							<th class="full-request__header btn--grey">Пред. полис:</th>
-							<th class="full-request__header btn--grey">КБМ:</th>
-							<th class="full-request__header btn--grey">Класс:</th>
-						</tr>
-						<tr>
-							<td class="full-request__data full-request__data--width1">Найдено</td>
-							<td class="full-request__data full-request__data--width2">#25719030420 32346</td>
-							<td class="full-request__data">РЕСО</td>
-							<td class="full-request__data">0,85</td>
-							<td class="full-request__data">Класс 6</td>
-						</tr>
-					</table>
+
+					<div class="full-request__table full-request__table--kbm">
+						<div class="full-request__table-item-wrapper">
+							<p class="full-request__table-item-head">Статус:</p>
+							<p class="full-request__table-item">Найдено</p>
+
+						</div>
+						<div class="full-request__table-item-wrapper">
+							<p class="full-request__table-item-head">Пред. СК:</p>
+							<p class="full-request__table-item">#25719030420 32346</p>
+
+						</div>
+						<div class="full-request__table-item-wrapper">
+							<p class="full-request__table-item-head">Пред. полис:</p>
+							<p class="full-request__table-item">РЕСО</p>
+
+						</div>
+						<div class="full-request__table-item-wrapper">
+							<p class="full-request__table-item-head">КБМ:</p>
+							<p class="full-request__table-item">0,85</p>
+
+						</div>
+						<div class="full-request__table-item-wrapper">
+							<p class="full-request__table-item-head">Класс:</p>
+							<p class="full-request__table-item">Класс 6</p>
+						</div>
+
+
+					</div>
 
 					<div class="test__btn-price-wrapper">
 						<div class="test__btn-wrapper test__btn-wrapper--wide">

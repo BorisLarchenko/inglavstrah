@@ -284,9 +284,20 @@
   text-align: center;
   //background-color: rgba(78, 135, 203, 0.39);
   cursor: pointer;
+  &--equal-size {
+    padding-right: 0;
+    margin-right: 0;
+    width: calc((100% - 30px)/5);
+    text-align: left;
+
+  }
 }
 .full-request--kbm .test__input-aria{
-  padding: 15px 0 15px 40px;
+
+  padding: 15px 40px;
+  &--nopadding-right {
+    padding: 15px 0 15px 40px;
+  }
 }
 
 .test__radio-circle {
