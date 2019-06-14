@@ -23,28 +23,28 @@
     console.log(btnBackArr);
     btnForwardArr[0].addEventListener('click', function (evt) {
       evt.preventDefault();
-      formStepsArr[0].classList.remove('test__form-step13');
-      formStepsArr[1].classList.add('test__form-step18');
+      formStepsArr[0].classList.remove('test__kbm-step1');
+      formStepsArr[1].classList.add('test__kbm-step2');
     });
     for (let i = 1; i< formStepsArr.length-1; i++) {
       btnForwardArr[i].addEventListener('click', function (evt) {
         evt.preventDefault();
-        formStepsArr[i].classList.remove('test__form-step18');
-        formStepsArr[i+1].classList.add('test__form-step18');
+        formStepsArr[i].classList.remove('test__kbm-step2');
+        formStepsArr[i+1].classList.add('test__kbm-step2');
       });
     }
 
 
     btnBackArr[0].addEventListener('click', function (evt) {
       evt.preventDefault();
-      formStepsArr[0].classList.add('test__form-step13');
-      formStepsArr[1].classList.remove('test__form-step18');
+      formStepsArr[0].classList.add('test__kbm-step1');
+      formStepsArr[1].classList.remove('test__kbm-step2');
     });
 
     btnBackArr[1].addEventListener('click', function (evt) {
       evt.preventDefault();
-      formStepsArr[1].classList.add('test__form-step18');
-      formStepsArr[2].classList.remove('test__form-step18');
+      formStepsArr[1].classList.add('test__kbm-step2');
+      formStepsArr[2].classList.remove('test__kbm-step2');
     });
 
 
