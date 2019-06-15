@@ -113,6 +113,7 @@
 .full-request__data-wrapper {
   .full-request__radio-wrapper;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .full-request__input-aria {
@@ -153,8 +154,10 @@
 .full-request__radio-wrapper .ui.dropdown.full-request__form-select {
   border: none;
   min-width: 16em;
+  padding-left: 0;
   &--short {
     min-width: 10em;
+    padding-left: 0;
   }
   .dropdown.icon {
     display: none;
@@ -253,7 +256,7 @@
 }
 
 .full-request__btn-down {
-  margin-top: auto;
+  margin-top: 85px;
 }
 
 .full-request__text-wrapper {
@@ -308,6 +311,10 @@
 
 span.full-request__text {
   width: auto;
+  &--margin {
+    margin-right: 40px;
+  }
+
 }
 
 .full-request__info {
