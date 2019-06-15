@@ -1018,41 +1018,41 @@
 					<p class="test__step-title full-request__step-title">Полученные данные верны</p>
 
 					<div class="full-request__table full-request__table--kbm">
-						<div class="full-request__table-item-wrapper">
+						<div class="full-request__table-item-wrapper full-request__table-item-wrapper--long">
 							<p class="full-request__table-item-head">Марка:</p>
 							<p class="full-request__table-item">Toyota</p>
 
 						</div>
-						<div class="full-request__table-item-wrapper">
+						<div class="full-request__table-item-wrapper full-request__table-item-wrapper--long">
 							<p class="full-request__table-item-head">Модель:</p>
 							<p class="full-request__table-item">Corolla</p>
 
 						</div>
-						<div class="full-request__table-item-wrapper">
+						<div class="full-request__table-item-wrapper full-request__table-item-wrapper--long">
 							<p class="full-request__table-item-head">Год выпуска:</p>
 							<p class="full-request__table-item">2006</p>
 
 						</div>
-						<div class="full-request__table-item-wrapper">
+						<div class="full-request__table-item-wrapper full-request__table-item-wrapper--long">
 							<p class="full-request__table-item-head">Объем двигателя:</p>
 							<p class="full-request__table-item">1.6 л.</p>
 
 						</div>
-						<div class="full-request__table-item-wrapper">
+						<div class="full-request__table-item-wrapper full-request__table-item-wrapper--long">
 							<p class="full-request__table-item-head">Мощность:</p>
 							<p class="full-request__table-item">110 л.с.</p>
 						</div>
 
 
-						<div class="full-request__table-item-wrapper">
+						<div class="full-request__table-item-wrapper full-request__table-item-wrapper--long">
 							<p class="full-request__table-item-head">Номер VIN:</p>
 							<p class="full-request__table-item">NMTE*********4638</p>
 						</div>
-						<div class="full-request__table-item-wrapper">
+						<div class="full-request__table-item-wrapper full-request__table-item-wrapper--long">
 							<p class="full-request__table-item-head">Диагностическая карта ТО:</p>
 							<p class="full-request__table-item">06505***********00893</p>
 						</div>
-						<div class="full-request__table-item-wrapper">
+						<div class="full-request__table-item-wrapper full-request__table-item-wrapper--long">
 							<p class="full-request__table-item-head">Дата окончания ТО:</p>
 							<p class="full-request__table-item">14.03.2019</p>
 						</div>
@@ -1528,8 +1528,17 @@
 						<input class="form__text full-request__text" type="text" placeholder="Имя" name="user-name">
 						<input class="form__text full-request__text" type="text" placeholder="Отчество" name="user-second-name">
 
-						<input class="form__text full-request__text" type="text" placeholder="Дата рождения" name="user-birthday">
-						<input class="form__text full-request__text mask--passport" type="text" placeholder="Паспорт" name="user-passport">
+
+						<label class='form__text full-request__text calendar-label-date ui calendar'>
+							<input type="text" placeholder="Дата рождения">
+						</label>
+
+
+
+
+
+
+						<input class="form__text full-request__text mask--passport" type="text" placeholder="Паспорт" name="user-passport1">
 						<input class="form__text full-request__text" type="text" placeholder="VIN" name="car-vin">
 					</div>
 
@@ -1570,8 +1579,13 @@
 						<input class="form__text full-request__text" type="text" placeholder="Имя" name="user-name">
 						<input class="form__text full-request__text" type="text" placeholder="Отчество" name="user-second-name">
 
-						<input class="form__text full-request__text" type="text" placeholder="Дата рождения" name="user-birthday">
-						<input class="form__text full-request__text" type="text" placeholder="Водительское удостоверение" name="user-passport">
+						<label class='form__text full-request__text calendar-label-date ui calendar'>
+							<input type="text" placeholder="Дата рождения">
+						</label>
+
+						<input class="form__text full-request__text" type="text" placeholder="Водительское удостоверение">
+
+
 						<label class="form__text full-request__text">
 							<span class="modal__pass-svg icon__input-svg-wrapper" data-title="Считается с даты выдачи первого ВУ (водительского удостоверения)">
 								<svg class="icon__input-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 32 32">
@@ -1581,7 +1595,9 @@
 
 								</svg>
 							</span>
-														<input class="full-request__text--inner" type="text" placeholder="Дата начала стажа" name="car-vin">
+							<label class='full-request__text--inner calendar-label-date ui calendar'>
+								<input type="text" placeholder="Дата начала стажа">
+							</label>
 
 
 						</label>
@@ -1600,8 +1616,11 @@
 							<input class="form__text full-request__text" type="text" placeholder="Имя" name="user-name">
 							<input class="form__text full-request__text" type="text" placeholder="Отчество" name="user-second-name">
 
-							<input class="form__text full-request__text" type="text" placeholder="Дата рождения" name="user-birthday">
-							<input class="form__text full-request__text" type="text" placeholder="Водительское удостоверение" name="user-passport">
+							<label class='form__text full-request__text calendar-label-date ui calendar'>
+								<input type="text" placeholder="Дата рождения">
+							</label>
+
+							<input class="form__text full-request__text" type="text" placeholder="Водительское удостоверение" >
 							<label class="form__text full-request__text">
 							<span class="modal__pass-svg icon__input-svg-wrapper" data-title="Считается с даты выдачи первого ВУ (водительского удостоверения)">
 								<svg class="icon__input-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 32 32">
@@ -1611,7 +1630,9 @@
 
 								</svg>
 							</span>
-								<input class="full-request__text--inner" type="text" placeholder="Дата начала стажа" name="car-vin">
+								<label class='full-request__text--inner calendar-label-date ui calendar'>
+									<input type="text" placeholder="Дата начала стажа">
+								</label>
 
 
 							</label>
@@ -1631,8 +1652,12 @@
 							<input class="form__text full-request__text" type="text" placeholder="Имя" name="user-name">
 							<input class="form__text full-request__text" type="text" placeholder="Отчество" name="user-second-name">
 
-							<input class="form__text full-request__text" type="text" placeholder="Дата рождения" name="user-birthday">
-							<input class="form__text full-request__text" type="text" placeholder="Водительское удостоверение" name="user-passport">
+							<label class='form__text full-request__text calendar-label-date ui calendar'>
+								<input type="text" placeholder="Дата рождения">
+							</label>
+
+
+							<input class="form__text full-request__text" type="text" placeholder="Водительское удостоверение" >
 							<label class="form__text full-request__text">
 							<span class="modal__pass-svg icon__input-svg-wrapper" data-title="Считается с даты выдачи первого ВУ (водительского удостоверения)">
 								<svg class="icon__input-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 32 32">
@@ -1642,8 +1667,9 @@
 
 								</svg>
 							</span>
-								<input class="full-request__text--inner" type="text" placeholder="Дата начала стажа" name="car-vin">
-
+								<label class='full-request__text--inner calendar-label-date ui calendar'>
+									<input type="text" placeholder="Дата начала стажа">
+								</label>
 
 							</label>
 						</div>
@@ -1736,8 +1762,9 @@
 							</label>
 						</div>
 						<input class="form__text full-request__text" type="text" placeholder="Номер СТС" name="sts-number">
-						<input class="form__text full-request__text" type="text" placeholder="Дата выдачи" name="user-passport">
-
+						<label class='form__text full-request__text  full-request__text--short calendar-label-date ui calendar'>
+							<input type="text" placeholder="Дата выдачи">
+						</label>
 					</div>
 
 					<div class="test__btn-price-wrapper">
@@ -1775,11 +1802,13 @@
 						</div>
 
 
-						<input class="form__text full-request__text" type="text" placeholder="Дата выдачи" name="user-name">
+						<label class='form__text full-request__text  full-request__text--short calendar-label-date ui calendar'>
+							<input type="text" placeholder="Дата выдачи">
+						</label>
 						<input class="form__text full-request__text" type="text" placeholder="Код подразделения" name="user-second-name">
 
 						<input class="form__text full-request__text" type="text" placeholder="Кем выдан" name="user-birthday">
-						<input class="form__text full-request__text full-request__text--long" type="text" placeholder="Адрес регистрации (область, город, улица, дом, квартира)" name="user-passport">
+						<input class="form__text full-request__text full-request__text--long" type="text" placeholder="Адрес регистрации (область, город, улица, дом, квартира)">
 
 					</div>
 
@@ -1814,7 +1843,10 @@
 						<input class="form__text full-request__text" type="text" placeholder="Фамилия" name="user-soname">
 						<input class="form__text full-request__text" type="text" placeholder="Имя" name="user-name">
 						<input class="form__text full-request__text" type="text" placeholder="Отчество" name="user-second-name">
-						<input class="form__text full-request__text full-request__text--short" type="text" placeholder="Дата рождения" name="user-second-name">
+
+						<label class='form__text full-request__text  full-request__text--short calendar-label-date ui calendar'>
+							<input type="text" placeholder="Дата рождения">
+						</label>
 					</div>
 
 					<div class="test__radio-wrapper full-request__radio-wrapper full-request__input-wrapper full-request__input-wrapper--short">
@@ -1823,7 +1855,9 @@
 							<input class="form__text full-request__text mask--four-numbers" type="text" placeholder="Серия " name="passport-id">
 							<input class="form__text full-request__text mask--six-numbers" type="text" placeholder="Номер паспорта" name="passport-number">
 						</div>
-						<input class="form__text full-request__text" type="text" placeholder="Дата выдачи" name="user-name">
+						<label class='form__text full-request__text  full-request__text--short calendar-label-date ui calendar'>
+							<input type="text" placeholder="Дата выдачи">
+						</label>
 						<input class="form__text full-request__text" type="text" placeholder="Код подразделения" name="user-second-name">
 
 						<input class="form__text full-request__text" type="text" placeholder="Кем выдан" name="user-birthday">
@@ -1863,7 +1897,9 @@
 							<input class="form__text full-request__text mask--four-numbers" type="text" placeholder="Серия " name="passport-id">
 							<input class="form__text full-request__text mask--six-numbers" type="text" placeholder="Номер паспорта" name="passport-number">
 						</div>
-						<input class="form__text full-request__text" type="text" placeholder="Дата выдачи" name="user-name">
+						<label class='form__text full-request__text  full-request__text--short calendar-label-date ui calendar'>
+							<input type="text" placeholder="Дата выдачи">
+						</label>
 						<input class="form__text full-request__text" type="text" placeholder="Код подразделения" name="user-second-name">
 
 						<input class="form__text full-request__text" type="text" placeholder="Кем выдан" name="user-birthday">

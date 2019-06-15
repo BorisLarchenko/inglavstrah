@@ -399,8 +399,7 @@ span.full-request__text {
 
 .full-request__radio-info {
   position: absolute;
-  right: 13px;
-  /* left: auto; */
+  right: 0; //move i to left edge
   top: 19px;
   width: 22px;
   height: 22px;
@@ -489,10 +488,17 @@ span.full-request__text {
   }*/
 }
 
+
+.full-request__add-driver {
+  margin-top: 35px;
+}
 //Write all styles for big-tablet and small desktop
 @media (max-width: @desctopWidth)  {
   .full-request__btn-wrapper {
     width: 76%;
+  }
+  .full-request__table-item-wrapper--long {
+    width: calc((100% - 30px)/4);
   }
 }
 

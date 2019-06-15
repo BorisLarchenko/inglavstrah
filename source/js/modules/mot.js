@@ -1,5 +1,19 @@
 (function () {
   function testMot(elem) {
+    $('.calendar-label-date').calendar({
+      type: 'date',
+      startMode: 'year',
+      monthFirst: false,
+      text: {
+        days: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+        months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Окрябрь', 'Ноябрь', 'Декабрь'],
+        monthsShort: ['Янв', 'Фев', 'Март', 'Апр', 'Май', 'Июнь', 'Июль', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+        today: 'Сегодня',
+        now: 'Сейчас'
+      },
+    });
+
+
     $('.ui.dropdown').dropdown();
 
     const button3 = document.querySelector('.request__form-wrapper .request__btn');
