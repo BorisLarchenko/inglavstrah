@@ -40,7 +40,10 @@
           linear-gradient(@bg-color-blue (@dot-space - @dot-size), transparent 1%) center,
           @dot-color-blue;
 
-  background-size:  @dot-space @dot-space,;
+  background-size:  @dot-space @dot-space;
+  .main-howto-pagination {
+    display: none;
+  }
 }
 
 .main__benefits {
@@ -563,8 +566,24 @@
 
 //Write all styles for mobile
 @media (max-width: @tabletWidth) {
+
+  .main__howto {
+
+
+    .main-howto-pagination {
+      display: block;
+      width: 290px;
+      margin: 0 auto;
+      color: white;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+
   .main__test-info {
     flex-direction: row;
+
 
 
 

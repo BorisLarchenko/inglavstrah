@@ -331,5 +331,84 @@
 
 //Write all styles for mobile
 @media (max-width: @tabletWidth) {
-  .slider {}
+  .slider__slide-car-pic {
+    right: calc(((100vw - 768px)/2) + 585px);
+    width: 340px;
+    margin-top: 0;
+    top: 64%;
+   transform: scaleX(-1);
+  }
+
+
+  .main__howto {
+    padding-top: 55px;
+    .slider__slide {
+      flex-direction: column;
+      align-items: center;
+      .slider__info {
+        width: 290px;
+        margin-top: 40px;
+        &:not(:first-child) {
+          margin-left: 0;
+          margin-top: 25px;
+        }
+      }
+    }
+
+    .main__title--colored {
+      font-size: 28px;
+      top: 0;
+    }
+  }
+
+  .slider__info {
+    &--first {
+      width: 290px;
+      margin-left: auto;
+       margin-right: auto;
+      flex-direction: row;
+      align-items: center;
+      .main__test-price {
+        width: 110px;
+      }
+      .slider__info-words {
+        width: 200px;
+        margin-top: 0;
+        margin-left: 20px;
+      }
+    }
+    &--second {
+      width: 290px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: baseline;
+
+      .slider__info-words {
+        margin: auto;
+        margin-left: 20px;
+        order: 3;
+      }
+
+      .slider__info-percent {
+        order: 2;
+      }
+
+      .slider__percent {
+        transform: none;
+        width: 80px;
+        order: 1;
+      }
+
+
+    }
+  }
+
+  .slider__slide-bag-pic {
+    img& {
+      display: none;
+    }
+  }
 }
