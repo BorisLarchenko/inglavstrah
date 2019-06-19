@@ -4,7 +4,13 @@ $(document).ready(function(){
     infinite: false,
     speed: 300,
     slidesToShow: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1280,
+        arrows: false,
+      }
+    ]
   });
 
   $('.main__advantages-list--slider').slick({
@@ -13,8 +19,7 @@ $(document).ready(function(){
     infinite: false,
     speed: 300,
     slidesToShow: 1,
-    prevArrow: false,
-    nextArrow: false,
+
 
     mobileFirst: true,
     // centerMode: true,
