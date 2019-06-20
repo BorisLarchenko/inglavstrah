@@ -30,4 +30,16 @@ $(document).ready(function(){
       }
     ]
   });
+  //find thanks block in the .main__contacts section on the index.html
+  const contactsArr = document.querySelectorAll('.main__contacts-form-wrapper');
+  const contactsButton = contactsArr[0].querySelector('.btn.slider__btn.form__btn');
+
+  contactsButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    contactsArr[0].classList.add('form__contacts--close');
+    contactsArr[1].classList.remove('form__contacts--close');
+  });
+
+
+
 });
