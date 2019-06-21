@@ -40,7 +40,10 @@
           linear-gradient(@bg-color-blue (@dot-space - @dot-size), transparent 1%) center,
           @dot-color-blue;
 
-  background-size:  @dot-space @dot-space,;
+  background-size:  @dot-space @dot-space;
+  .main-howto-pagination {
+    display: none;
+  }
 }
 
 .main__benefits {
@@ -62,6 +65,14 @@
           linear-gradient(@bg-color-blue (@dot-space - @dot-size), transparent 1%) center,
           @dot-color-blue;
   background-size: @dot-space @dot-space;
+  .form__contacts-wrapper {
+    .form__contacts-thanks {
+      color: white;
+    }
+    .form__contacts-thanks-text {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
 }
 
 .main__form-test {
@@ -210,6 +221,9 @@
   width: auto;
   text-align: center;
   font-size: 50px;
+  .main__benefits-title--mobile {
+    display: none;
+  }
 }
 
 .main__benefits-info {
@@ -473,6 +487,8 @@
 
   .main__advantages-img {
     left: -30px;
+    order: 2;
+    margin: auto;
   }
 
   .main__benefits {
@@ -513,11 +529,48 @@
   .main__title--colored {
     width: 1000px;
   }
-
+//start making adaptive .main__benefits  section of index.html
+  .main__benefits {
+    padding-top: 60px;
+    padding-bottom: 145px;
+    min-height: auto;
+  }
   .main__benefits-title {
     width: auto;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  .main__benefits-info-title {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+  }
+  .main__benefits-info-additional {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
   }
 
+  .main__benefits-info-wrapper {
+    flex-wrap: wrap;
+    .main__benefits-info {
+      width: 46%;
+      margin-top: 30px;
+      font-size: 14px;
+      line-height: 19px;
+      &:not(:first-child) {
+        margin-left: 5%;
+      }
+      &:nth-child(2n+1) {
+        margin-left: 0;
+      }
+      .main__benefits-info-additional {
+        margin-bottom: 10px;
+      }
+    }
+
+  }
+  //start making adaptive .main__benefits  section of index.html
   .main__test-description {
     font-size: 30px;
   }
@@ -529,32 +582,16 @@
 
   }
 
- /* .main__test-info {
-    flex-direction: row;
+ .main__advantages-item {
+   font-size: 14px;
+   line-height: 18px;
+ }
+ .main__advantages-item-title {
+   font-size: 22px;
+   line-height: 34px;
+   letter-spacing: -0.01em;
+ }
 
-
-
-    font-size: 13px;
-    line-height: 16px;
-
-
-  }
-
-  .main__test-price {
-    width: 230px;
-
-    font-size: 65px;
-    line-height: 65px;
-    letter-spacing: -0.05em;
-    color: @yellow-color;
-  }
-
-  .main__test-price-sign {
-    font-size: 40px;
-  }
-  .main__test-words {
-    margin-top: 15px;
-  }*/
   .main__advantages-wrapper--mot {
 
     .request__step-list {
@@ -562,13 +599,80 @@
     }
   }
 
+  //section .main__howto styles
+  .main__howto-slider {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .main__howto-slider .slick-prev, .main__howto-slider .slick-next,
+  .main__howto-slider .slick-prev, .main__howto-slider .slick-prev {
+    right: -2000px;
+  }
+  //for all pages with .main__contacts-link class
+  .main__contacts-link {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+//start adaptive style for last section .main-contacts in index.html
+  .main__contacts {
+    padding: 120px 0 150px;
+    .main__contacts-address {
+      width: 315px;
+    }
+    .main__contacts-slogan {
+      font-size: 45px;
+      line-height: 45px;
+    }
+
+    .main__contacts-link {
+      font-size: 13px;
+      line-height: 16px;
+    }
+
+    .form-btn-wrapper {
+      flex-direction: column-reverse;
+      flex-basis: 100px;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 45px;
+    }
+
+
+    .form__contacts-wrapper {
+      .form__contacts-thanks {
+        color: white;
+      }
+      .form__contacts-thanks-text {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+//finish adaptive style for last section .main-contacts in index.html
 
 }
 
 //Write all styles for mobile
 @media (max-width: @tabletWidth) {
+
+  .main__howto {
+
+
+    .main-howto-pagination {
+      display: block;
+      width: 290px;
+      margin: 0 auto;
+      color: white;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+
   .main__test-info {
     flex-direction: row;
+
 
 
 
@@ -643,6 +747,167 @@
 
     padding-bottom: 0;
   }
+
+  .main__advantages-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+  .main__advantages-list {
+    display: block;
+    //flex-direction: column;
+    width: 100%;
+  }
+  .main__advantages-item {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .main__advantages {
+    padding-top: 35px;
+    .main__advantages-item-title {
+      .main__advantages-item-title--special;
+    }
+  }
+  .main__advantages-picture {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .main__advantages-img {
+    //left: 30px;
+    margin-right: 0;
+    width: 80%;
+  }
+  //start making adaptive .main__benefits  section of index.html
+  .main__benefits {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    min-height: auto;
+    background: url(../img/01-main-page/benefits-car-bg2.png) no-repeat center bottom -50px,
+                url(../img/01-main-page/benefits-bg.jpg) no-repeat center;
+    background-size: 270px 100px,cover;
+
+  }
+  .main__benefits-title {
+    width: auto;
+    margin-bottom: 15px;
+    text-align: left;
+    .main__benefits-title--mobile {
+      display: block;
+    }
+    .main__benefits-title--notmobile {
+      display: none;
+    }
+  }
+  /*.main__benefits-info-title {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+  }
+  .main__benefits-info-additional {
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+  }*/
+
+  .main__benefits-wrapper {
+    padding: 0 10px;
+  }
+  .main__benefits-info-wrapper {
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .main__benefits-info {
+      width: 100%;
+      margin-top: 30px;
+      font-size: 14px;
+      line-height: 19px;
+      &:not(:first-child) {
+        margin-left: 0%;
+      }
+      &:nth-child(2n+1) {
+        margin-left: 0;
+      }
+      .main__benefits-info-additional {
+        margin-bottom: 10px;
+      }
+    }
+
+  }
+  //finish making adaptive .main__benefits  section of index.html
+
+  //start adaptive style for last section .main-contacts in index.html
+  .main__contacts {
+    padding: 60px 0 60px;
+    .main__contacts-map,
+    .main__contacts-form-wrapper {
+      width: 290px;
+    }
+    .main__contacts-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+    }
+    .main__contacts-town {
+      line-height: 18px;
+      font-size: 18px;
+    }
+    .main__contacts-link {
+      font-size: 13px;
+      line-height: 16px;
+    }
+    .main__contacts-address {
+      width: 210px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    .main__contacts-slogan {
+      font-size: 30px;
+      line-height: 30px;
+      &.form__contacts-slogan--color {
+        margin-bottom: 40px;
+      }
+    }
+
+    .form-btn-wrapper {
+      flex-direction: column-reverse;
+      flex-basis: 100px;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 45px;
+    }
+
+
+    .form__contacts-wrapper {
+      .form__contacts-thanks {
+        color: white;
+        line-height: 18px;
+        font-size: 14px;
+      }
+      .form__contacts-thanks-text {
+        margin-bottom: 50px;
+        line-height: 18px;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+      .form__contacts__btn {
+        left: 50%;
+        margin-left: -110px;
+      }
+    }
+    .main__contacts-form {
+      margin-top: 40px;
+    }
+    .main__contacts-btn {
+      margin-bottom: 80px;
+      margin-top: 45px;
+      left: 50%;
+      margin-left: -110px;
+    }
+  }
+  //finish adaptive style for last section .main-contacts in index.html
+
+
 }
 
 //first screen is finished

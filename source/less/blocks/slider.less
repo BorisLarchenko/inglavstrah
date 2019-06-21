@@ -111,11 +111,11 @@
   //margin-left: 0;
 }
 
-.slider__info:not(:first-child) {
+.slider__info:not(:nth-child(2)) {
   margin-left: 130px;
 }
 
-.slider__slide--space .slider__info:not(:first-child) {
+.slider__slide--space .slider__info:not(:nth-child(2)) {
   margin-left: 50px;
   z-index: 1;
 }
@@ -184,7 +184,7 @@
   .slider__info-percent {
     font-size: 80px;
   }
-  .slider__info:not(:first-child) {
+  .slider__info:not(:nth-child(2)) {
     margin-left: 90px;
   }
   .slider__info--second {
@@ -200,7 +200,7 @@
       margin-top: 0;
     }
   }
-  .slider__slide--space .slider__info:not(:first-child) {
+  .slider__slide--space .slider__info:not(:nth-child(2)) {
     margin-left: 20px;
   }
   .slider__slide--space .slider__info {
@@ -227,17 +227,199 @@
 
 @media (max-width: @mediumWidth)  {
   .slider__slide-car-pic {
-    right: calc(((-100vw + 9px + 1280px)/2) - 640px);
+    right: calc(((-100vw + 1280px)/2) - 800px);
+    margin-top: 0;
     &--3 {
-      right: calc(((-100vw + 9px + 1280px)/2) - 780px);
+      //right: calc(((-100vw + 9px + 1280px)/2) - 780px);
+      img& {
+        display: none;
+
+      }
     }
   }
   .slider__info--about .slider__price {
     line-height: 35px;
   }
+  .slider__info-title {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .slider__slide--space .slider__info {
+    width: 230px;
+  }
+
+  .slider__info {
+    font-size: 14px;
+    line-height: 20px;
+    width: 230px;
+    &:not(:nth-child(2)) {
+      margin-left: 50px;
+    }
+
+    &--first {
+      width: 150px;
+      margin-left: calc(100vw - 510px - 257px);
+      //margin-left: 20%;
+      margin-right: 2%;
+      order: unset;
+      background-color: transparent;
+    }
+
+    &--second {
+      order: unset;
+      width: 150px;
+      margin-top: 40px;
+      margin-left: calc(100vw - 510px - 257px);
+      //margin-left: 20%;
+      margin-right: 2%;
+      background-color: transparent;
+      .slider__percent {
+        width: 152px;
+        transform: rotate(270deg) translateY(-98px) translateX(104px);
+        font-size: 65px;
+        line-height: 56px;
+        color: #4e87cb;
+      }
+      .slider__info-percent {
+        font-size: 37px;
+        line-height: 37px;
+      }
+    }
+
+    &--third {
+
+
+      &::before {
+        top: 0px;
+        left: 0;
+        display: block;
+        margin-left: 0px;
+        width: 60px;
+        height: 65px;
+        background: url(../img/01-main-page/gift-third-slide-howto.svg) no-repeat center;
+        background-size: 65px;
+      }
+    }
+  }
+  .slider .slider__slide--space .slider__info--third {
+    width: 150px;
+    margin-left: calc(100vw - 510px - 257px);
+    padding-top: 65px;
+  }
+  .slider__info-words {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .slider__price {
+    font-size: 65px;
+    .main__test-price-sign {
+      font-size: 50px;
+    }
+  }
+  .main__howto {
+    padding-top: 20px;
+  }
+
+  .main__howto .slider__slide {
+    min-height: auto;
+  }
+  .slider__slide .slider__btn {
+    margin-top: 40px;
+  }
 }
 
 //Write all styles for mobile
 @media (max-width: @tabletWidth) {
-  .slider {}
+  .slider__slide-car-pic {
+    right: calc(((100vw - 768px)/2) + 585px);
+    width: 340px;
+    margin-top: 0;
+    top: 64%;
+   transform: scaleX(-1);
+  }
+
+
+  .main__howto {
+    padding-top: 55px;
+    .slider__slide {
+      flex-direction: column;
+      align-items: center;
+      .slider__info {
+        width: 290px;
+        margin-top: 40px;
+        &:not(:nth-child(2)) {
+          margin-left: 0;
+          margin-top: 25px;
+        }
+
+        &.slider__info--third {
+          padding-left: 65px;
+          padding-top: 25px;
+        }
+
+        &.slider__info--last {
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+      }
+    }
+
+    .main__title--colored {
+      font-size: 28px;
+      top: 0;
+    }
+  }
+
+  .slider__info {
+    &--first {
+      width: 290px;
+      margin-left: auto;
+       margin-right: auto;
+      flex-direction: row;
+      align-items: center;
+      .main__test-price {
+        width: 110px;
+      }
+      .slider__info-words {
+        width: 200px;
+        margin-top: 0;
+        margin-left: 20px;
+      }
+    }
+    &--second {
+      width: 290px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: baseline;
+
+      .slider__info-words {
+        margin: auto;
+        margin-left: 20px;
+        order: 3;
+      }
+
+      .slider__info-percent {
+        order: 2;
+      }
+
+      .slider__percent {
+        transform: none;
+        width: 80px;
+        order: 1;
+      }
+    }
+
+
+  }
+
+  .slider__slide-bag-pic {
+    img& {
+      display: none;
+    }
+  }
 }

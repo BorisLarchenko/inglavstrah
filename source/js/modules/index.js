@@ -4,6 +4,42 @@ $(document).ready(function(){
     infinite: false,
     speed: 300,
     slidesToShow: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1280,
+        arrows: false,
+      }
+    ]
   });
+
+  $('.main__advantages-list--slider').slick({
+    slide: '.main__advantages-item--slide',
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+
+
+    mobileFirst: true,
+    // centerMode: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: "unslick"
+      }
+    ]
+  });
+  //find thanks block in the .main__contacts section on the index.html
+  const contactsArr = document.querySelectorAll('.main__contacts-form-wrapper');
+  const contactsButton = contactsArr[0].querySelector('.btn.slider__btn.form__btn');
+
+  contactsButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    contactsArr[0].classList.add('form__contacts--close');
+    contactsArr[1].classList.remove('form__contacts--close');
+  });
+
+
+
 });
