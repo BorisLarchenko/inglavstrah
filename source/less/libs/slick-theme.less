@@ -121,7 +121,37 @@
         }
     }
 }
+//Write all styles for tablet-desctop(less than 1280px)
+@media (max-width: @mediumWidth) {
+    .slick-dots {
+       li {
+           &.slick-active button {
+               width: 60px;
+               height: 60px;
+           }
+           &.slick-active button:before {
+               width: 14px;
+               height: 14px;
+           }
+       }
+    }
 
+}
+//Write styles for tablet (less than 1024px)
+@media (max-width: @lowWidth) {
+    .slick-dots {
+        li {
+            &.slick-active button {
+                width: 55px;
+                height: 55px;
+            }
+            &.slick-active button:before {
+                width: 13px;
+                height: 13px;
+            }
+        }
+    }
+}
 
 //Write all styles for mobile
 @media (max-width: @tabletWidth) {
