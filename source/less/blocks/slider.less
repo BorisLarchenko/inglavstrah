@@ -227,14 +227,11 @@
 
 @media (max-width: @mediumWidth)  {
   .slider__slide-car-pic {
-    right: calc(((-100vw + 1280px)/2) - 800px);
+    right: calc(((-100vw + 1023px)/2) - 470px);
     margin-top: 0;
     &--3 {
-      //right: calc(((-100vw + 9px + 1280px)/2) - 780px);
-      img& {
-        display: none;
-
-      }
+      right: calc(((-100vw + 9px + 1023px)/2) - 470px);
+      margin-top: 0;
     }
   }
   .slider__info--about .slider__price {
@@ -246,20 +243,20 @@
   }
 
   .slider__slide--space .slider__info {
-    width: 230px;
+    width: 430px;
   }
 
   .slider__info {
-    font-size: 14px;
-    line-height: 20px;
-    width: 230px;
+    //font-size: 14px;
+    //line-height: 20px;
+    width: 430px;
     &:not(:nth-child(2)) {
       margin-left: 50px;
     }
 
     &--first {
       width: 150px;
-      margin-left: calc(100vw - 510px - 257px);
+      //margin-left: calc(100vw - 510px - 257px);
       //margin-left: 20%;
       margin-right: 2%;
       order: unset;
@@ -270,7 +267,7 @@
       order: unset;
       width: 150px;
       margin-top: 40px;
-      margin-left: calc(100vw - 510px - 257px);
+      //margin-left: calc(100vw - 510px - 257px);
       //margin-left: 20%;
       margin-right: 2%;
       background-color: transparent;
@@ -303,8 +300,9 @@
     }
   }
   .slider .slider__slide--space .slider__info--third {
-    width: 150px;
-    margin-left: calc(100vw - 510px - 257px);
+    width: 245px;
+    margin-right: 20px;
+    //margin-left: calc(100vw - 510px - 257px);
     padding-top: 65px;
   }
   .slider__info-words {
@@ -327,12 +325,59 @@
   .slider__slide .slider__btn {
     margin-top: 40px;
   }
+  .slider__slide.slider__slide--space .slider__btn {
+    margin-top: 135px;
+    margin-right: auto;
+
+  }
 }
 
 //Write styles for tablet (less than 1024px)
 @media (max-width: @lowWidth) {
+  .slider__info {
+    font-size: 14px;
+    line-height: 20px;
+    width: 230px;
+
+    &--first {
+      width: 150px;
+      margin-left: calc(100vw - 510px - 257px);
+    }
+    &--second {
+      margin-left: calc(100vw - 510px - 257px);
+    }
+  }
+
+  .slider__slide-car-pic {
+    right: calc(((-100vw + 1280px)/2) - 800px);
+    margin-top: 0;
+    &--3 {
+      //right: calc(((-100vw + 9px + 1280px)/2) - 780px);
+      img& {
+        display: none;
+
+      }
+    }
+  }
+
+  .slider__slide--space .slider__info {
+    width: 230px;
+  }
+
+  .slider .slider__slide--space .slider__info--third {
+    width: 150px;
+    margin-left: calc(100vw - 510px - 257px);
+    padding-top: 65px;
+  }
+  .slider__slide.slider__slide--space .slider__btn {
+    margin-top: 40px;
+    margin-right: 0;
+
+  }
 
 }
+
+
 
 
 //Write all styles for mobile
