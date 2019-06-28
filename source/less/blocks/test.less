@@ -584,7 +584,7 @@
 
 }
 
-//Write all styles for tablet
+//Write all styles for tablet-desctop(less than 1280px)
 @media (max-width: @mediumWidth) {
   .test {
   }
@@ -594,10 +594,39 @@
   .test__subimt-wrapper--last {
     width: 55%;
   }
+
+  .test__input-aria {
+    &--equal-size {
+      width: calc((100% - 30px)/4);
+
+    }
+  }
+
+}
+
+///Write styles for tablet (less than 1024px)
+@media (max-width: @lowWidth) {
+  .test__input-aria {
+    &--equal-size {
+      width: calc((100% - 30px)/3);
+
+    }
+  }
+  .test__form {
+    padding: 0 14px;
+  }
+
 }
 
 //Write all styles for mobile
 @media (max-width: @tabletWidth) {
   .test {
   }
+  .test__input-aria {
+    &--equal-size {
+      width: calc((100% - 30px)/1);
+
+    }
+  }
+
 }
