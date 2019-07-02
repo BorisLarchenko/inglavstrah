@@ -151,12 +151,12 @@
 
     //5 first block working with 5-1 step special block as there are two 5 steps=======================
     //find next step div in form
-    const formStep5Next = form.querySelector('.test__form-wrapper:nth-child(7)');
+    const formStep5Next = form.querySelector('.test__form-wrapper:nth-child(6)');
     //find forward button in current step div
     const buttonForward5 = form.querySelector('.test__form-wrapper:nth-child(6) .test__btn');
 
     // add evt listener on forward button click to go to the current step div
-    buttonForward5.addEventListener('click', function (evt) {
+   /* buttonForward5.addEventListener('click', function (evt) {
       evt.preventDefault();
       formStep5.classList.remove('test__form-step5');
       formStep5Next.classList.add('test__form-step5');
@@ -170,15 +170,15 @@
       evt.preventDefault();
       formStep5.classList.remove('test__form-step5');
       formStep4.classList.add('test__form-step4');
-    });
+    });*/
     //==========================================
 
 
-    //5next block working with 5-2 step =======================
+    //5next block working with 5-2 step for real it is 5-1 step =======================
     //find next step div in form
     const formStep6 = form.querySelector('.test__form-wrapper:nth-child(8)');
     //find forward button in current step div
-    const buttonForward5Next = form.querySelector('.test__form-wrapper:nth-child(7) .test__btn');
+    const buttonForward5Next = form.querySelector('.test__form-wrapper:nth-child(6) .test__btn');
 
 // add evt listener on forward button click to go to the current step div
     buttonForward5Next.addEventListener('click', function (evt) {
@@ -188,7 +188,7 @@
     });
 
 //  find back button in current step div
-    const buttonBack5Next = form.querySelector('.test__form-wrapper:nth-child(7) .btn-back');
+    const buttonBack5Next = form.querySelector('.test__form-wrapper:nth-child(6) .btn-back');
 
     //add evt listener on backward button ckick to go to the prev step div
     buttonBack5Next.addEventListener('click', function (evt) {
