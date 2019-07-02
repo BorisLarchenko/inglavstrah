@@ -18,6 +18,19 @@
       // you can use any ui transition
       transition: 'drop'
     });
+
+    $( function() {
+      $( "#slider-range-min" ).slider({
+        range: "min",
+        value: 37,
+        min: 1,
+        max: 700,
+        slide: function( event, ui ) {
+          $( "#amount" ).val( ui.value + "(руб)" );
+        }
+      });
+      $( "#amount" ).val( $( "#slider-range-min" ).slider( "value" ) + "(руб)" );
+    } );
     //find full form in full-request page
     const form = document.querySelector('.full-request .test__form');
 //  find first step div in form

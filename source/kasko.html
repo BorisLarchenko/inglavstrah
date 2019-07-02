@@ -1006,6 +1006,9 @@
 						</p>
 					</div>
 				</div>
+
+
+<!--excluded block 5-2 step-->
 				<div class="test__form-wrapper">
 
 					<p class="test__pagination">1 <span class="test__pagination--grey">/ 4</span>
@@ -1178,10 +1181,13 @@
 						</p>
 					</div>
 				</div>
+
+
+
 				<div class="test__form-wrapper">
 					<p class="test__pagination">1 <span class="test__pagination--grey">/ 4</span>
 						<span class="full-request__pagination-title">Автомобиль</span></p>
-					<p class="test__step-title full-request__step-title">Период страхования</p>
+					<p class="test__step-title full-request__step-title">Стоимость автомобиля</p>
 
 					<ul class="pagination full-request__pages">
 						<li class="pagination__item full-request__item">
@@ -1214,10 +1220,18 @@
 
 
 					<div class="test__radio-wrapper full-request__radio-wrapper">
-						<label class="test__input-aria full-request__input-aria full-request__input-aria--step5">
-							<input class="test__radio" type="radio" name="term" value="one-month">
-							<span class="test__radio-circle">1 месяц</span>
-						</label>
+
+						<div class="test__range-wrapper" style="width: 30%;">
+							<div id="slider-range-min"></div>
+							<p>
+								<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+							</p>
+						</div>
+
+
+
+
+
 						<label class="test__input-aria full-request__input-aria full-request__input-aria--step5">
 							<input class="test__radio" type="radio" name="term" value="three-month">
 							<span class="test__radio-circle">3 месяца</span>
