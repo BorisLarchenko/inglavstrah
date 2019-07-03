@@ -20,16 +20,16 @@
     });
 
     $( function() {
-      $( "#slider-range-min" ).slider({
+      $( ".slider-range__min" ).slider({
         range: "min",
-        value: 37,
-        min: 1,
-        max: 700,
+        value: 800000,
+        min: 100000,
+        max: 10000000,
         slide: function( event, ui ) {
-          $( "#amount" ).val( ui.value + "(руб)" );
+          $( ".slider-range__amount" ).val( ui.value + `(руб.)` );
         }
       });
-      $( "#amount" ).val( $( "#slider-range-min" ).slider( "value" ) + "(руб)" );
+      $( ".slider-range__amount" ).val( $( ".slider-range__min" ).slider( "value" ) + `(руб.)` );
     } );
     //find full form in full-request page
     const form = document.querySelector('.full-request .test__form');
