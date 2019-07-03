@@ -1243,65 +1243,32 @@
 					</div>
 				</div>
 				<div class="test__form-wrapper">
-					<p class="test__pagination">1 <span class="test__pagination--grey">/ 4</span>
-						<span class="full-request__pagination-title">Автомобиль</span></p>
-					<p class="test__step-title full-request__step-title">Регистрация автомобиля</p>
+					<p class="test__pagination">2 <span class="test__pagination--grey">/ 4</span>
+						<span class="full-request__pagination-title">Параметры</span></p>
+					<p class="test__step-title full-request__step-title">Спутниковая система</p>
 
 					<ul class="pagination full-request__pages">
 						<li class="pagination__item full-request__item">
-							<button class="btn--grey full-request__btn-back" type="button">Автомобиль:  Toyota</button>
-							<button class="modal__close close--full-pagination">
 
-								<span class="visually-hidden">Выбрать другую марку автомобиля</span>
-								<include src="build/img/icons/close.svg"></include>
-							</button>
 						</li>
-						<li class="pagination__item full-request__item">
-							<button class="btn--grey full-request__btn-back" type="button">2006</button>
-						</li>
-						<li class="pagination__item full-request__item">
-							<button class="btn--grey full-request__btn-back" type="button">Corolla</button>
-						</li>
-						<li class="pagination__item full-request__item">
-							<button class="btn--grey full-request__btn-back" type="button">1.6 л.</button>
-						</li>
-						<li class="pagination__item full-request__item">
-							<button class="btn--grey full-request__btn-back" type="button">100 л.с.</button>
-						</li>
-						<li class="pagination__item full-request__item">
-							<button class="btn--grey full-request__btn-back" type="button">Хэтчбек</button>
-						</li>
-						<li class="pagination__item full-request__item">
-							<button class="btn--grey full-request__btn-back" type="button">Автоматическая</button>
-						</li>
-						<li class="pagination__item full-request__item">
-							<button class="btn--grey full-request__btn-back" type="button">Страхование: 6 месяцев</button>
-							<button class="modal__close close--full-pagination">
-								<span class="visually-hidden">Выбрать другой период стахования</span>
-								<include src="build/img/icons/close.svg"></include>
-							</button>
-						</li>
+
 					</ul>
 
 
 					<div class="test__radio-wrapper full-request__radio-wrapper">
 						<label class="test__input-aria full-request__input-aria full-request__input-aria--step5">
-							<input class="test__radio" type="radio" name="region" value="Voronezh">
-							<span class="test__radio-circle">Воронеж</span>
-						</label>
-						<label class="test__input-aria full-request__input-aria full-request__input-aria--step5">
-							<input class="test__radio" type="radio" name="region" value="Krasnodar">
-							<span class="test__radio-circle">Краснодар</span>
+							<input class="test__radio" type="radio" name="satellite" value="No">
+							<span class="test__radio-circle">Нет</span>
 						</label>
 
 						<label class="test__input-aria full-request__input-aria">
-							<input class="test__radio" type="radio" name="region">
+							<input class="test__radio" type="radio" name="satellite">
 							<span class="test__radio-circle"></span>
 							<select class="ui dropdown not-filled full-request__form-select full-request__form-list" name="additional-mark">
-								<option value="">Другой регион</option>
-								<option value="Брянск, Россия">Брянск, Россия</option>
-								<option value="Брянск-Льговский, Россия">Брянск-Льговский, Россия"</option>
-								<option value="Брянская область, Россия">Брянская область, Россия</option>
+								<option value="">Есть</option>
+								<option value="StarLine">StarLine</option>
+								<option value="Pandora">Pandora</option>
+								<option value="MS Грифон">MS Грифон</option>
 							</select>
 						</label>
 
@@ -1319,53 +1286,163 @@
 						</p>
 					</div>
 				</div>
+<!--I have copied and inserted this block-->
+				<div class="test__form-wrapper">
+					<p class="test__pagination">2 <span class="test__pagination--grey">/ 4</span>
+						<span class="full-request__pagination-title">Параметры</span></p>
+					<p class="test__step-title full-request__step-title">Автомобиль в кредит</p>
+
+					<ul class="pagination full-request__pages">
+						<li class="pagination__item full-request__item">
+							Без спутниковой сигн.
+						</li>
+
+					</ul>
+
+
+					<div class="test__radio-wrapper full-request__radio-wrapper">
+						<label class="test__input-aria full-request__input-aria full-request__input-aria--step5">
+							<input class="test__radio" type="radio" name="credit" value="No">
+							<span class="test__radio-circle">Нет</span>
+						</label>
+
+						<label class="test__input-aria full-request__input-aria">
+							<input class="test__radio" type="radio" name="credit">
+							<span class="test__radio-circle"></span>
+							<select class="ui dropdown not-filled full-request__form-select full-request__form-list" name="additional-mark">
+								<option value="">Да</option>
+								<option value="StarLine">Сбербанк России</option>
+								<option value="Pandora">ВТБ</option>
+								<option value="MS Грифон">Газпромбанк</option>
+							</select>
+						</label>
+
+					</div>
+
+					<div class="test__btn-price-wrapper">
+						<div class="test__btn-wrapper full-request__btn-wrapper">
+							<button class="btn test__btn" type="button">Следующий шаг</button>
+							<button class="btn-back test__btn-back" type="button">Шаг назад</button>
+						</div>
+
+						<p class="main__test-info test__info">
+							<span class="main__test-price test__price">2000<span class="main__test-price-sign">₽</span></span>
+							<span class="main__test-words test__words"> Заполните данные и получите скидку на полис КАСКО</span>
+						</p>
+					</div>
+				</div>
+<!--I have copied and inserted this block-->
+				<div class="test__form-wrapper">
+					<p class="test__pagination">2 <span class="test__pagination--grey">/ 4</span>
+						<span class="full-request__pagination-title">Параметры</span></p>
+					<p class="test__step-title full-request__step-title">Подлежал ли автомобиль страхованию </p>
+
+					<ul class="pagination full-request__pages">
+						<li class="pagination__item full-request__item">
+							Без спутниковой сигн.
+						</li>
+						<li class="pagination__item full-request__item">
+							Кредит:  Абсолют Банк.
+						</li>
+
+					</ul>
+
+
+					<div class="test__radio-wrapper full-request__radio-wrapper">
+						<label class="test__input-aria full-request__input-aria full-request__input-aria--step5">
+							<input class="test__radio" type="radio" name="insurance" value="No">
+							<span class="test__radio-circle">Нет</span>
+						</label>
+
+						<label class="test__input-aria full-request__input-aria">
+							<input class="test__radio" type="radio" name="insurance">
+							<span class="test__radio-circle"></span>
+							<select class="ui dropdown not-filled full-request__form-select full-request__form-list" name="additional-mark">
+								<option value="">Да</option>
+								<option value="SBR">Сбербанк Страхование</option>
+								<option value="VTB">ВТБ Страхование</option>
+								<option value="Gas">Газпромбанк Страхование</option>
+							</select>
+						</label>
+
+					</div>
+
+					<div class="test__btn-price-wrapper">
+						<div class="test__btn-wrapper full-request__btn-wrapper">
+							<button class="btn test__btn" type="button">Следующий шаг</button>
+							<button class="btn-back test__btn-back" type="button">Шаг назад</button>
+						</div>
+
+						<p class="main__test-info test__info">
+							<span class="main__test-price test__price">2000<span class="main__test-price-sign">₽</span></span>
+							<span class="main__test-words test__words"> Заполните данные и получите скидку на полис КАСКО</span>
+						</p>
+					</div>
+				</div>
+<!--I have copied and inserted this block-->
+				<div class="test__form-wrapper">
+					<p class="test__pagination">2 <span class="test__pagination--grey">/ 4</span>
+						<span class="full-request__pagination-title">Параметры</span></p>
+					<p class="test__step-title full-request__step-title">Были ли страховые случаи </p>
+
+					<ul class="pagination full-request__pages">
+						<li class="pagination__item full-request__item">
+							Без спутниковой сигн.
+						</li>
+						<li class="pagination__item full-request__item">
+							Кредит:  Абсолют Банк.
+						</li>
+						<li class="pagination__item full-request__item">
+							Страхование: Абсолют Страхование
+						</li>
+
+					</ul>
+
+
+					<div class="test__radio-wrapper full-request__radio-wrapper">
+						<label class="test__input-aria full-request__input-aria full-request__input-aria--step5">
+							<input class="test__radio" type="radio" name="insurance-cases" value="No">
+							<span class="test__radio-circle">Нет</span>
+						</label>
+
+						<label class="test__input-aria full-request__input-aria full-request__input-aria--step5">
+							<input class="test__radio" type="radio" name="insurance-cases" value="Yes">
+							<span class="test__radio-circle">Да</span>
+						</label>
+
+					</div>
+
+					<div class="test__btn-price-wrapper">
+						<div class="test__btn-wrapper full-request__btn-wrapper">
+							<button class="btn test__btn" type="button">Следующий шаг</button>
+							<button class="btn-back test__btn-back" type="button">Шаг назад</button>
+						</div>
+
+						<p class="main__test-info test__info">
+							<span class="main__test-price test__price">2000<span class="main__test-price-sign">₽</span></span>
+							<span class="main__test-words test__words"> Заполните данные и получите скидку на полис КАСКО</span>
+						</p>
+					</div>
+				</div>
+
+
+<!--This step is needed to be moved down-->
 				<div class="test__form-wrapper ">
-					<p class="test__pagination">1 <span class="test__pagination--grey">/ 4</span>
-						<span class="full-request__pagination-title">Автомобиль</span></p>
+					<p class="test__pagination">2 <span class="test__pagination--grey">/ 4</span>
+						<span class="full-request__pagination-title">Параметры</span></p>
 					<p class="test__step-title full-request__step-title">Регион регистрации собственника по паспорту</p>
 
 					<ul class="pagination full-request__pages">
 						<li class="pagination__item full-request__item">
-							<button class="btn--grey full-request__btn-back" type="button">Автомобиль:  Toyota</button>
-							<button class="modal__close close--full-pagination">
+							<button class="btn--grey full-request__btn-back" type="button">Без спутниковой сигн. </button>
 
-								<span class="visually-hidden">Выбрать другую марку автомобиля</span>
-								<include src="build/img/icons/close.svg"></include>
-							</button>
 						</li>
 						<li class="pagination__item full-request__item">
-							<button class="btn--grey full-request__btn-back" type="button">2006</button>
+							<button class="btn--grey full-request__btn-back" type="button">Кредит: Абсолют Банк.</button>
 						</li>
 						<li class="pagination__item full-request__item">
-							<button class="btn--grey full-request__btn-back" type="button">Corolla</button>
+							<button class="btn--grey full-request__btn-back" type="button">Страхование: Абсолют Страхование,  с убытками</button>
 						</li>
-						<li class="pagination__item full-request__item">
-							<button class="btn--grey full-request__btn-back" type="button">1.6 л.</button>
-						</li>
-						<li class="pagination__item full-request__item">
-							<button class="btn--grey full-request__btn-back" type="button">100 л.с.</button>
-						</li>
-						<li class="pagination__item full-request__item">
-							<button class="btn--grey full-request__btn-back" type="button">Хэтчбек</button>
-						</li>
-						<li class="pagination__item full-request__item">
-							<button class="btn--grey full-request__btn-back" type="button">Автоматическая</button>
-						</li>
-						<li class="pagination__item full-request__item">
-							<button class="btn--grey full-request__btn-back" type="button">Страхование: 6 месяцев</button>
-							<button class="modal__close close--full-pagination">
-								<span class="visually-hidden">Выбрать другой период стахования</span>
-								<include src="build/img/icons/close.svg"></include>
-							</button>
-						</li>
-						<li class="pagination__item full-request__item">
-							<button class="btn--grey full-request__btn-back" type="button">рег. Краснодар</button>
-						</li>
-						<!--						<li class="pagination__item full-request__item">-->
-						<!--							<button class="btn&#45;&#45;grey full-request__btn-back" type="button">обсл. Краснодар</button>-->
-						<!--						</li>-->
-
-
 					</ul>
 
 
