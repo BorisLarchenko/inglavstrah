@@ -31,6 +31,110 @@
       });
       $( ".slider-range__amount" ).val( $( ".slider-range__min" ).slider( "value" ) + `(руб.)` );
     } );
+    $( function() {
+      $( ".slider-range__min1" ).slider({
+        range: "min",
+        value: 22,
+        min: 16,
+        max: 99,
+        slide: function( event, ui ) {
+          $( ".slider-range__amount1" ).val( ui.value  );
+        }
+      });
+      $( ".slider-range__amount1" ).val( $( ".slider-range__min1" ).slider( "value" )  );
+    } );
+
+    $( function() {
+      $( ".slider-range__min2" ).slider({
+        range: "min",
+        value: 5,
+        min: 1,
+        max: 90,
+        slide: function( event, ui ) {
+          $( ".slider-range__amount2" ).val( ui.value );
+        }
+      });
+      $( ".slider-range__amount2" ).val( $( ".slider-range__min2" ).slider( "value" ) );
+    } );
+    $( function() {
+      $( ".slider-range__min3" ).slider({
+        range: "min",
+        value: 21,
+        min: 16,
+        max: 90,
+        slide: function( event, ui ) {
+          $( ".slider-range__amount3" ).val( ui.value );
+        }
+      });
+      $( ".slider-range__amount3" ).val( $( ".slider-range__min3" ).slider( "value" ) );
+    } );
+    $( function() {
+      $( ".slider-range__min4" ).slider({
+        range: "min",
+        value: 5,
+        min: 1,
+        max: 90,
+        slide: function( event, ui ) {
+          $( ".slider-range__amount4" ).val( ui.value );
+        }
+      });
+      $( ".slider-range__amount4" ).val( $( ".slider-range__min4" ).slider( "value" ) );
+    } );
+    $( function() {
+      $( ".slider-range__min5" ).slider({
+        range: "min",
+        value: 1,
+        min: 0,
+        max: 10,
+        slide: function( event, ui ) {
+          $( ".slider-range__amount5" ).val( ui.value );
+        }
+      });
+      $( ".slider-range__amount5" ).val( $( ".slider-range__min5" ).slider( "value" ) );
+    } );
+
+
+
+
+    $( function() {
+      $( ".slider-range__min6" ).slider({
+        range: "min",
+        value: 21,
+        min: 16,
+        max: 90,
+        slide: function( event, ui ) {
+          $( ".slider-range__amount6" ).val( ui.value );
+        }
+      });
+      $( ".slider-range__amount6" ).val( $( ".slider-range__min6" ).slider( "value" ) );
+    } );
+    $( function() {
+      $( ".slider-range__min7" ).slider({
+        range: "min",
+        value: 5,
+        min: 1,
+        max: 90,
+        slide: function( event, ui ) {
+          $( ".slider-range__amount7" ).val( ui.value );
+        }
+      });
+      $( ".slider-range__amount7" ).val( $( ".slider-range__min7" ).slider( "value" ) );
+    } );
+    $( function() {
+      $( ".slider-range__min8" ).slider({
+        range: "min",
+        value: 1,
+        min: 0,
+        max: 10,
+        slide: function( event, ui ) {
+          $( ".slider-range__amount8" ).val( ui.value );
+        }
+      });
+      $( ".slider-range__amount8" ).val( $( ".slider-range__min8" ).slider( "value" ) );
+    } );
+
+
+
     //find full form in full-request page
     const form = document.querySelector('.full-request .test__form');
 //  find first step div in form

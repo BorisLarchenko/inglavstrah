@@ -262,6 +262,59 @@
   }
 }
 
+.main--kasko .test__form {
+
+
+
+  .test__form-step1::after {
+    .step-length(1; 100%/32);
+  }
+  .test__form-step2::after {
+    .step-length(2; 100%/32);
+  }
+  .test__form-step3::after {
+    .step-length(3; 100%/32);
+  }
+  .test__form-step4::after {
+    .step-length(4; 100%/32);
+  }
+  .test__form-step5::after {
+    .step-length(5; 100%/32);
+  }
+  .test__form-step6::after {
+    .step-length(6; 100%/32);
+  }
+  .test__form-step7::after {
+    .step-length(7; 100%/32);
+    border-radius: 0 0 0 20px;
+  }
+  .test__form-step8::after {
+    .step-length(8; 100%/32);
+    border-radius: 0 0 0 20px;
+  }
+
+  .test__form-step9::after {
+    .step-length(10; 100%/32);
+    border-radius: 0 0 0 20px;
+  }
+
+  .test__form-step10::after {
+    .step-length(12; 100%/32);
+    border-radius: 0 0 0 20px;
+  }
+
+  .test__form-step11::after {
+    .step-length(14; 100%/32);
+    border-radius: 0 0 0 20px;
+  }
+
+  .test__form-step12::after {
+    .step-length(15; 100%/32);
+    border-radius: 0 0 0 20px;
+  }
+
+}
+
 .test__pagination {
   display: flex;
   font-family: 'cuprumbold', 'Arial', sans-serif;
@@ -564,6 +617,37 @@
   fill: @yellow-color;
 }
 
+.test__rest-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 35px;
+
+  min-height: 100px;
+  .test__radiobut-wrapper {
+    width: 28%;}
+  .test__input-aria--full {
+    padding: 5px 40px;
+  }
+
+
+}
+.test__price--absolute {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  font-size: 90px;
+  letter-spacing: -0.05em;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  .main__test-price-sign {
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    font-size: 70px;
+  }
+}
+
+.test__thanks-text--big {
+  padding-left: 200px;
+}
 //Write all styles for small desktop and big tablet
 @media (max-width: @desctopWidth)  {
   .test {
@@ -670,6 +754,17 @@
   .test__thanks-text {
     margin-top: 70px;
     font-size: 16px;
+  }
+  .test__price--absolute {
+    top: 30px;
+    font-family: 'Cuprum', 'Arial', sans-serif;
+    .main__test-price-sign {
+      font-family: 'Cuprum', 'Arial', sans-serif;
+      font-size: 40px;
+    }
+  }
+  .test__thanks-text--big {
+    padding-left: 150px;
   }
 }
 
