@@ -495,7 +495,7 @@
     buttonForward13.addEventListener('click', function (evt) {
       evt.preventDefault();
       formStep13.classList.remove('test__form-step13');
-      formStep13Second.classList.add('test__form-step13');
+      formStep13Second.classList.add('test__form-step14');
     });
 
 //  find back button in current step div
@@ -518,8 +518,8 @@
 // add evt listener on forward button click to go to the current step div
     buttonForward13Second.addEventListener('click', function (evt) {
       evt.preventDefault();
-      formStep13Second.classList.remove('test__form-step13');
-      formStep14.classList.add('test__form-step14');
+      formStep13Second.classList.remove('test__form-step14');
+      formStep14.classList.add('test__form-step15');
     });
 
 //  find back button in current step div
@@ -528,7 +528,7 @@
     //add evt listener on backward button ckick to go to the prev step div
     buttonBack13Second.addEventListener('click', function (evt) {
       evt.preventDefault();
-      formStep13Second.classList.remove('test__form-step13');
+      formStep13Second.classList.remove('test__form-step14');
       formStep13.classList.add('test__form-step13');
     });
 //==========================================
@@ -542,8 +542,8 @@
 // add evt listener on forward button click to go to the current step div
     buttonForward14.addEventListener('click', function (evt) {
       evt.preventDefault();
-      formStep14.classList.remove('test__form-step14');
-      formStep15.classList.add('test__form-step15');
+      formStep14.classList.remove('test__form-step15');
+      formStep15.classList.add('test__form-step16');
     });
 
 //  find back button in current step div
@@ -552,8 +552,8 @@
     //add evt listener on backward button ckick to go to the prev step div
     buttonBack14.addEventListener('click', function (evt) {
       evt.preventDefault();
-      formStep14.classList.remove('test__form-step14');
-      formStep13Second.classList.add('test__form-step13');
+      formStep14.classList.remove('test__form-step15');
+      formStep13Second.classList.add('test__form-step14');
     });
 //==========================================
     //16 block working with 15 step =======================
@@ -565,8 +565,8 @@
 // add evt listener on forward button click to go to the current step div
     buttonForward15.addEventListener('click', function (evt) {
       evt.preventDefault();
-      formStep15.classList.remove('test__form-step15');
-      formStep16.classList.add('test__form-step16');
+      formStep15.classList.remove('test__form-step16');
+      formStep16.classList.add('test__form-step17');
     });
 
 //  find back button in current step div
@@ -575,8 +575,8 @@
     //add evt listener on backward button ckick to go to the prev step div
     buttonBack15.addEventListener('click', function (evt) {
       evt.preventDefault();
-      formStep15.classList.remove('test__form-step15');
-      formStep14.classList.add('test__form-step14');
+      formStep15.classList.remove('test__form-step16');
+      formStep14.classList.add('test__form-step15');
     });
 //==========================================
 
@@ -590,8 +590,8 @@
 // add evt listener on forward button click to go to the current step div
     buttonForward16.addEventListener('click', function (evt) {
       evt.preventDefault();
-      formStep16.classList.remove('test__form-step16');
-      formStep16Next.classList.add('test__form-step16');
+      formStep16.classList.remove('test__form-step17');
+      formStep16Next.classList.add('test__form-step18');
     });
 
 //  find back button in current step div
@@ -601,10 +601,10 @@
     buttonBack16.addEventListener('click', function (evt) {
       evt.preventDefault();
       console.log(buttonBack16);
-      formStep16.classList.remove('test__form-step16');
-      formStep15.classList.add('test__form-step15');
+      formStep16.classList.remove('test__form-step17');
+      formStep15.classList.add('test__form-step16');
     });
-//==========================================
+//==========================================stop here
 
     //==========================================
     //19 block working with 16-2 step =======================
@@ -616,95 +616,11 @@
 // add evt listener on forward button click to go to the current step div
     buttonForward16Next.addEventListener('click', function (evt) {
       evt.preventDefault();
-      formStep16Next.classList.remove('test__form-step16');
-      formStep17.classList.add('test__form-step17');
+      formStep16Next.classList.remove('test__form-step18');
+      formStep17.classList.add('test__form-step19');
     });
 
-//  find back button in current step div
-    const buttonBack16Next = form.querySelector('.test__form-wrapper:nth-child(20) .test__btn-wrapper .btn-back');
-
-    //add evt listener on backward button ckick to go to the prev step div
-    buttonBack16Next.addEventListener('click', function (evt) {
-      evt.preventDefault();
-      formStep16Next.classList.remove('test__form-step16');
-      formStep16.classList.add('test__form-step16');
-    });
-//==========================================
-    //==========================================
-    //20 block working with 17 step =======================
-    //find next step div in form
-    const formStep18 = form.querySelector('.test__form-wrapper:nth-child(22)');
-    //find forward button in current step div
-    const buttonForward17 = form.querySelector('.test__form-wrapper:nth-child(21) .test__btn');
-
-// add evt listener on forward button click to go to the current step div
-    buttonForward17.addEventListener('click', function (evt) {
-      evt.preventDefault();
-      formStep17.classList.remove('test__form-step17');
-      formStep18.classList.add('test__form-step18');
-    });
-
-//  find back button in current step div
-    const buttonBack17 = form.querySelector('.test__form-wrapper:nth-child(21) .btn-back');
-
-    //add evt listener on backward button ckick to go to the prev step div
-    buttonBack17.addEventListener('click', function (evt) {
-      evt.preventDefault();
-      formStep17.classList.remove('test__form-step17');
-      formStep16Next.classList.add('test__form-step16');
-    });
-//==========================================
-    //==========================================
-    //21 block working with 18-1 step =======================
-    //find next step div in form
-    const formStep18Second = form.querySelector('.test__form-wrapper:nth-child(23)');
-    //find forward button in current step div
-    const buttonForward18 = form.querySelector('.test__form-wrapper:nth-child(22) .test__btn');
-
-// add evt listener on forward button click to go to the current step div
-    buttonForward18.addEventListener('click', function (evt) {
-      evt.preventDefault();
-      formStep18.classList.remove('test__form-step18');
-      formStep18Second.classList.add('test__form-step18');
-    });
-
-//  find back button in current step div
-    const buttonBack18 = form.querySelector('.test__form-wrapper:nth-child(22) .btn-back');
-
-    //add evt listener on backward button ckick to go to the prev step div
-    buttonBack18.addEventListener('click', function (evt) {
-      evt.preventDefault();
-      formStep18.classList.remove('test__form-step18');
-      formStep17.classList.add('test__form-step17');
-    });
-//==========================================
-
-    //==========================================
-    //22 block working with 18-2 step =======================
-    //find next step div in form
-    const formStep18Third = form.querySelector('.test__form-wrapper:nth-child(24)');
-    //find forward button in current step div
-    const buttonForward18Second = form.querySelector('.test__form-wrapper:nth-child(23) .test__btn');
-
-// add evt listener on forward button click to go to the current step div
-    buttonForward18Second.addEventListener('click', function (evt) {
-      evt.preventDefault();
-      formStep18Second.classList.remove('test__form-step18');
-      formStep18Third.classList.add('test__form-step18');
-    });
-
-//  find back button in current step div
-    const buttonBack18Second = form.querySelector('.test__form-wrapper:nth-child(23) .btn-back');
-
-    //add evt listener on backward button ckick to go to the prev step div
-    buttonBack18Second.addEventListener('click', function (evt) {
-      evt.preventDefault();
-      formStep18Second.classList.remove('test__form-step18');
-      formStep18.classList.add('test__form-step18');
-
-
-    });
-//==========================================
   }
+
   window.isElementPresent('.main--kasko', testKasko);
 })();
