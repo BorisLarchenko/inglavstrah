@@ -94,6 +94,16 @@
     background-size: @dot-space @dot-space;
   }
 }
+
+.main--kasko-onepage .main__form-test {
+  &--kbm {
+    background: url("../img/13-kasko/kasko-bg.png") no-repeat right 10% top 50%,
+    url("../img/02-form-main/formpage-bg-small.png") no-repeat center;
+    background-size: 645px 262px, cover;
+    padding: 200px 0;
+  }
+}
+
 .main__form-test--kbm .main__btn{
   margin: 0;
 }
@@ -480,6 +490,7 @@
   }
 
 
+
   .main__title {
     &--nowidth {
       width: auto;
@@ -515,6 +526,15 @@
 //Write all styles for tablet-desctop(less than 1280px)
 @media (max-width: @mediumWidth)  {
   .main {
+  }
+
+  .main--kasko-onepage .main__form-test {
+    &--kbm {
+      background: url("../img/13-kasko/kasko-bg.png") no-repeat right -10% top 50%,
+      url("../img/02-form-main/formpage-bg-small.png") no-repeat center;
+      background-size: 645px 262px, cover;
+      padding: 200px 0;
+    }
   }
   .main__test-wrapper {
     padding-bottom: 70px;
@@ -678,7 +698,14 @@
       font-size: 50px;
     }
   }
-
+  .main--kasko-onepage .main__form-test {
+    &--kbm {
+      background: url("../img/13-kasko/kasko-bg.png") no-repeat right -40% top 50%,
+      url("../img/02-form-main/formpage-bg-small.png") no-repeat center;
+      background-size: 645px 262px, cover;
+      padding: 200px 0;
+    }
+  }
 }
 
 //Write all styles for mobile
