@@ -52,26 +52,51 @@
 //  find first step div with full info about cars
     const formStep1Full = form.querySelector('.test__form-step1 + .test__form-wrapper');
 //  find button .btn--all-cars in formStep1Full
-    const btnShowLess = formStep1Full.querySelector('.btn--all-cars');
-
-//  add evt listener on btnShowFull click
+    //  add evt listener on btnShowFull click
     btnShowFull.addEventListener('click', function (evt) {
       evt.preventDefault();
       formStep1.classList.remove('test__form-step1');
       formStep1Full.classList.add('test__form-step1');
     });
 
+
+//  find second step div in form
+    const formStep2 = form.querySelector('.test__form-wrapper:nth-child(3)');
+
+
+//----- dlock that should be modified ------------------------------
+//     it is not needed now
+    const btnShowBack = formStep1Full.querySelector('.btn-back');
 //  add evt listener on btnShowLess click
-    btnShowLess.addEventListener('click', function (evt) {
+    btnShowBack.addEventListener('click', function (evt) {
       evt.preventDefault();
       formStep1.classList.add('test__form-step1');
       formStep1Full.classList.remove('test__form-step1');
     });
+    //  find all buttons with car`s names in formStep1
+    const btnShowForward = formStep1Full.querySelector('.test__btn');
+    // add evt listener on forward button click to go to the second step div
+    console.log(btnShowForward);
+    btnShowForward.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      formStep1Full.classList.remove('test__form-step1');
+      formStep2.classList.add('test__form-step2');
+    });
+
+
+
+//    ----- end of modified block -------------------------------------
+
+
+
+
+
+
+
 
 
     // add ability to go to the second step clicking every car in list
-//  find second step div in form
-    const formStep2 = form.querySelector('.test__form-wrapper:nth-child(3)');
+
 //  find all buttons with car`s names in formStep1
     const carNameArr = formStep1.querySelectorAll('.btn--data');
 
@@ -84,17 +109,7 @@
       });
     };
 
-    //  find all buttons with car`s names in formStep1
-    const carNameArrFull = formStep1Full.querySelectorAll('.btn--data');
 
-// add evt listener on all carNameArr elements click to go to the second step
-    for (let i = 0; i < carNameArrFull.length; i++) {
-      carNameArrFull[i].addEventListener('click', function (evt) {
-        evt.preventDefault();
-        formStep2.classList.add('test__form-step2');
-        formStep1Full.classList.remove('test__form-step1');
-      });
-    };
 
     //2 block working with second step =======================
     //find third step div in form

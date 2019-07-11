@@ -14,10 +14,7 @@
     });
 
 
-    $('.ui.dropdown').dropdown({
-      // you can use any ui transition
-      transition: 'drop'
-    });
+    $('.ui.dropdown').dropdown();
 
     $( function() {
       $( ".slider-range__min" ).slider({
