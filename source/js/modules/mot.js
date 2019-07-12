@@ -31,7 +31,7 @@
 
     const containerFirst = elem.querySelector('.container--mot');
     const containerSecond = elem.querySelector('.container--mot + .container');
-    const button1 = elem.querySelector('.request__btn');
+    const button1 = elem.querySelector('.modal__reg-link.request__mark-link');
     console.log(containerFirst);
     console.log(button1);
     button1.addEventListener('click', function (evt) {
