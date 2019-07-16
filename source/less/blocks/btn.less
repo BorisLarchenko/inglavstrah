@@ -155,3 +155,54 @@
       fill: @gray-color;
     }
   }
+
+  .btn-back--sign {
+    display: none;
+  }
+
+  //Write all styles for big-tablet and small desktop
+  @media (max-width: @desctopWidth)  {}
+  //Write all styles for tablet-desctop(less than 1280px)
+  @media (max-width: @mediumWidth)  {
+
+  }
+  ///Write styles for tablet (less than 1024px)
+  @media (max-width: @lowWidth) {
+    .btn--all-cars {
+      font-size: 16px;
+    }
+    .btn--grey {
+      font-size: 15px;
+    }
+    .btn--delete {
+      top: -5px;
+    }
+    .btn-back--text {
+      display: none;
+    }
+
+    .btn-back__svg{
+      fill: @gray-color;
+    }
+
+    .btn-back--sign {
+      display: block;
+      border-bottom: none;
+      &:hover {
+
+        .btn-back__svg{
+          fill: black;
+        }
+      }
+    }
+    .btn-back--nobord {
+      border-bottom: none;
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
+  //Write all styles for mobile
+  @media (max-width: @tabletWidth) {
+
+  }
