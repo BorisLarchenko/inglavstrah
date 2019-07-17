@@ -142,7 +142,9 @@
 //  find first step div with full info about cars
     const formStep1Full = form.querySelector('.test__form-step1 + .test__form-wrapper');
 //  find button .btn--all-cars in formStep1Full
-    const btnShowLess = formStep1Full.querySelector('.btn--all-cars');
+    const btnShowLess = formStep1Full.querySelector('.btn-back.btn-back--nobord');
+    //  find button .btn--all-cars in formStep1Full
+    const btnForward = formStep1Full.querySelector('.btn.test__btn.test__btn--kbm');
 
 //  add evt listener on btnShowFull click
     btnShowFull.addEventListener('click', function (evt) {
@@ -175,18 +177,16 @@
     }
     ;
 
-    //  find all buttons with car`s names in formStep1
-    const carNameArrFull = formStep1Full.querySelectorAll('.btn--data');
 
-// add evt listener on all carNameArr elements click to go to the second step
-    for (let i = 0; i < carNameArrFull.length; i++) {
-      carNameArrFull[i].addEventListener('click', function (evt) {
+
+// add evt listener on btnForward
+
+    btnForward.addEventListener('click', function (evt) {
         evt.preventDefault();
         formStep2.classList.add('test__form-step2');
         formStep1Full.classList.remove('test__form-step1');
       });
-    }
-    ;
+
 
 //  ===========================================================================
 
