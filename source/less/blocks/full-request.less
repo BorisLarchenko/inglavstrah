@@ -519,7 +519,16 @@ span.full-request__text {
 
 //Write all styles for tablet-desctop(less than 1280px)
 @media (max-width: @mediumWidth)  {
-  .full-request {}
+  .full-request__btn-wrapper .test__btn {
+    margin-right: 15px;
+  }
+  .full-request__btn-wrapper {
+    width: 100%;
+  }
+
+  .full-request__btn-wrapper .form__personal {
+    margin-right: 15px;
+  }
 }
 
 ///Write styles for tablet (less than 1024px)
@@ -564,6 +573,9 @@ span.full-request__text {
     left: 15px;
   }
 
+  .full-request__btn-wrapper {
+    width: 90%;
+  }
 }
 
 //Write all styles for mobile

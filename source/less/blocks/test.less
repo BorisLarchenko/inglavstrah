@@ -739,6 +739,22 @@
 
     }
   }
+  .test__btn {
+    font-size: 25px;
+    //border-radius: 0 22px 22px;
+    //&--kbm {
+    //  padding: 25px 115px;
+    //}
+    &--kbm-less {
+      padding: 25px 30px;
+    }
+    //&--kbm-super-less {
+    //  padding: 25px 20px;
+    //}
+    //&--form-less {
+    //  padding: 25px 55px;
+    //}
+  }
 
 }
 
@@ -746,10 +762,11 @@
 @media (max-width: @lowWidth) {
   .test__input-aria {
     &--equal-size {
-      width: calc((100% - 30px)/3);
+      width: calc((100% - 30px) / 3);
 
     }
   }
+
   .test__form {
     padding: 0 14px;
   }
@@ -757,115 +774,144 @@
   .test__info {
     width: 200px;
   }
+
   .test__price {
     font-size: 65px;
     line-height: 65px;
+
     .test__price-sign {
       font-size: 50px;
     }
   }
+
   .test__words {
     font-size: 14px;
     line-height: 16px;
   }
+
   .test__btn-wrapper {
     width: 300px;
   }
+
   .test__btn {
-    padding: 16px 35px;
+    padding: 16px 25px;
     font-size: 17px;
     border-radius: 0 22px 22px;
   }
+
   .test__input-aria {
     margin-right: 4%;
+
     &.test__input-aria--equal-size {
       padding-right: 0;
       margin-right: 0;
     }
   }
+
   .form__personal {
     width: 295px;
     font-size: 12px;
     line-height: 14px;
   }
+
   .form__personal-link {
     font-size: 12px;
     line-height: 14px;
   }
+
   .test__subimt-wrapper {
     width: 510px;
   }
+
   .test__subimt-wrapper--last {
     width: 370px;
   }
+
   .test__price-text {
     font-size: 16px;
     //line-height: 62px;
   }
+
   .test__thanks-text {
     margin-top: 70px;
     font-size: 16px;
   }
+
   .test__price--absolute {
     top: 30px;
     font-family: 'Cuprum', 'Arial', sans-serif;
+
     .main__test-price-sign {
       font-family: 'Cuprum', 'Arial', sans-serif;
       font-size: 40px;
     }
   }
+
   .test__thanks-text--big {
     padding-left: 150px;
   }
+
   .test__step-title {
     font-size: 30px;
     line-height: 50px;
   }
+
   .test__pagination {
     font-size: 16px;
     line-height: 50px;
   }
+
   .test__title {
     font-size: 20px;
     line-height: 35px;
   }
+
   .test__input-aria {
     padding: 15px 35px;
     font-size: 15px;
     line-height: 25px;
   }
+
   .test__radio-circle::before {
     margin-top: -10px;
     width: 20px;
     height: 20px;
   }
-  .test__radio:checked+.test__radio-circle::after {
+
+  .test__radio:checked + .test__radio-circle::after {
     margin-top: -4px;
     width: 8px;
     height: 8px;
   }
+
   .test__input-aria--chose {
     padding: 0;
   }
+
   .test__input-aria--chose .test__selection.ui.selection.dropdown {
     padding-left: 35px;
   }
+
   .ui.search.dropdown.not-filled.test__form-select {
     min-width: 320px;
   }
+
   .test__form-select {
     font-size: 15px;
     line-height: 18px;
     color: #000;
   }
+
   .test__form-select-wrapper--fixed {
     width: 320px;
   }
+
   .test__phone-text {
     font-size: 12px;
     line-height: 14px;
     color: #d9d9d9;
   }
+
   .full-request__info--gift .test__form-thanks-svg {
     position: absolute;
     top: 50%;
@@ -874,7 +920,6 @@
     width: 80px;
   }
 }
-
 //Write all styles for mobile
 @media (max-width: @tabletWidth) {
   .test {
