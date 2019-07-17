@@ -227,7 +227,14 @@
 
 //Write all styles for tablet
 @media (max-width: @mediumWidth)  {
-  .form {}
+
+}
+
+///Write styles for tablet (less than 1024px)
+@media (max-width: @lowWidth) {
+  .form__personal.form__personal--less {
+    width: 220px;
+  }
 }
 
 //Write all styles for mobile
