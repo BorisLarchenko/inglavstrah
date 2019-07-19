@@ -17,6 +17,8 @@
     // you can use any ui transition
     transition: 'drop'
   });
+  const div = document.querySelector('.full-request .test__form+.test__end-form-thanks');
+  console.log(div);
   //find full form in full-request page
   const form = document.querySelector('.full-request .test__form');
 //  find first step div in form
@@ -571,8 +573,8 @@
 // add evt listener on forward button click to go to the current step div
   buttonForward18Second.addEventListener('click', function (evt) {
     evt.preventDefault();
-    formStep18Second.classList.remove('test__form-step18');
-    formStep18Third.classList.add('test__form-step18');
+    form.classList.add('test__form--invisible');
+    div.classList.remove('test__form--invisible');
   });
 
 //  find back button in current step div
