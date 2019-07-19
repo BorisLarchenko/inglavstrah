@@ -160,4 +160,26 @@ for (let i = 0; i < allCloseButtons.length; i++) {
     overlay.classList.add('modal--active');
   });
 
+//  cb function for gifts.html
+  function clickGiftButton(elem) {
+    // find all buttons on gift.html
+    const buttonGiftArr = elem.querySelectorAll('.btn__modal--gifts');
+  //  find popup gift on modal-auth-reg.html
+    const popupGift = document.querySelector('.modal__overlay+.modal--enter.modal--gift');
+    const sectionPopupGift = popupGift.querySelector('.modal__forgot-pass.modal__forgot-pass--gift');
+    //  activate overlay, authWrap and auth while clicking login
+    for(let i = 0; i < buttonGiftArr.length; i++) {
+      buttonGiftArr[i].addEventListener('click', function (evt) {
+        evt.preventDefault();
+        overlay.classList.add('modal--active');
+        popupGift.classList.add('modal--active');
+        sectionPopupGift.classList.add('modal--active');
+      });
+
+    }
+
+  }
+
+  isElementPresent('.main__advantages-list--gifts', clickGiftButton);
+
 })();

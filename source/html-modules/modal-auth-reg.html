@@ -319,5 +319,25 @@
 </section>
 
 <!--Add/remove class .modal--active in order to show/hide overlay-->
-<div class="modal__overlay"></div>
+<div class="modal__overlay "></div>
+
+<div class="modal modal--enter modal--gift">
+	<!--Add/remove class .modal--active in order to show/hide auth-wrapper-->
+	<section class="modal__forgot-pass modal__forgot-pass--gift">
+		<p class="modal__gift-wrapper">
+			<include src="build/img/02-form-main/gift.svg"></include>
+		</p>
+
+		<p class="modal__pass-text">
+			Чтобы восстановить пароль, введите  номер телефона, который вы указывали при регистрации
+		</p>
+		<button class="btn btn__review btn__modal" type="submit">Оформить страховку</button>
+
+		<button class="modal__close close">
+
+			<span class="visually-hidden">Закрыть форму регистрации</span>
+			<include src="build/img/icons/close.svg"></include>
+		</button>
+	</section>
+</div>
 <!--Finish modal window registration layout-->
