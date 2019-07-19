@@ -1,0 +1,82 @@
+.insurance__page {
+  padding-top: 145px;
+  padding-bottom: 120px;
+  min-height: 800px;
+  background:
+          linear-gradient(90deg, @bg-color-white (@dot-space - @dot-size), transparent 1%) center,
+          linear-gradient(@bg-color-white (@dot-space - @dot-size), transparent 1%) center,
+          @dot-color;
+  background-size: @dot-space @dot-space;
+
+}
+
+.insurance__blocks-wrapper {
+  display: flex;
+  justify-content: space-between;
+  .insurance__step-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 0;
+    font-size: 24px;
+    line-height: 30px;
+    color: @new-blue;
+  }
+  .insurance__blocks-wrapper-right {
+    width: 31%;
+    min-height: 200px;
+    background-color: rgba(164, 45, 10, 0.27);
+    outline: 1px solid red;
+
+    .insurance__info {
+      margin-bottom: 24px;
+      padding: 25px 25px;
+      min-height: 370px;
+      box-shadow: 0 10px 28px 0 rgba(54,80,107,.5);
+      background-color: white;
+      outline: 1px solid green;
+    }
+  }
+  .insurance__blocks-wrapper-left {
+    width: 65%;
+    min-height: 200px;
+    background-color: rgba(164, 45, 10, 0.27);
+    outline: 1px solid red;
+    .insurance__info {
+      min-height: 480px;
+      box-shadow: 0 10px 28px 0 rgba(54,80,107,.5);
+      background-color: white;
+      outline: 1px solid green;
+
+    }
+  }
+  .insurance__cashback {
+    display: inline-block;
+    padding: 10px 10px;
+    font-family: 'robotomedium', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: @new-blue;
+    background-color: @new-weat;
+    border-radius: 5px;
+  }
+
+}
+
+
+
+
+//Write all styles for big-tablet and small desktop
+@media (max-width: @desctopWidth)  {}
+//Write all styles for tablet-desctop(less than 1280px)
+@media (max-width: @mediumWidth)  {
+
+}
+//Write styles for tablet (less than 1024px)
+@media (max-width: @lowWidth) {
+
+}
+
+//Write all styles for mobile
+@media (max-width: @tabletWidth) {
+
+}
