@@ -558,6 +558,9 @@
 .test__input-wrapper {
   display: block;
   margin-top: 35px;
+  &--up {
+    margin-top: 0;
+  }
 }
 
 .test__form-phone {
@@ -699,6 +702,48 @@
 .test__thanks-text--big {
   padding-left: 200px;
 }
+.test__insurance-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 40px;
+  .test__insurance-list {
+    width: 45%;
+    //background-color: greenyellow;
+    //outline: 1px solid red;
+    .test__insurance-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .test__price-text--icon {
+    padding-left: 50px;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      transform: translateY(-52%);
+      top: 50%;
+      width: 45px;
+      height: 45px;
+      //background-color: green;
+      background: url("../../img/02-form-main/logo1.png") center no-repeat;
+    }
+    &-two{
+      &:before {
+        background: url("../../img/02-form-main/logo2.png") center no-repeat;
+      }
+    }
+    &-three{
+      &:before {
+        background: url("../../img/02-form-main/logo3.png") center no-repeat;
+      }
+    }
+  }
+}
+
+
 //Write all styles for small desktop and big tablet
 @media (max-width: @desctopWidth)  {
   .test {
