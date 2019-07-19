@@ -24,8 +24,6 @@
   .insurance__blocks-wrapper-right {
     width: 31%;
     min-height: 200px;
-    background-color: rgba(164, 45, 10, 0.27);
-    outline: 1px solid red;
 
     .insurance__info {
       margin-bottom: 24px;
@@ -33,20 +31,48 @@
       //min-height: 370px;
       box-shadow: 0 10px 28px 0 rgba(54,80,107,.5);
       background-color: white;
-      outline: 1px solid green;
+      //outline: 1px solid green;
     }
   }
   .insurance__blocks-wrapper-left {
     width: 65%;
     min-height: 200px;
-    background-color: rgba(164, 45, 10, 0.27);
-    outline: 1px solid red;
+    //background-color: rgba(164, 45, 10, 0.27);
+    //outline: 1px solid red;
     .insurance__info {
       min-height: 480px;
       padding: 25px 25px;
       box-shadow: 0 10px 28px 0 rgba(54,80,107,.5);
       background-color: white;
-      outline: 1px solid green;
+      //outline: 1px solid green;
+      .insurance__stars {
+        font-size: 18px;
+        //width: 90%;
+        padding-left: 110px;
+        //margin-bottom: 40px;
+        line-height: 22px;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          transform: translateY(-52%);
+          top: 50%;
+          width: 105px;
+          height: 20px;
+          //background-color: green;
+          background: url("../img/icons/star1.png") center no-repeat;
+        }
+        &-half{
+          &:before {
+            background: url("../img/icons/star2.png") center no-repeat;
+          }
+        }
+
+
+      }
+      .insurance__invisible {
+        display: none;
+      }
       .insurance__price-text {
         font-family: 'robotomedium', 'Arial', sans-serif;
         font-size: 18px;
