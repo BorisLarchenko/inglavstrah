@@ -20,6 +20,11 @@
 
     .insurance__blocks-wrapper-left {
       width: 73%;
+      .pagination {
+        width: 45%;
+        margin-left: auto;
+
+      }
       .insurance__btn {
         align-self: flex-end;
         margin-bottom: 30px;
@@ -29,19 +34,22 @@
         flex-wrap: wrap;
         align-items: center;
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid @superlight-grey;
       }
       .insurance__info {
         display: flex;
         flex-direction: column;
         border-radius: 20px;
         padding: 10px 120px;
+        margin-bottom: 100px;
         .blog__social {
           position: absolute;
 
           left: 75px;
           top: 165px;
-          p {
+          a {
+            display: block;
             margin-bottom: 15px;
           }
           .icon__fb-svg {
@@ -110,6 +118,7 @@
           }
         }
         .test__price-text {
+          margin-bottom: 10px;
           letter-spacing: -0.025em;
           font-size: 14px;
           line-height: 16px;
@@ -145,9 +154,6 @@
             height: 17px;
           }
         }
-      }
-      .test__insurance-wrapper:first-of-type {
-        border-bottom: 1px solid @superlight-grey;
       }
     }
     .insurance__text {
