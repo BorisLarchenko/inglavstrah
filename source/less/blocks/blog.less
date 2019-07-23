@@ -1,4 +1,9 @@
 .blog__page {
+  background:
+          linear-gradient(90deg, @bg-color-white (@dot-space - @dot-size), transparent 1%) center,
+          linear-gradient(@bg-color-white (@dot-space - @dot-size), transparent 1%) center,
+          @dot-color;
+  background-size: @dot-space @dot-space;
   .test__title {
     margin-bottom: 40px;
     font-weight: normal;
