@@ -1,0 +1,65 @@
+.blog__page {
+  .test__title {
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 62px;
+    color: black;
+  }
+  .insurance__blocks-wrapper {
+
+    .insurance__blocks-wrapper-right {
+      width: 23%;
+      .insurance__info {
+        margin-bottom: 24px;
+        padding: 25px 25px;
+        border-radius: 20px;
+        background-color: @bg-color-blue;
+      }
+    }
+
+    .insurance__blocks-wrapper-left {
+      width: 73%;
+      .insurance__info {
+        border-radius: 20px;
+      }
+      .test__insurance-wrapper:first-of-type {
+        border-bottom: 1px solid @new-grey;
+      }
+    }
+    .insurance__text {
+      display: block;
+      padding-bottom: 15px;
+      padding-top: 15px;
+      border-bottom: none;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        color: @yellow-color;
+        transition: 0.3s;
+      }
+    }
+
+
+  }
+
+}
+
+
+
+
+
+//Write all styles for big-tablet and small desktop
+@media (max-width: @desctopWidth)  {}
+//Write all styles for tablet-desctop(less than 1280px)
+@media (max-width: @mediumWidth)  {
+
+}
+//Write styles for tablet (less than 1024px)
+@media (max-width: @lowWidth) {
+
+}
+
+//Write all styles for mobile
+@media (max-width: @tabletWidth) {
+
+}
