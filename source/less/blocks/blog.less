@@ -1,5 +1,6 @@
 .blog__page {
   .test__title {
+    margin-bottom: 40px;
     font-weight: normal;
     font-size: 50px;
     line-height: 62px;
@@ -19,11 +20,134 @@
 
     .insurance__blocks-wrapper-left {
       width: 73%;
+      .insurance__btn {
+        align-self: flex-end;
+        margin-bottom: 30px;
+      }
+      .test__insurance-wrapper {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
       .insurance__info {
+        display: flex;
+        flex-direction: column;
         border-radius: 20px;
+        padding: 10px 120px;
+        .blog__social {
+          position: absolute;
+
+          left: 75px;
+          top: 165px;
+          p {
+            margin-bottom: 15px;
+          }
+          .icon__fb-svg {
+            height: 20px;
+            cursor: pointer;
+            .icon__fb-svg1 {
+              fill: @superlight-grey;
+              &:hover {
+                fill: black;
+                transition: fill 0.3s ease;
+              }
+            }
+          }
+          .icon__vk-svg {
+            width: 22px;
+            cursor: pointer;
+            .icon__vk-svg1 {
+              fill: @superlight-grey;
+              &:hover {
+                fill: black;
+                transition: fill 0.3s ease;
+              }
+            }
+          }
+          .icon__odnoklassniki-svg,
+          .icon__telegr-svg,
+          .icon__viber-svg {
+            height: 22px;
+            cursor: pointer;
+              fill: @superlight-grey;
+              &:hover {
+                fill: black;
+                transition: fill 0.3s ease;
+              }
+          }
+
+        }
+        .blog__current-title {
+          margin-top: 30px;
+          margin-bottom: 20px;
+          font-family: 'cuprumbold', 'Arial', sans-serif;
+          font-size: 25px;
+          line-height: 22px;
+          color: @bg-color-blue;
+        }
+        .blog__current-pic {
+
+        }
+        .blog__current-text {
+          margin: 20px 0;
+          font-size: 18px;
+          line-height: 24px;
+          color: @blog-text-grey;
+        }
+        .insurance__text--first {
+          width: auto;
+          margin-right: auto;
+        }
+        .insurance__text--first:last-child {
+          margin-right: 0;
+        }
+        .test__price-text--icon {
+          padding-left: 25px;
+          &:before {
+            content: none;
+          }
+        }
+        .test__price-text {
+          letter-spacing: -0.025em;
+          font-size: 14px;
+          line-height: 16px;
+          color: @superlight-grey;
+          .icon__folder-svg,
+          .icon__user-svg,
+          .icon__date-svg,
+          .icon__look-svg,
+          .icon__comment-svg {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 15px;
+            fill: @icon-blue;
+          }
+          .icon__user-svg {
+            height: 18px;
+            .modal__pass-svg1 {
+              fill: @icon-blue;
+            }
+          }
+          .icon__date-svg {
+            height: 18px;
+          }
+          .icon__look-svg {
+            width: 23px;
+            height: 14px;
+          }
+          .icon__comment-svg {
+            width: 21px;
+            height: 17px;
+          }
+        }
       }
       .test__insurance-wrapper:first-of-type {
-        border-bottom: 1px solid @new-grey;
+        border-bottom: 1px solid @superlight-grey;
       }
     }
     .insurance__text {
