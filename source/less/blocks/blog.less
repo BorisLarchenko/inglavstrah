@@ -4,13 +4,47 @@
           linear-gradient(@bg-color-white (@dot-space - @dot-size), transparent 1%) center,
           @dot-color;
   background-size: @dot-space @dot-space;
-  .test__title {
+
+  .blog__test__titile-wrapper {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 40px;
-    font-weight: normal;
-    font-size: 50px;
-    line-height: 62px;
-    color: black;
+    .test__title {
+      width: 150px;
+      font-weight: normal;
+      font-size: 50px;
+      line-height: 62px;
+      color: black;
+    }
+    .blog__search-form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 685px;
+      .modal__select-wrapper {
+        margin: 0;
+        width: 55%;
+        .modal__phone {
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+      }
+      .header__button {
+        padding: 10px 25px;
+        display: inline-block;
+        font-family: 'Cuprum','Arial',sans-serif;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0;
+        color: #fff;
+        background-color: #305a7f;
+        border: 1px solid #305a7f;
+        border-radius: 0 10px 10px;
+        cursor: pointer;
+      }
+    }
   }
+
   .insurance__blocks-wrapper {
 
     .insurance__blocks-wrapper-right {
