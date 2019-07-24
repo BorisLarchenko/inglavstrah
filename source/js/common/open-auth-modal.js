@@ -182,4 +182,19 @@ for (let i = 0; i < allCloseButtons.length; i++) {
 
   isElementPresent('.main__advantages-list--gifts', clickGiftButton);
 
+  // Add popup for blog-item.html window
+
+  function clickBlogCommentButton(elem) {
+    // find all buttons on gift.html
+    const buttonComment = elem.querySelector('#btn-blog');
+    //find comment popup
+    const popupComment = document.querySelector('.modal__auth.modal__callback.modal--blog-item');
+    console.log(popupComment);
+    buttonComment.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      popupComment.classList.add('modal--active');
+      overlay.classList.add('modal--active');
+    });
+  }
+  isElementPresent('.blog__page.blog__item', clickBlogCommentButton);
 })();

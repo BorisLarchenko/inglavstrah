@@ -340,4 +340,43 @@
 		</button>
 	</section>
 </div>
+
+<section class="modal__auth modal__callback modal--blog-item">
+	<h2 class="modal__title">Комментарий</h2>
+	<form class="modal__form modal__form--callback">
+
+		<div class="modal__select-wrapper">
+			<include src="build/img/icons/user.svg"></include>
+			<input class="modal__phone" type="text" placeholder="Имя">
+		</div>
+
+		<div class="modal__select-wrapper">
+			<include src="build/img/icons/link.svg"></include>
+			<input class="modal__phone" type="text" placeholder="Ссылка на соцсеть">
+		</div>
+
+		<div class="modal__select-wrapper">
+<!--			<include src="build/img/icons/clock.svg"></include>-->
+			<textarea class="modal__phone" name="comment" id="comment-field" rows="10" placeholder="Текст комментария"></textarea>
+		</div>
+
+		<div class="modal__checkbox-wrapper">
+			<input class="modal__checkbox" type="checkbox" id="myData1" name="rememberMe" checked>
+			<include src="build/img/icons/check.svg"></include>
+			<label class="modal__checkbox-text" for="myData1">
+				Согласен с правилами сервиса
+			</label>
+		</div>
+		<button class="btn btn__review btn__modal" type="submit">Отправить комментарий</button>
+
+
+	</form>
+
+	<button class="modal__close close">
+
+		<span class="visually-hidden">Закрыть форму регистрации</span>
+		<include src="build/img/icons/close.svg"></include>
+	</button>
+</section>
+
 <!--Finish modal window registration layout-->
