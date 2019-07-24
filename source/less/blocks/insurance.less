@@ -47,28 +47,38 @@
       //outline: 1px solid green;
       .insurance__stars {
         font-size: 18px;
-        width: 20%;
-        padding-left: 110px;
+        display: flex;
+        width: 130px;
+        //padding-left: 110px;
         //margin-bottom: 40px;
         line-height: 22px;
-        &:before {
-          content: "";
-          position: absolute;
-          left: 0;
-          transform: translateY(-52%);
-          top: 50%;
-          width: 105px;
-          height: 20px;
-          //background-color: green;
-          background: url("../img/icons/star1.png") center no-repeat;
-        }
-        &-half{
+        .insurance__stars-full{
+          width: 21px;
+          display: inline-block;
           &:before {
-            background: url("../img/icons/star2.png") center no-repeat;
+            content: "";
+            position: absolute;
+            left: 0;
+            transform: translateY(-52%);
+            top: 50%;
+            width: 21px;
+            height: 20px;
+            //background-color: green;
+            background: url("../img/icons/star_full.png") center no-repeat;
+          }
+
+        }
+        .insurance__stars-half {
+          &:before {
+            background: url("../img/icons/star_half.png") center no-repeat;
+          }
+
+        }
+        .insurance__stars-empty {
+          &:before {
+            background: url("../img/icons/star_emp.png") center no-repeat;
           }
         }
-
-
       }
       .insurance__invisible {
         display: none;
@@ -83,6 +93,7 @@
         width: 20%;
         color: black;
         font-size: 18px;
+        text-align: center;
         .icon__input-svg-wrapper {
           right: 0px;
           top: 4px;
@@ -96,7 +107,7 @@
         width: 15%;
       }
       .insurance__text--third {
-        width: 20%;
+        width: 130px;
       }
       .insurance__supertitle {
         font-family: 'cuprumbold', 'Arial', sans-serif;
