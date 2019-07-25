@@ -32,7 +32,7 @@
   background-color: #fff;
   box-shadow: 0 10px 28px 0 rgba(54,80,107,.5);
   border-radius: 20px;
-  width: 40%;
+  width: 520px;
   &::after {
     content: "";
     position: absolute;
@@ -858,7 +858,9 @@
 
     }
   }
-
+  .test__insurance-wrapper {
+    width: 100%;
+  }
   .test__form {
     padding: 0 14px;
   }
@@ -1032,5 +1034,62 @@
   .test__info {
     display: none;
   }
+  .test__insurance-wrapper {
+    flex-direction: column;
+  }
+
+  .main__form-test {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: none;
+  }
+  .test__title {
+    margin-left: 14px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .test__step-title {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .test__form-wrapper {
+
+    padding-top: 0;
+    //padding-bottom: 50px;
+    //position: static;
+  }
+  .test__form-wrapper::after {
+    position: fixed;
+    left: 0;
+    height: 5px;
+    border-bottom: 4px solid #ffd800;
+    bottom: 0;
+    border-radius: 0 0 0 0;
+  }
+  .test__form {
+    overflow: scroll;
+    padding-bottom: 75px;
+    //padding: 0 94px;
+    min-height: auto;
+    //background-color: #fff;
+    //box-shadow: 0 10px 28px 0 rgba(54,80,107,.5);
+    border-radius: 0;
+  }
+  .test__btn-price-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0;
+    padding: 20px 0;
+    background-color: wheat;
+    box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.16),0px 3px 6px 0px rgba(0, 0, 0, 0.23);
+  }
+  .test__btn-wrapper {
+    left: 14px;
+  }
+
 
 }
