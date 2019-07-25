@@ -238,7 +238,9 @@
 					<p class="test__step-title full-request__step-title">Выберите марку автомобиля</p>
 
 					<div class="test__radio-wrapper">
-						<select class="ui search dropdown not-filled test__form-select test__form-select--short" name="car-mark">
+						<div class="test__select-label-wrapper">
+							<p class="test__select-label-text">This is a lable text</p>
+							<select class="ui search dropdown not-filled test__form-select test__form-select--short" name="car-mark">
 							<option class="test__form-option" value="">Выберите марку</option>
 							<option class="test__form-option" value="Continental">Continental</option>
 							<option class="test__form-option" value="Michelin">Michelin</option>
@@ -246,7 +248,10 @@
 							<option class="test__form-option" value="Cooper">Cooper</option>
 							<option class="test__form-option" value="Pirelli">Pirelli</option>
 						</select>
-						<select class="ui search dropdown not-filled test__form-select test__form-select--short" name="car-type">
+						</div>
+						<div class="test__select-label-wrapper">
+							<p class="test__select-label-text">This is a lable text</p>
+							<select class="ui search dropdown not-filled test__form-select test__form-select--short" name="car-type">
 							<option class="test__form-option" value="">Выберите модель</option>
 							<option class="test__form-option" value="Continental">Continental</option>
 							<option class="test__form-option" value="Michelin">Michelin</option>
@@ -254,7 +259,9 @@
 							<option class="test__form-option" value="Cooper">Cooper</option>
 							<option class="test__form-option" value="Pirelli">Pirelli</option>
 						</select>
+						</div>
 					</div>
+
 					<div class="test__btn-price-wrapper">
 						<div class="test__btn-wrapper full-request__btn-wrapper">
 							<button class="btn test__btn test__btn--kbm btn--disabled" type="button" data-title="Сначала выберите значение">Далее</button>
