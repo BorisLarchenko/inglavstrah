@@ -511,6 +511,40 @@
   margin-bottom: 40px;
 }
 
+.modal__stars {
+  width: 130px;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  .modal__stars-full {
+    width: 21px;
+    display: inline-block;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      -webkit-transform: translateY(-52%);
+      transform: translateY(-52%);
+      top: 50%;
+      width: 21px;
+      height: 20px;
+      background: url(../img/icons/star_full.png) center no-repeat;
+    }
+  }
+  .modal__stars-half {
+    &::before {
+      background: url(../img/icons/star_half.png) center no-repeat;
+    }
+
+  }
+  .modal__stars-empty {
+    &::before {
+        background: url(../img/icons/star_emp.png) center no-repeat;
+      }
+
+  }
+
+}
+
 //Write all styles for big-tablet and small desktop
 @media (max-width: @desctopWidth)  {
   .modal {}
