@@ -1052,15 +1052,21 @@
 						</label>
 
 
-						<label class="test__input-aria test__input-aria--chose full-request__input-aria">
+						<label class=" test__input-aria test__input-aria--chose full-request__input-aria">
 							<input class="test__radio" type="radio" name="region">
 							<span class="test__radio-circle"></span>
-							<select class="ui search dropdown not-filled full-request__form-select full-request__form-list test__selection" name="additional-mark">
-								<option value="">Другой регион</option>
-								<option value="Брянск, Россия">Брянск, Россия</option>
-								<option value="Брянск-Льговский, Россия">Брянск-Льговский, Россия"</option>
-								<option value="Брянская область, Россия">Брянская область, Россия</option>
-							</select>
+
+							<div class="ui dropdown search not-filled full-request__form-select full-request__form-list test__selection selection">
+								<input type="hidden" name="regions">
+								<div class="default text">Другой регион</div>
+								<div class="menu">
+									<div class="item" data-value="Брянская область, Россия">Брянская область, Россия</div>
+									<div class="item item__city" data-value="Брянск, Россия">Брянск, Россия</div>
+									<div class="item item__city" data-value="Брянск, Россия">Калуга, Россия</div>
+									<div class="item" data-value="Брянская область, Россия">Орловская область, Россия</div>
+									<div class="item item__city" data-value="Брянск, Россия">Орел</div>
+								</div>
+							</div>
 						</label>
 
 
