@@ -102,6 +102,37 @@
 
 //Write all styles for mobile
 @media (max-width: @tabletWidth) {
-  .reviews {
+  .reviews__title{
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  .reviews__item-name-date {
+    padding-left: 61px;
+    font-size: 18px;
+  }
+  .reviews__item-date{
+    font-size: 12px;
+  }
+  .reviews__list{
+    width: 100%;
+  }
+  .reviews__item{
+    width: 100%;
+    font-size: 14px;
+  }
+  .reviews__item--brief .reviews__btn-full{
+    font-size: 14px;
+  }
+  .reviews__item-name-date::before{
+    width: 46px;
+    height: 46px;
+    margin-top: -23px;
+  }
+  .reviews__pages.pagination{
+    max-width: 300px;
+    width: 100%;
+    margin-top: 50px;
+    margin: 0 auto;
   }
 }

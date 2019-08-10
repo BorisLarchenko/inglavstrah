@@ -80,5 +80,18 @@
 
 //Write all styles for mobile
 @media (max-width: @tabletWidth) {
-  .not-found {}
+  .not-found__wrapper{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .not-found__image-wrapper{
+    width: 100%;
+    padding-right: 18%;
+  }
+  .not-found__info-wrapper,
+  .not-found__nav-wrapper{
+    margin-left: 0;
+    width: 100%;
+    padding: 0 15px;
+  }
 }

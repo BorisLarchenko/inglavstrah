@@ -148,5 +148,72 @@
 
 //Write all styles for mobile
 @media (max-width: @tabletWidth) {
-  .about {}
+  .about__info{
+    padding-left: 15px;
+    padding-right: 15px;
+    .main__title--about{
+      order: 0;
+    }
+  }
+  .about__info-wrapper,
+  .about__network-text-wrapper{
+    flex-wrap: wrap;
+  }
+  .about__network-wrapper{
+    width: 100%;
+  }
+  .about__network-title{
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 45px;
+    margin-bottom: 40px;
+  }
+  .about__stat{
+    width: 100%;
+  }
+  .about__network-text{
+    width: 100%;
+    margin-bottom: 35px;
+    font-size: 14px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  .about__partners-wrapper{
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
+  .about__partners-all{
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  .about__partners-logo-item{
+    width: 47%;
+  }
+  .about__partners{
+    padding-top: 60px;
+  }
+  .about__partners-bg{
+    transform: rotateY(180deg);
+    right: inherit;
+    left: -241px;
+    top: 94%;
+  }
+  .about__partners-advantages{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about__partners-logo{
+    margin-bottom: 0;
+    margin-top: 55px;
+  }
+  .about__partners-logo-item .about__partners-link .about__partners-image{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+  .about__partners-text{
+    font-size: 18px;
+  }
 }

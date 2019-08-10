@@ -569,5 +569,37 @@
 
 //Write all styles for mobile
 @media (max-width: @tabletWidth) {
-  .modal {}
+  .modal__auth, .modal__forgot-pass{
+    width: 100%;
+    margin-left: -50%;
+    padding: 50px 15px;
+  }
+  .modal__aouth--reg{
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+    padding: 50px 15px;
+  }
+  .modal__input-wrapper{
+    flex-wrap: wrap;
+  }
+  .modal__select-wrapper--reg{
+    width: 100%;
+  }
+  .modal__btn-wrapper{
+    flex-wrap: wrap;
+  }
+  .modal__btn-wrapper2{
+    width: 100%;
+    order: 1;
+  }
+  .modal__personal{
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .modal__auth-text--reg{
+    font-size: 14px;
+  }
 }

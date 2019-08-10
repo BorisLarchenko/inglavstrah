@@ -255,5 +255,49 @@
 
 //Write all styles for mobile
 @media (max-width: @tabletWidth) {
-  .shops {}
+  .shops__wrapper {
+    flex-wrap: wrap;
+  }
+  .shops__group{
+    width: 100%;
+    order: 1;
+    padding: 30px 15px 0;
+  }
+  .shops__map{
+    width: 100%;
+  }
+  .shops__map #map-general{
+    height: 290px;
+  }
+  .shops__town-wrapper{
+    margin-top: 20px;
+  }
+  .shops__item{
+    padding-right: 0;
+  }
+  .form__contacts-wrapper{
+    width: 100%;
+    padding: 60px 15px;
+  }
+  .form__contacts-slogan{
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .form__contacts-text{
+    font-size: 14px;
+  }
+  .form{
+    margin-top: 50px;
+  }
+  .form-btn-wrapper{
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  .form__contacts__btn{
+    order: 1;
+    margin-top: 20px;
+  }
+  .form__contacts-thanks-text{
+    margin-bottom: 60px;
+  }
 }
