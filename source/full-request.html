@@ -605,7 +605,7 @@
 					<div class="test__btn-price-wrapper">
 						<div class="test__btn-wrapper full-request__btn-wrapper test__btn-wrapper--wide">
 							<button class="btn test__btn" type="button">Да, продолжить</button>
-							<button class="btn-back test__btn-back" type="button">Нет, исправить</button>
+							<button class="btn-back test__btn-back text-back" type="button"><span>Нет, исправить</span></button>
 						</div>
 					</div>
 				</div>
@@ -1109,7 +1109,7 @@
 						</span>
 					</p>
 
-					<ul class="pagination full-request__pages">
+					<ul class="pagination full-request__pages flex-start">
 						<li class="pagination__item full-request__item">
 							<button class="btn--grey full-request__btn-back" type="button">Неограниченный круг </button>
 						</li>
@@ -1167,7 +1167,7 @@
 							<include src="build/img/icons/info.svg"></include>
 						</span>
 					</p>
-					<ul class="pagination full-request__pages">
+					<ul class="pagination full-request__pages flex-start">
 						<li class="pagination__item full-request__item">
 							<button class="btn--grey full-request__btn-back" type="button">Ограниченный круг</button>
 						</li>
@@ -1301,11 +1301,11 @@
 				</div>
 <!--start step 3 from 4 steps-->
 				<!-- test__form-step14  -->
-				<div class="test__form-wrapper">
+				<div class="test__form-wrapper mobile-column">
 					<p class="test__pagination">3 <span class="test__pagination--grey">/ 4</span>
 						<span class="full-request__pagination-title">Рассчет стоимости</span></p>
 					<p class="test__step-title full-request__step-title">Стоимость полиса ОСАГО</p>
-					<p class="pagination full-request__pages">
+					<p class="pagination full-request__pages blocks">
 						<span class="btn--grey">Автомобиль:  Toyota, 2006, Corolla, 1.6 л., 100 л.с., Хэтчбек, Автоматическая</span>
 						<span class="btn--grey">Страхование:  с 15.06.2018 (6 месяцев),  рег. Краснодар, обсл. Краснодар</span>
 						<span class="btn--grey">Ограниченный круг:  Водитель 1 — Иванов Иван Иванович, 30.12.1989   ВУ: 12 34 5678  </span>
@@ -1313,8 +1313,10 @@
 
 					<div class="test__radio-wrapper full-request__radio-wrapper">
 						<p class="full-request__price-text">Стоимость полиса ОСАГО составляет
-							<span class="full-request__old-price">13610 руб.</span>
-							<span class="full-request__new-price">12930  руб.</span>
+							<span class="prices">
+                                <span class="full-request__old-price">13610 руб.</span>
+						        <span class="full-request__new-price">12930  руб.</span>
+						    </span>
 						</p>
 						<p class="full-request__price-text">Сумма скидки <span class="full-request__new-price">680 руб.</span></p>
 					</div>
@@ -1322,7 +1324,7 @@
 					<div class="test__btn-price-wrapper">
 						<div class="test__btn-wrapper full-request__btn-wrapper">
 							<button class="btn test__btn" type="button" data-title="Сначала выберите значение">Оформить</button>
-							<button class="btn-back test__btn-back" type="button">Вернуться к расчету</button>
+							<button class="btn-back test__btn-back text-back" type="button"><span>Вернуться к расчету</span></button>
 						</div>
 
 						<p class="main__test-info test__info full-request__info full-request__info--gift">
@@ -1451,7 +1453,7 @@
 
 					<p class="test__price-text full-request__name-other">
 						<span class="full-request__name full-request__name--grey">Иванов Иван Иванович</span>
-						<button class="btn-back full-request__name test__btn-back" type="button">Другой</button>
+						<button class="btn-back test__btn-back" type="button">Другой</button>
 					</p>
 
 
@@ -1623,7 +1625,7 @@
 					<div class="test__btn-price-wrapper">
 						<div class="form-btn-wrapper test__subimt-wrapper--last full-request__btn-wrapper">
 							<button class="btn test__btn" type="submit">Подтвердить</button>
-							<button class="btn-back test__btn-back" type="button">Выслать повторно</button>
+							<button class="btn-back test__btn-back text-back" type="button"><span>Выслать повторно</span></button>
 						</div>
 
 						<p class="main__test-info test__info full-request__info">

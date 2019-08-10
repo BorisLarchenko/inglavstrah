@@ -253,8 +253,10 @@
     &.main__request{
       padding-top: 50px;
     }
-    .request__step-list {
-        padding-left: 30px;
+    .request__step-list--mot {
+      padding-left: 30px;
+      max-width: 510px;
+      width: 100%;
     }
     .request__step-item:first-child::before{
           width: 138px;
@@ -288,18 +290,35 @@
         line-height: 20px;
     }
     .request__form {
-        min-width: 288px;
-        width: 288px;
-        padding: 30px 16px;
+      min-width: inherit;
+      width: 100%;
+      padding: 30px 16px;
     }
     .request__text {
-        width: 100%;
-        font-size: 16px;
-        margin-bottom: 12px;
+      width: 100%;
+      font-size: 16px;
+      margin-bottom: 12px;
+      text-align: center;
     }
     .request__title {
         font-size: 36px;
             line-height: 36px;
+    }
+    .request__wrapper--mot{
+      width: 320px;
+    }
+    .request__step-list-wrapper{
+      width: calc(100% - 320px);
+    }
+    .request__form-wrapper{
+      width: 380px;
+      margin-left: 30px;
+    }
+    .request__text--mot1{
+      text-align: left;
+    }
+    .request__form--mot2{
+      min-width: 380px;
     }
   }
 }
@@ -331,7 +350,6 @@
     .main__advantages-list {
         display: flex;
         width: 100%;
-            max-width: 400px;
     }
     .request .request__step-item {
         width: calc((100% - 16px)/2);
@@ -344,6 +362,28 @@
     .request__step-item:first-child,
     .request__step-item:nth-child(2) {
         padding-top: 80px;
+    }
+    .request__form{
+      width: 100%;
+    }
+    .request__wrapper--mot{
+      width: 100%;
+    }
+    .request__step-list-wrapper{
+      width: 100%;
+    }
+    .request__form-wrapper{
+      width: 100%;
+      margin-left: 0;
+    }
+    .main__contacts-slogan.form__contacts-slogan{
+      width: 100%;
+    }
+    .request__form--mot2{
+      min-width: inherit;
+    }
+    .request__text--mot1{
+      padding-right: 0;
     }
   }
 }

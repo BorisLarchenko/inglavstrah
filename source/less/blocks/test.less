@@ -1090,7 +1090,6 @@
     //position: static;
   }
   .test__form-wrapper::after {
-    position: fixed;
     left: 0;
     height: 5px;
     border-bottom: 4px solid #ffd800;
@@ -1098,7 +1097,7 @@
     border-radius: 0 0 0 0;
   }
   .test__form {
-    overflow: scroll;
+    //overflow: scroll;
     padding-bottom: 75px;
     //padding: 0 94px;
     min-height: auto;
@@ -1131,5 +1130,69 @@
   .test__radio-wrapper {
     margin-top: 20px;
   }
-
+  .test__form--ruler .test__form-step14.mobile-column{
+    display: flex;
+    flex-direction: column;
+  }
+  .test__form-wrapper.mobile-column .full-request__pages.blocks{
+    order: 1;
+    border-top: 1px solid #cccccc;
+  }
+  .test__form-wrapper.mobile-column .full-request__pages.blocks span{
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .test__form-wrapper.mobile-column .test__btn-price-wrapper{
+    order: 2;
+    margin-top: 20px;
+  }
+  .test__form-wrapper.mobile-column .full-request__price-text .prices{
+    display: block;
+    width: 100%;
+  }
+  .test__form.test__form--ruler{
+    padding-bottom: 0;
+  }
+  .test__btn-price-wrapper{
+    position: static;
+    width: calc(100% + 28px);
+    margin-left: -14px;
+    background: #fff;
+  }
+  .test__btn.test__btn--kbm{
+    width: 100%;
+  }
+  .test__form--ruler .test__kbm-step1,
+  .test__form--ruler .test__kbm-step2, 
+  .test__form--ruler .test__kbm-step3{
+    padding-bottom: 0;
+  }
+  .test__form-step18 .test__radio-wrapper {
+    margin-bottom: 20px;
+  }
+  .test__pagination{
+    flex-wrap: wrap;
+  }
+  .test__input-aria--chose .test__selection.ui.selection.dropdown{
+    padding-top: 15px;
+    padding-bottom: 21.5px;
+  }
+  .test__form-select-wrapper{
+    width: 100%;
+    margin-right: 0;
+  }
+  .test__end-form-thanks{
+    width: 100%;
+    padding: 20px 15px;
+  }
+  .test__rest-wrapper{
+    flex-wrap: wrap;
+  }
+  .test__thanks-text--big{
+    width: 100%;
+    padding-left: 0;
+  }
+  .test__price--absolute{
+    top: -25px;
+  }
 }
