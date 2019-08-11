@@ -1025,6 +1025,7 @@
     font-size: 15px;
     line-height: 18px;
     color: #000;
+    margin-right: 0;
   }
 
   .test__form-select-wrapper--fixed {
@@ -1063,7 +1064,30 @@
     }
   }
   .test__info {
+    position: fixed;
+    top: 35vh;
+    left: 5vw;
+    margin-top: 0;
+    background: #fff;
+    width: 90vw;
+    height: 30vh;
     display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 210px 0px rgba(0,0,0,0.75);
+    padding: 10px;
+    border-radius: 10px;
+    &.opened{
+      display: flex;
+    }
+  }
+  .test__price{
+    margin-right: 10px;
+    width: auto;
+  }
+  .test__words{
+    margin-top: 20px;
   }
   .test__insurance-wrapper {
     flex-direction: column;
@@ -1116,6 +1140,7 @@
     padding: 20px 0;
     background-color: wheat;
     box-shadow: 0px -3px 6px 0px rgba(0, 0, 0, 0.16),0px 3px 6px 0px rgba(0, 0, 0, 0.23);
+    z-index: 5;
   }
   .test__btn-wrapper {
     left: 14px;
@@ -1154,7 +1179,6 @@
     padding-bottom: 0;
   }
   .test__btn-price-wrapper{
-    position: static;
     width: calc(100% + 28px);
     margin-left: -14px;
     background: #fff;
@@ -1194,5 +1218,21 @@
   }
   .test__price--absolute{
     top: -25px;
+  }
+  .form-footer-hide{
+    .test__form-wrapper,
+    .test__end-form-thanks{
+      height: calc(100vh - 172px);
+      padding-bottom: 16px;
+      overflow: auto;
+      padding-bottom: 125px;
+    }
+    .full-request__data-wrapper{
+      max-height: calc(100% - 125px);
+    }
+    .test__btn-wrapper{
+      margin: 0 auto;
+      left: 0;
+    }
   }
 }
