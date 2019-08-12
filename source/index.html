@@ -12,61 +12,73 @@
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   <link rel="icon" href="img/favicon.png" type="image/x-icon">
 
-  <style>
-    #page-preloader {
-      position: fixed;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      background: #fff;
-      z-index: 100500;
-    }
-    #page-preloader svg {
-      width: 500px;
-      height: auto;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      margin: -250px 0 0 -250px;
-    }
-    @-webkit-keyframes preloader-anim {
-      0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
-      }
+	<!-- Стили для preloader -->
+	  <style>
+	    #page-preloader {
+	      position: fixed;
+	      left: 0;
+	      top: 0;
+	      right: 0;
+	      bottom: 0;
+	      background: #fff;
+	      z-index: 100500;
+	    }
+	    #page-preloader p{
+	    	position: absolute;
+	      left: 50%;
+	      transform: translateX(-50%);
+	      margin-top: 20px;
+	      font-size: 18px;
+	      width: 90%;
+	      text-align: center;
+	    }
+	    #page-preloader svg {
+	      width: 320px;
+	      height: auto;
+	      position: absolute;
+	      left: 50%;
+	      top: 50%;
+	      margin: -132px 0 0 -160px;
+	    }
+	    @-webkit-keyframes preloader-anim {
+	      0% {
+	        -webkit-transform: rotate(0);
+	        transform: rotate(0);
+	      }
 
-      100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-      }
-    }
-    @keyframes preloader-anim {
-      0% {
-        -webkit-transform: rotate(0);
-        -ms-transform: rotate(0);
-        transform: rotate(0);
-      }
+	      100% {
+	        -webkit-transform: rotate(360deg);
+	        transform: rotate(360deg);
+	      }
+	    }
+	    @keyframes preloader-anim {
+	      0% {
+	        -webkit-transform: rotate(0);
+	        -ms-transform: rotate(0);
+	        transform: rotate(0);
+	      }
 
-      100% {
-        -webkit-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-      }
-    }
-    .preloader-anim {
-      -webkit-animation-name: preloader-anim;
-      animation-name: preloader-anim;
-      -webkit-transform-origin: 46.5px 46.5px;
-      transform-origin: 46.5px 46.5px;
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-iteration-count:infinite;
-      animation-iteration-count: infinite;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-    }
-  </style>
+	      100% {
+	        -webkit-transform: rotate(360deg);
+	        -ms-transform: rotate(360deg);
+	        transform: rotate(360deg);
+	      }
+	    }
+	    .preloader-anim {
+	      -webkit-animation-name: preloader-anim;
+	      animation-name: preloader-anim;
+	      -webkit-transform-origin: 62px 62px;
+	      transform-origin: 62px 62px;
+	      -webkit-animation-duration: 2s;
+	      animation-duration: 2s;
+	      -webkit-animation-iteration-count:infinite;
+	      animation-iteration-count: infinite;
+	      -webkit-animation-fill-mode: both;
+	      animation-fill-mode: both;
+	      -webkit-animation-timing-function: linear;
+	      animation-timing-function: linear;
+	    }
+	  </style>
 
 	<!-- Styles -->
 		<link rel="stylesheet" href="css/style.min.css">
@@ -80,7 +92,25 @@
 
 	<!-- START Preloader -->
     <div id="page-preloader">
-    	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.22 92.97" width="35" height="35"><path style="fill: #3c6487;" d="M79.36 13.62l-15.7 15.71a24.27 24.27 0 1 0 0 34.32l15.7 15.71a46.49 46.49 0 1 1 0-65.74"/><g class="preloader-anim"><path style="fill: #fff" d="M74.56 68.5a36 36 0 0 0 5.51-10L79 58.14a34.71 34.71 0 0 1-5.34 9.66zM61.21 79a35.22 35.22 0 0 0 9.48-6.31l-.77-.82-.16.15a34.56 34.56 0 0 1-9 6zM44.5 82.17h9.86l.22-.05.22-.05.22-.05.22-.06.22-.06.22-.06h.15l-.3-1.09h-.14l-.21.06L55 80l-.21.06h-.22l-.21.05h-9.8zm-16.27-4.9a35.66 35.66 0 0 0 10.61 4.16l.23-1.1a34.48 34.48 0 0 1-10.27-4zM16 65.41A35.51 35.51 0 0 0 23.55 74l.71-.87A34.25 34.25 0 0 1 17 64.81zm-5.28-16.14v5.13l.05.22.05.22.05.22.06.22.06.22.06.22.06.22.06.22.06.21.06.22.06.22.06.22.07.21.07.22.07.21.07.21.07.21.07.21.07.21.07.21.08.21.08.21.08.2.08.21.08.21.08.2.09.21.07.17 1-.44-.07-.17-.08-.2-.08-.2-.08-.2-.08-.2-.08-.2-.08-.2-.07-.2-.07-.21-.07-.2-.07-.21-.07-.21-.07-.21-.07-.21-.07-.21-.06-.21-.06-.21-.06-.21-.06-.21.74-.17v-.21l-.06-.21-.06-.21-.07-.23-.06-.21v-.21l-.05-.21v-5.2zm2.71-16.78a35.74 35.74 0 0 0-2.72 11.06l1.12.09a34.66 34.66 0 0 1 2.63-10.72zm10.15-13.64a36 36 0 0 0-7.5 8.56l1 .6.11-.18a35 35 0 0 1 7.16-8.12zm15.3-7.4l-.47.1a35.43 35.43 0 0 0-10.16 4l.58 1a34.41 34.41 0 0 1 10.26-4zm17 .47a35.9 35.9 0 0 0-11.33-1.22l.06 1.12a34.72 34.72 0 0 1 11 1.19zm14.85 8.28a36.19 36.19 0 0 0-9.48-6.32l-.47 1A35 35 0 0 1 70 21zm9.36 14.19a35.19 35.19 0 0 0-5.5-10l-.88.7A33.9 33.9 0 0 1 79 34.77zm.64 7.38a34.77 34.77 0 0 1-.27 11l1.11.2m0 0a35.92 35.92 0 0 0 .27-11.39l-1.12.15v-1.65l1.11-.21v1.71"/></g><path style="fill: #ffd800;" d="M79.26 13.52l17.25 17.25 15.71 15.71-15.71 15.7-17.25 17.25-15.7-15.7 17.25-17.25-17.25-17.26 15.7-15.7z"/><path style="fill: #3c6487;" d="M46.49 38.73a7.76 7.76 0 1 1-7.76 7.76 7.76 7.76 0 0 1 7.76-7.76"/></svg>
+    	<p>Здесь любой текст Здесь любой текст Здесь любой текст Здесь любой текст Здесь любой текст Здесь любой текст Здесь любой текст</p>
+    	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 124">
+				<path style="fill:#31597E;" d="M106.1,18.2L106.1,18.2L85,39.2l0,0c-12.6-12.7-33.2-12.7-45.9-0.1S26.3,72.2,39,84.9S72.2,97.6,84.8,85
+						c0,0,0,0,0,0l0.1-0.1l0,0l21,21c-24.3,24.2-63.6,24.2-87.8,0s-24.2-63.5,0-87.7C42.4-6,81.7-6,105.9,18.1"/>
+				<path class="preloader-anim" style="fill:#FFFFFF;" d="M61.9,111.4c-1,0-2,0-3-0.1l0.2-3c4.2,0.2,8.4-0.1,12.6-0.9l0.6,2.9C68.8,111,65.4,111.4,61.9,111.4z
+						 M51.7,110.4c-4.4-0.9-8.7-2.5-12.6-4.6l1.4-2.7c3.7,1.9,7.7,3.4,11.9,4.2L51.7,110.4z M79.2,108.3l-1-2.8c4-1.5,7.7-3.5,11.1-6
+						l1.8,2.4C87.4,104.6,83.4,106.7,79.2,108.3L79.2,108.3z M32.9,102c-3.6-2.6-6.9-5.8-9.7-9.3l2.3-1.9c2.6,3.3,5.7,6.2,9.1,8.7
+						L32.9,102z M96.5,97.3l-2.1-2.1c3-3,5.6-6.3,7.7-10l2.6,1.5C102.5,90.5,99.7,94.1,96.5,97.3L96.5,97.3z M19.1,86.8
+						c-2.3-3.9-4-8.1-5.1-12.4l2.9-0.7c1.1,4.1,2.7,8,4.8,11.6L19.1,86.8z M107.9,80.1l-2.8-1.1c1.6-3.9,2.6-8,3-12.2l3,0.3
+						C110.7,71.5,109.6,75.9,107.9,80.1z M12.7,67.3c-0.2-1.8-0.3-3.5-0.3-5.3c0-2.7,0.2-5.4,0.7-8.1l3,0.5c-0.4,2.5-0.6,5.1-0.6,7.6
+						c0,1.7,0.1,3.3,0.3,5L12.7,67.3z M108.3,60c-0.2-4.2-0.9-8.4-2.2-12.4l2.8-0.9c1.4,4.3,2.2,8.7,2.4,13.2L108.3,60z M17.6,47.7
+						l-2.9-0.9c1.4-4.3,3.3-8.3,5.8-12.1l2.5,1.7C20.8,39.9,18.9,43.7,17.6,47.7z M103.5,41.3c-1.9-3.8-4.3-7.3-7.1-10.4l2.2-2
+						c3,3.3,5.6,7.1,7.6,11.1L103.5,41.3z M27.2,31L25,29c3-3.3,6.4-6.3,10.2-8.7l1.6,2.5C33.3,25.1,30.1,27.9,27.2,31z M91.5,26.2
+						c-3.3-2.7-6.9-4.9-10.7-6.6l1.2-2.7c4.1,1.8,8,4.2,11.4,7.1L91.5,26.2z M42.8,19.6l-1.2-2.7c4.1-1.8,8.4-3.1,12.9-3.8l0.4,3
+						C50.7,16.7,46.7,17.9,42.8,19.6z M74.4,17.2c-4.1-1.1-8.3-1.7-12.5-1.7h-0.2v-3h0.2c4.5,0,8.9,0.6,13.3,1.8L74.4,17.2z"/>
+				<polygon style="fill:#FFCC00;" points="105.9,18.1 129,41.1 150,62.1 129,83.1 105.9,106.2 85,85.1 108,62.1 85,39.1 		"/>
+				<path style="fill:#31597E;" d="M62.1,51.8c5.7,0,10.4,4.6,10.4,10.3c0,5.7-4.6,10.4-10.3,10.4c-5.7,0-10.4-4.6-10.4-10.3V62
+						C51.8,56.4,56.4,51.8,62.1,51.8C62.1,51.8,62.1,51.8,62.1,51.8"/>
+			</svg>
     </div>
   <!-- Finish Preloader -->
 
