@@ -41,6 +41,7 @@ $(function(){
   });
 
 
+
 // START Hide preloader after load page
   $(window).on('load', function () {
       var $preloader = $('#page-preloader'),
@@ -49,3 +50,9 @@ $(function(){
       $preloader.delay(350).fadeOut('slow');
   });
 // FINISH Hide preloader after load page
+
+//open info on mobile tests-pages
+$(".info-mobile-only").on("click", function(){
+  $(this).toggleClass("close");
+  $(".main__test-info.test__info").toggleClass("opened");
+});
