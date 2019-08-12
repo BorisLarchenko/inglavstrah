@@ -157,3 +157,68 @@ h1 {
     display: none;
   }
 }
+
+
+
+
+.main_breadcrumbs{
+  position: absolute;
+  width: 100%;
+  margin-top: 30px;
+  z-index: 2;
+  nav{
+    ul{
+      display: flex;
+      align-items: center;
+      li, a{
+        font-size: 16px;
+      }
+      li{
+        color: #000;
+        a{
+          color: #325a7e;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+        & + li{
+          margin-left: 48px;
+          &:before{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            content: '›';
+            font-size: 28px;
+            left: -28px;
+            top: 6px;
+            line-height: 0;
+            color: #325a7e;
+          }
+        }
+        &:last-child:before{
+          color: black;
+        }
+      }
+    }
+  }
+  &.dark-section{
+    nav{
+      ul{
+        li{
+          color: #fff;
+          a{
+            color: #ffd800;
+          }
+          & + li{
+            &:before{
+              color: #ffd800;
+            }
+          }
+          &:last-child:before{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
