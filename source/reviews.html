@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta	name="viewport"	content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta name="HandheldFriendly" content="true">
 
 	<meta name="description" content="This is description">
@@ -20,6 +21,7 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
+
 <body>
 	<include src="source/html-modules/header.html"></include>
 	<main class="main">
@@ -45,36 +47,68 @@
 				<h2 class="reviews__title">Отзывы</h2>
 				<ul class="reviews__list">
 					<li class="reviews__item">
-						<p class="reviews__item-name-date reviews__item-name-date--pic">Александр, г. Брянск
-							<time class="reviews__item-date" datetime="2018-05-29 10:00">29.05.2018 г.</time>
-						</p>
-						Скоростное оформлениеи вашего полиса ОСАГО Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <button class="btn-back reviews__btn-full" type="button">... Читать полностью</button>
+						<div class="reviews__item-name-date reviews__item-name-date--pic">
+							<div class="reviews__item-name-date-inner">
+								Александр, г. Брянск
+								<time class="reviews__item-date" datetime="2018-05-29 10:00">29.05.2018 г.</time>
+							</div>
+							<div class="reviews__rating">
+								<div style="width: 100%" class="reviews__rating-inner"></div>
+							</div>
+						</div>
+						Скоростное оформлениеи вашего полиса ОСАГО Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <button
+							class="btn-back reviews__btn-full" type="button">... Читать полностью</button>
 					</li>
-<!--if any li from reviews__list has 'reviews__item--brief' class we can see btn '... Читать полностью'-->
+					<!--if any li from reviews__list has 'reviews__item--brief' class we can see btn '... Читать полностью'-->
 
 					<li class="reviews__item  reviews__item--brief">
-						<p class="reviews__item-name-date">Андрей, г. Краснодар
-							<time class="reviews__item-date" datetime="2018-05-29 10:00">29.05.2018 г.</time>
-						</p>
-						Скоростное оформлениеи вашего полиса ОСАГО Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <button class="btn-back reviews__btn-full" type="button">Читать полностью</button>
+						<div class="reviews__item-name-date">
+							<div class="reviews__item-name-date-inner">
+								Андрей, г. Краснодар
+								<time class="reviews__item-date" datetime="2018-05-29 10:00">29.05.2018 г.</time>
+							</div>
+							<div class="reviews__rating">
+								<div style="width: 75%" class="reviews__rating-inner"></div>
+							</div>
+						</div>
+						Скоростное оформлениеи вашего полиса ОСАГО Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... <button
+							class="btn-back reviews__btn-full" type="button">Читать полностью</button>
 					</li>
 					<li class="reviews__item">
-						<p class="reviews__item-name-date">Ирина, г. Воронеж
-							<time class="reviews__item-date" datetime="2018-05-29 10:00">29.05.2018 г.</time>
-						</p>
-						Скоростное оформлениеи вашего полиса ОСАГО Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <button class="btn-back reviews__btn-full" type="button">... Читать полностью</button>
+						<div class="reviews__item-name-date">
+							<div class="reviews__item-name-date-inner">
+								Ирина, г. Воронеж
+								<time class="reviews__item-date" datetime="2018-05-29 10:00">29.05.2018 г.</time>
+							</div>
+							<div class="reviews__rating">
+								<div style="width: 50%" class="reviews__rating-inner"></div>
+							</div>
+						</div>
+						Скоростное оформлениеи вашего полиса ОСАГО Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <button
+							class="btn-back reviews__btn-full" type="button">... Читать полностью</button>
 					</li>
 					<li class="reviews__item">
-						<p class="reviews__item-name-date">Данил, с. Новая Усмань
-							<time class="reviews__item-date" datetime="2018-05-29 10:00">29.05.2018 г.</time>
-						</p>
-						Скоростное оформлениеи вашего полиса ОСАГО Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <button class="btn-back reviews__btn-full" type="button">... Читать полностью</button>
+						<div class="reviews__item-name-date">
+							<div class="reviews__item-name-date-inner">
+								Данил, с. Новая Усмань
+								<time class="reviews__item-date" datetime="2018-05-29 10:00">29.05.2018 г.</time>
+							</div>
+							<div class="reviews__rating">
+								<div style="width: 25%" class="reviews__rating-inner"></div>
+							</div>
+						</div>
+						Скоростное оформлениеи вашего полиса ОСАГО Lorem ipsum dolor sit amet, consectetur adipisicing
+						elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <button
+							class="btn-back reviews__btn-full" type="button">... Читать полностью</button>
 					</li>
 				</ul>
 				<ul class="pagination reviews__pages">
 					<li class="pagination__item"><a class="pagination__link" href="#">1</a></li>
 					<li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-					<li class="pagination__item pagination__item-current" ><a class="pagination__link">3</a></li>
+					<li class="pagination__item pagination__item-current"><a class="pagination__link">3</a></li>
 					<li class="pagination__item"><a class="pagination__link" href="#">...</a></li>
 					<li class="pagination__item"><a class="pagination__link" href="#">10</a></li>
 					<li class="pagination__item"><a class="pagination__link" href="#">Далее</a></li>
@@ -83,19 +117,24 @@
 		</section>
 		<section class="main__form-review form__review">
 			<div class="container">
-				<div class="form__review-wrapper" >
+				<div class="form__review-wrapper">
 					<p class="main__contacts-slogan">Оставьте свой отзыв</p>
 					<!-- если пользователь авторизовался то удаляем классы: form--unauthorised у формы и 	btn--disabled у кнопки-->
 					<form class="form__review-form form form--unauthorised" data-title="Сначала авторизуйтесь">
 						<input class="form__text form__text--review" type="text" placeholder="Имя" name="user-name">
 						<input class="form__text form__text--review" type="text" placeholder="Город" name="town">
-						<input class="form__text form__text--review" type="text" placeholder="Сообщение" name="user-message">
+						<input class="form__text form__text--review" type="text" placeholder="Сообщение"
+							name="user-message">
 
 
 
 						<div class="modal__checkbox-wrapper  modal__checkbox-wrapper--form-contacts">
 							<input class="modal__checkbox" type="checkbox" id="rememberMe" name="rememberMe">
-							<svg class="modal__check-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+							<svg class="modal__check-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path
+									d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z">
+								</path>
+							</svg>
 							<label class="modal__checkbox-text" for="rememberMe">
 								Я не робот
 							</label>
@@ -104,26 +143,33 @@
 
 
 						<div class="form-btn-wrapper">
-							<button class="btn btn__review test__btn btn--disabled form__btn--unauth" type="button" data-title="Сначала авторизуйтесь">Отправить</button>
-							<p class="form__review form__review--unauthorised"> <a class="form__personal-link" href="#">Авторизуйтесь,</a>
+							<button class="btn btn__review test__btn btn--disabled form__btn--unauth" type="button"
+								data-title="Сначала авторизуйтесь">Отправить</button>
+							<p class="form__review form__review--unauthorised"> <a class="form__personal-link"
+									href="#">Авторизуйтесь,</a>
 								чтобы оставить отзыв</p>
 						</div>
 
 					</form>
 				</div>
 
-				<a href="#" class="btn review-thanks-open" style="color: red; font-size: 20px; margin-top: 10px;">Открываю/закрываю thanks block, удали меня после теста</a>
+				<a href="#" class="btn review-thanks-open"
+					style="color: red; font-size: 20px; margin-top: 10px;">Открываю/закрываю thanks block, удали меня
+					после теста</a>
 
 
-				<div class="form__review-wrapper form__review-wrapper--close" >
+				<div class="form__review-wrapper form__review-wrapper--close">
 					<p class="main__contacts-slogan main__advantages-item-title--special">Благодарим за отзыв!</p>
 					<p class="form__thanks-text">
-						Мы ценим ваше мнение Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Мы ценим ваше мнение Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.
 					</p>
 					<p class="form__contact-text">
-						Если у вас остались вопросы и пожелания, вы можете связаться с нами по номеру телефона  +7 (473) 22-88-507
+						Если у вас остались вопросы и пожелания, вы можете связаться с нами по номеру телефона +7 (473)
+						22-88-507
 					</p>
-					<button class="btn btn__review test__btn form__btn" type="button" data-title="Сначала авторизуйтесь">На главную</button>
+					<button class="btn btn__review test__btn form__btn" type="button"
+						data-title="Сначала авторизуйтесь">На главную</button>
 				</div>
 
 			</div>
@@ -142,4 +188,5 @@
 
 
 </body>
+
 </html>
