@@ -28,6 +28,8 @@
 }
 
 .reviews__item-name-date {
+  display: flex;
+  flex-wrap: wrap;
   padding-left: 71px;
   padding-bottom: 5px;
   padding-top: 10px;
@@ -45,7 +47,29 @@
     width: 56px;
     height: 56px;
     background-color: #ededed;
+    background-image: url("../img/icons/user-big.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 50%;
+  }
+  .reviews__item-name-date-inner{
+    margin-right: 10px;
+    flex: 1 0.5 auto;
+  }
+}
+.reviews__rating{
+  width: 120px;
+  height: 20px;
+  position: relative;
+  background-image: url(../img/icons/star.svg);
+  background-position: left;
+  .reviews__rating-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-image: url(../img/icons/star-full.svg);
+    background-position: left;
   }
 }
 
