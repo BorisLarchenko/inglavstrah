@@ -182,6 +182,25 @@ for (let i = 0; i < allCloseButtons.length; i++) {
 
   isElementPresent('.main__advantages-list--gifts', clickGiftButton);
 
+  function clickGiftOverviewButton(elem) {
+    // find all buttons on gift.html
+    const buttonGiftArr = elem.querySelectorAll('.btn__modal--gift-overview');
+    //  find popup gift on modal-auth-reg.html
+    const popupGift = document.querySelector('.modal__overlay+.modal--enter.modal--gift-overview');
+    const sectionPopupGift = popupGift.querySelector('.modal__forgot-pass.modal__forgot-pass--gift-overview');
+    //  activate overlay, authWrap and auth while clicking login
+    for (let i = 0; i < buttonGiftArr.length; i++) {
+      buttonGiftArr[i].addEventListener('click', function (evt) {
+        evt.preventDefault();
+        overlay.classList.add('modal--active');
+        popupGift.classList.add('modal--active');
+        sectionPopupGift.classList.add('modal--active');
+      });
+    }
+  }
+
+  isElementPresent('.main__advantages-list--gifts', clickGiftOverviewButton);
+
   // Add popup for blog-item.html window
 
   function clickBlogCommentButton(elem) {

@@ -1,0 +1,96 @@
+.main__profile-personal {
+
+}
+.profile-personal__wrapper{
+  padding: 50px 110px 80px;
+  display: block
+}
+.profile-personal__step-title{
+  margin-bottom: 20px;
+}
+.profile-personal__input-row{
+  display: flex;
+  padding: 0 20px;
+  border-bottom: 1px solid #606e81;
+  margin-bottom: 5px;
+  max-width: 830px;
+  width: 100%;
+  .profile-personal__input-lable{
+    min-width: 215px;
+    width: 215px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    padding: 6px 0;
+  }
+  .input-readolny{
+    position: relative;
+    flex: 1;
+    .input-readolny__btn{
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+  }
+  .form__text{
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    padding-right: 25px;
+    &:read-only{
+      color: #7f7f7f
+    }
+  }
+}
+.profile-personal__btn-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 830px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.profile-personal_btn-back{
+  color: #325a7e;
+  border-color: #325a7e;
+}
+.profile-personal__btn{
+  font-size: 22px;
+  padding: 9.5px 56px;
+}
+
+
+//Write all styles for big-tablet and small desktop
+@media (max-width: @desctopWidth)  {}
+//Write all styles for tablet-desctop(less than 1280px)
+@media (max-width: @mediumWidth)  {
+
+}
+//Write styles for tablet (less than 1024px)
+@media (max-width: @lowWidth) {
+  .profile-personal__wrapper{
+    padding: 50px 14px 80px;
+  }
+}
+
+//Write all styles for mobile
+@media (max-width: @tabletWidth) {
+  .profile-personal__wrapper{
+    padding: 30px 15px;
+  }
+  .profile-personal__input-row{
+    flex-wrap: wrap;
+    padding: 0;
+    .input-readolny{
+      flex: none;
+      width: 100%;
+    }
+  }
+  .profile-personal__btn-wrapper{
+    margin-bottom: 30px;
+  }
+}
