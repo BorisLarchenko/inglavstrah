@@ -1,0 +1,157 @@
+.main__profile-policies {
+
+}
+.profile-policies__wrapper{
+  padding: 50px 110px;
+  display: block;
+  min-height: auto;
+}
+
+.profile-policies__search-form{
+  display: flex;
+  max-width: 1040px;
+  width: 100%;
+  margin-top: 30px;
+  .profile-policies__search-wrapper{
+    margin-right: 20px;
+    flex: 1;
+  }
+  .profile-policies__search-input{
+    width: 100%;
+    background-color: transparent;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    padding-left: 40px;
+    padding-right: 20px;
+    font-size: 17px;
+    line-height: 22px;
+    border: 1px solid #c1cdd8;
+    &::placeholder{
+      color: #325a7e;
+    }
+  }
+  .profile-policies__btn-search{
+    font-size: 22px;
+    padding: 9.5px;
+    max-width: 157px;
+    width: 100%;
+  }
+}
+
+.profile-policies__checkbox-wrapper{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.table-policies{
+  font-size: 16px;
+  line-height: 130%;
+  max-width: 1040px;
+  .table-policies__row{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 1px solid #cccccc;
+  }
+  .table-policies__number{
+    font-weight: 700;
+    color: #325a7e;
+    width: auto;
+    min-width: 140px;
+    flex: 1;
+  }
+  .table-policies__download{
+    max-width: 110px;
+  }
+  .table-policies__car{
+    max-width: 185px;
+    color: #7f7f7f;
+  }
+  .table-policies__term{
+    max-width: 180px;
+    color: #7f7f7f;
+  }
+  .table-policies__insurance-premium{
+    max-width: 210px;
+    font-weight: 700;
+    color: #325a7e;
+  }
+  .table-policies__action{
+    max-width: 142px;
+  }
+  .table-policies__item{
+    width: 100%;
+    padding: 12px 10px 12px 0;
+  }
+  .table-policies__row-head {
+    .table-policies__item{
+      font-family: "robotomedium";
+      color: #000000;
+      font-weight: normal;
+    }
+  }
+  .table-policies__row-inactive .table-policies__item{
+    font-family: "Roboto";
+    font-weight: normal;
+    color: #7f7f7f;
+  }
+  .table-policies__edit{
+    margin-left: 30px;
+  }
+  
+  .table-policies__currency{
+    font-size: 18px
+  }
+  .table-policies__btn{
+    font-size: 22px;
+    padding: 5px;
+    max-width: 142px;
+    width: 100%;
+    color: #000000;
+  }
+}
+
+//Write all styles for big-tablet and small desktop
+@media (max-width: @desctopWidth)  {}
+//Write all styles for tablet-desctop(less than 1280px)
+@media (max-width: @mediumWidth)  {
+
+}
+//Write styles for tablet (less than 1024px)
+@media (max-width: @lowWidth) {
+  .profile-policies__wrapper{
+    padding: 50px 14px;
+  }
+  .table-policies{
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    .table-policies__row{
+      flex-direction: column;
+      align-items: flex-start;
+      border-bottom: none;
+    }
+    .table-policies__number{
+      flex: none;
+    }
+  }
+}
+
+//Write all styles for mobile
+@media (max-width: @tabletWidth) {
+  .profile-policies__wrapper{
+    padding: 30px 15px;
+  }
+  .profile-policies__search-form{
+    flex-wrap: wrap;
+    justify-content: center;
+    .profile-policies__search-wrapper{
+      flex: none;
+      width: 100%;
+      margin-right: 0;
+    }
+    .profile-policies__btn-search{
+      margin-top: 15px;
+    }
+  }
+}
