@@ -41,6 +41,7 @@
         border: 1px solid #305a7f;
         border-radius: 0 10px 10px;
         cursor: pointer;
+        margin-left: 20px;
         &:hover {
           background-color: #4687b0;
           transition: background-color 100ms linear;
@@ -76,12 +77,14 @@
         margin-bottom: 30px;
       }
       .test__insurance-wrapper {
-        justify-content: flex-start;
+        justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
         padding-top: 20px;
         padding-bottom: 10px;
+        padding-right: 0;
         border-bottom: 1px solid @superlight-grey;
+        width: 100%;
       }
       .insurance__info {
         display: flex;
@@ -175,6 +178,7 @@
         }
         .test__price-text {
           margin-bottom: 10px;
+          margin-right: 10px;
           letter-spacing: -0.025em;
           font-size: 14px;
           line-height: 16px;
@@ -266,16 +270,19 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
             .reviews__title {
               margin-bottom: 0;
               font-family: 'cuprumbold','Arial',sans-serif;
               font-size: 25px;
               line-height: 22px;
               color: #273c55;
+              margin-right: 10px;
+              margin-bottom: 20px;
             }
             .insurance__btn {
-              margin-bottom: 0;
+              margin-bottom: 20px;
               padding: 10px 30px;
             }
           }
@@ -307,11 +314,13 @@
         position: static;
         border-top: 1px solid #b2b2b2;
         border-bottom: 1px solid #b2b2b2;
+        transform: none;
+        padding: 15px 15px 0;
+        flex-wrap: wrap;
         a,
         span {
           display: inline-block;
-          padding: 15px 15px;
-          margin-bottom: 0;
+          margin: 0 15px 15px 0;
           color: @bg-color-blue;
           font-size: 18px;
           line-height: 23px;
@@ -321,10 +330,12 @@
         order: 6;
         border-top: 1px solid #b2b2b2;
         margin-top: 50px;
+        padding: 15px 15px 0;
+        display: flex;
+        flex-wrap: wrap;
         span {
           display: inline-block;
-          padding: 15px 15px;
-          margin-bottom: 0;
+          margin: 0 15px 15px 0;
           color: @bg-color-blue;
           font-size: 18px;
           line-height: 23px;
@@ -332,6 +343,7 @@
         a {
           color: @superlight-grey;
           font-size: 18px;
+          margin: 0 15px 15px 0;
           &:hover {
             color: @bg-color-blue;
             transition: 0.3s;
@@ -357,10 +369,101 @@
 }
 //Write styles for tablet (less than 1024px)
 @media (max-width: @lowWidth) {
-
+  .blog__page {
+    .blog__test__titile-wrapper .test__title {
+      font-size: 40px;
+    }
+    .insurance__blocks-wrapper {
+      flex-wrap: wrap;
+      .insurance__blocks-wrapper-right {
+        width: 100%;
+        min-height: auto;
+        .insurance__info {
+          display: flex;
+          overflow: auto;
+          white-space: nowrap;
+          .insurance__text {
+            margin-right: 15px;
+            padding: 0;
+            font-size: 16px;
+          }
+        }
+      }
+      .insurance__blocks-wrapper-left {
+        width: 100%;
+        .insurance__info {
+          padding: 10px 50px;
+          margin-bottom: 50px;
+          .blog__current-text {
+            font-size: 16px;
+          }
+          .blog__social {
+            left: 14px;
+          }
+        }
+      }
+    }
+  }
 }
 
 //Write all styles for mobile
 @media (max-width: @tabletWidth) {
-
+  .blog__page {
+    padding-bottom: 30px;
+    .blog__test__titile-wrapper {
+      flex-wrap: wrap;
+      .test__title {
+        width: 100%;
+        font-size: 32px;
+      }
+      .blog__search-form {
+        width: 100%;
+        padding-left: 14px;
+        padding-right: 14px;
+        margin-top: 20px;
+      }
+    }
+    .insurance__blocks-wrapper {
+      .insurance__blocks-wrapper-right {
+        .insurance__info {
+          padding: 15px;
+          border-radius: 15px;
+          .insurance__text {
+            font-size: 14px;
+          }
+          
+        }
+      }
+      .insurance__blocks-wrapper-left {
+        .insurance__btn {
+          align-self: center;
+        }
+        .insurance__info {
+          padding: 10px 14px 20px;
+          .blog__current-text {
+            font-size: 14px;
+          }
+          .blog__social {
+            top: auto;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            a {
+              margin: 0 15px 0 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .blog__page.blog__item .insurance__blocks-wrapper .insurance__blocks-wrapper-left {
+    .main__reviews {
+      padding-bottom: 30px;
+    }
+    .insurance__info .blog__tags {
+      margin-top: 10px;
+    }
+  }
+    
 }

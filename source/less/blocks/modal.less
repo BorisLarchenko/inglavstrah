@@ -72,6 +72,8 @@
   min-height: 390px;
   width: 600px;
   margin-left: -300px;
+  overflow: auto;
+  max-height: 90vh;
   .modal--gift-overview-title{
     margin: 0 0 15px;
     font-family: 'cuprumbold','Arial',sans-serif;
@@ -83,8 +85,11 @@
     margin-bottom: 30px;
     img {
       margin: 0 auto;
-      display: block
+      display: block;
     }
+  }
+  .visually-hidden{
+    display: none;
   }
 }
 
@@ -621,5 +626,10 @@
   }
   .modal__auth-text--reg{
     font-size: 14px;
+  }
+  .modal__forgot-pass--gift-overview{
+    max-height: 80vh;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
