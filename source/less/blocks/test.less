@@ -67,6 +67,43 @@
 
 }
 
+.line-inputs .form__text{
+  margin-top: 0;
+  width: 100%;
+}
+.line-inputs .full-request__text .icon__input-svg-wrapper{
+  svg{
+    left: 7px;
+  }
+  &:hover:before{
+    display: none;
+  }
+}
+.line-inputs .test__select-label-text{
+  font-family: 'cuprumbold';
+  font-size: 20px;
+  color: @new-blue;
+}
+.error-text{
+  display: none;
+  font-family: 'cuprumbold';
+  font-size: 14px;
+  line-height: 16px;
+  color: red;
+  position: absolute;
+  bottom: -25px;
+}
+.error .error-text{
+  display: block;
+}
+.error input{
+  color: red;
+  border-color: red;
+}
+.new-email-field{
+  margin: 0 0 0 30px;
+}
+
 .test__form-step1 {
   display: block;
   &::after {

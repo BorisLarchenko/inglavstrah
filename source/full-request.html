@@ -566,6 +566,72 @@
 					</div>
 				</div>
 				<div class="test__form-wrapper">
+					<p class="test__pagination">1 <span class="test__pagination--grey">/ 4</span>
+						<span class="full-request__pagination-title">Автомобиль</span>
+					</p>
+					<p class="test__step-title full-request__step-title">
+						Диагностическа карта (Техосмотр)
+					</p>
+
+					<ul class="pagination full-request__pages">
+						<li class="pagination__item full-request__item">
+							<button class="btn--grey full-request__btn-back" type="button">Автомобиль:  Toyota</button>
+							<button class="modal__close close--full-pagination">
+
+								<span class="visually-hidden">Выбрать другую марку автомобиля</span>
+								<include src="build/img/icons/close.svg"></include>
+							</button>
+						</li>
+						<li class="pagination__item full-request__item">
+							<button class="btn--grey full-request__btn-back" type="button">2006</button>
+						</li>
+						<li class="pagination__item full-request__item">
+							<button class="btn--grey full-request__btn-back" type="button">Corolla</button>
+						</li>
+						<li class="pagination__item full-request__item">
+							<button class="btn--grey full-request__btn-back" type="button">1.6 л.</button>
+						</li>
+						<li class="pagination__item full-request__item">
+							<button class="btn--grey full-request__btn-back" type="button">124 л.с.</button>
+						</li>
+					</ul>
+
+					<div class="test__radio-wrapper line-inputs">
+						<div class="test__select-label-wrapper error">
+							<p class="test__select-label-text">Номер карты</p>
+							<input class="form__text full-request__text" type="text" placeholder="xx-xx-xx-xx-xx" value="54-54-23">
+							<p class="error-text">
+								Номер карты указан не коректно, введите 10 значный номер
+							</p>
+						</div>
+						<div class="test__select-label-wrapper">
+							<p class="test__select-label-text">Дата окончания</p>
+							<label class='form__text full-request__text calendar-label-date ui calendar'>
+								<input type="text" placeholder="ХХ.ХХ.ХХХХ">
+							</label>
+						</div>
+					</div>
+
+					<div class="test__btn-price-wrapper">
+						<div class="test__btn-wrapper full-request__btn-wrapper">
+							<button class="btn test__btn test__btn--kbm-less" type="button">Следующий шаг</button>
+							<button class="btn-back btn-back--nobord test__btn-back" type="button">
+								<span class="btn-back--text">Шаг назад</span>
+								<span class="btn-back--sign">
+									<include src="build/img/icons/back.svg"></include>
+								</span>
+
+							</button>
+                            <div class="info-mobile-only">i</div>
+						</div>
+
+						<p class="main__test-info test__info">
+							<span class="main__test-price test__price">350<span class="main__test-price-sign">₽</span></span>
+							<span class="main__test-words test__words"> Прошедшим тест — скидка	от стоимости полиса ОСАГО</span>
+						</p>
+					</div>
+				</div>
+				<div class="test__form-wrapper">
 
 					<p class="test__pagination">1 <span class="test__pagination--grey">/ 4</span>
 						<span class="full-request__pagination-title">Автомобиль</span>
@@ -1061,10 +1127,21 @@
 												</li>
 					</ul>
 
-
-					<div class="test__radio-wrapper full-request__radio-wrapper calendar-label-date ui calendar">
-							<include src="build/img/icons/date.svg"></include>
-							<input class="modal__phone full-request__date" type="text" name="date"  placeholder="Введите дату">
+					<div class="test__radio-wrapper line-inputs">
+						<div class="test__select-label-wrapper">
+							<label class='form__text full-request__text calendar-label-date ui calendar'>
+								<input type="text" placeholder="Выберите дату">
+								<span class="modal__pass-svg icon__input-svg-wrapper">
+									<include src="build/img/icons/date.svg"></include>
+								</span>
+							</label>
+						</div>
+						<div class="test__select-label-wrapper error">
+							<input class="form__text full-request__text" type="email" placeholder="Введите email">
+							<p class="error-text">
+								Введите корректный email
+							</p>
+						</div>
 					</div>
 
 					<div class="test__btn-price-wrapper">
