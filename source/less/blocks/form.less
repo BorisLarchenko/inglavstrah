@@ -236,6 +236,16 @@
   .form__personal.form__personal--less {
     width: 220px;
   }
+  .form__contacts-wrapper {
+    &.form__contacts-wrapper--default{
+      .form__contacts-slogan--color {
+        margin-bottom: 40px
+      }
+      .form__contacts-thanks-text {
+        margin-bottom: 70px
+      }
+    }
+  }
 }
 
 //Write all styles for mobile
@@ -262,6 +272,26 @@
     padding: 0 15px;
     .btn.btn__review{
       margin-bottom: 15px
+    }
+  }
+  .form__contacts-wrapper {
+    &.form__contacts-wrapper--default{
+      padding-top: 20px;
+      padding-bottom: 35px;
+      .form__contacts-slogan--color {
+        margin-bottom: 10px
+      }
+      .form__contacts-thanks-text {
+        margin-bottom: 15px
+      }
+    }
+  }
+  .form__contacts-text {
+    &--mot-bottom {
+      padding-bottom: 20px;
+    }
+    &--mot {
+      padding-bottom: 20px;
     }
   }
 }
