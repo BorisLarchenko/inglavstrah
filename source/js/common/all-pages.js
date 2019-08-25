@@ -40,6 +40,9 @@ $(function(){
     }
   });
 
+// Header Geolocation
+  $('.ui.dropdown.geolocation').dropdown();
+
 
 
 // START Hide preloader after load page
