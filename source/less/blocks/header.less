@@ -193,6 +193,77 @@
 .header__login-text{
   display: none;
 }
+
+
+.mobile-geolocation{
+  display: none;
+  border-bottom: rgba(254,202,4,.05) 1px solid;
+  width: 100%;
+  padding: 0 15px;
+}
+.header__nav--opened .mobile-geolocation{
+  display: block;
+}
+.header__nav .header__nav-wrapper .ui.dropdown.geolocation {
+  margin: 11px 0;
+}
+.header__wrapper .ui.dropdown.geolocation{
+  display: none;
+}
+.ui.dropdown.geolocation i.icon.marker{
+  font-size: 22px;
+  width: auto;
+  color: @new-blue;
+  color: #fff;
+}
+.ui.dropdown.geolocation .menu{
+  top: calc(100% + 5px);
+}
+.ui.dropdown.geolocation .text {
+  font-size: 18px;
+  letter-spacing: .025em;
+  color: @new-blue;
+  color: #fff;
+  font-family: 'cuprumbold';
+}
+.ui.dropdown.geolocation .text:hover {
+  text-decoration: underline;
+}
+.ui.dropdown.geolocation .menu>.item{
+  font-size: 14px;
+}
+.ui.dropdown.geolocation .menu>.input.search {
+    margin: .78571429rem 1.14285714rem;
+    font-family: 'robotomedium';
+    min-width: auto;
+}
+.ui.dropdown.geolocation>.left.menu .menu,
+.ui.dropdown.geolocation .menu .left.menu{
+  margin: 0!important;
+}
+.ui.dropdown.geolocation .scrolling.menu::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+}
+.ui.dropdown.geolocation .scrolling.menu::-webkit-scrollbar-track {
+  background: #f3f5f7;
+  border-radius: 0;
+}
+.ui.dropdown.geolocation .scrolling.menu::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(208, 217, 225, .8);
+}
+.ui.dropdown.geolocation .scrolling.menu::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 0;
+  background: rgba(208, 217, 225, .9);
+  transition: background 0.2s ease;
+}
+.ui.dropdown.geolocation .scrolling.menu::-webkit-scrollbar-thumb:hover {
+  background: rgba(208, 217, 225, 1);
+}
+
+
 @media (min-width: @tabletWidth)  {
 
   .header{
@@ -238,7 +309,22 @@
 }
 
 @media (min-width: @mediumWidth) {
-
+  .ui.dropdown.geolocation .scrolling.menu::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .header__nav--opened .mobile-geolocation{
+    display: none;
+  }
+  .header__wrapper .ui.dropdown.geolocation{
+    display: block;
+  }
+  .ui.dropdown.geolocation i.icon.marker{
+    color: @new-blue;
+  }
+  .ui.dropdown.geolocation .text {
+    color: @new-blue;
+  }
   .header__phone-svg {
     display: none;
   }
