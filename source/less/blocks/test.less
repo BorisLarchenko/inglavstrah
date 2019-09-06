@@ -1139,6 +1139,12 @@
   }
   .test__insurance-wrapper {
     flex-direction: column;
+    .test__insurance-list{
+      width: 100%;
+    }
+    .test__insurance-item{
+      flex-wrap: wrap;
+    }
   }
 
   .main__form-test {
@@ -1279,10 +1285,24 @@
   .form-footer-hide{
     .test__form-wrapper,
     .test__end-form-thanks{
-      height: calc(100vh - 227px);
+      /* height: calc(100vh - 227px); */
+      height: calc(100vh - 172px);
       padding-bottom: 16px;
       overflow: auto;
       padding-bottom: 125px;
+      &--h-247 {
+        height: calc(100vh - 247px);
+      }
+      &--h-227 {
+        height: calc(100vh - 227px);
+      }
+    }
+    .test__end-form-thanks--h-227{
+      height: calc(100vh - 227px);
+      min-height: auto;
+      &:after{
+        position: fixed;
+      }
     }
     .test__end-form-thanks--paddingb-0{
       padding-bottom: 40px;
@@ -1300,5 +1320,10 @@
   }
   .test__form--ruler::after{
     height: 8px;
+  }
+  .form-btn-wrapper.form-btn-wrapper--mobile-center{
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
