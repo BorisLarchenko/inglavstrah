@@ -506,6 +506,14 @@ span.full-request__text {
   display: none;
 }
 
+.icon__input-svg-wrapper-var2{
+  z-index: 2;
+}
+.icon__input-svg-wrapper-var3{
+  z-index: 3;
+}
+
+
 //Write all styles for big-tablet and small desktop
 @media (max-width: @desctopWidth)  {
   .full-request__btn-wrapper {
@@ -628,6 +636,9 @@ span.full-request__text {
     text-align: center;
     margin-top: 15px;
   }
+  .full-request__btn-wrapper .test__btn--kbm-var1{
+    max-width: 165px;
+  }
   .full-request__date-radio-wrapper--four-cols{
     margin-bottom: -20px;
   }
@@ -730,6 +741,21 @@ span.full-request__text {
     left: -272px;
     width: 320px;
     font-size: 14px;
+  }
+  .full-request__text .icon__input-svg-wrapper-var1::before{
+    left: auto;
+    right: 0;
+    width: 285px;
+    font-size: 14px;
+  }
+  .icon__input-svg-wrapper-var2::before{
+    left: auto;
+    right: 0;
+    width: 280px;
+  }
+  .full-request__step-title .icon__input-svg-wrapper-var3::before{
+    left: -127px;
+    width: 280px;
   }
   .info-mobile-only{    
     width: 32px;
