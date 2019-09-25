@@ -216,4 +216,46 @@ for (let i = 0; i < allCloseButtons.length; i++) {
     });
   }
   isElementPresent('.blog__page.blog__item', clickBlogCommentButton);
+
+
+  // Add popups for reviews.html
+  function letsLeaveReviewInit(elem) {
+    const button = elem.querySelector('#lets-leave-review-init');
+    const popup = document.querySelector('.lets-leave-review');
+    const popupWrap = popup.querySelector('.modal__forgot-pass');
+
+    button.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      popup.classList.add('modal--active');
+      overlay.classList.add('modal--active');
+      popupWrap.classList.add('modal--active');
+    });
+  }
+  isElementPresent('.reviews', letsLeaveReviewInit);
+
+
+  // Add popups for reviews.html
+  function leaveReviewInit(elem) {
+    const button = elem.querySelector('#leave-review-init');
+    const popup = document.querySelector('.leave-review');
+    const popupWrap = popup.querySelector('.modal__forgot-pass');
+
+    const popupPrev = document.querySelector('.lets-leave-review');
+    const popupWrapPrev = popupPrev.querySelector('.modal__forgot-pass');
+
+    button.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      popupPrev.classList.remove('modal--active');
+      popupWrapPrev.classList.remove('modal--active');
+
+      popup.classList.add('modal--active');
+      popupWrap.classList.add('modal--active');
+    });
+  }
+  isElementPresent('.lets-leave-review', leaveReviewInit);
 })();
+
+$('.star').click( function() {
+  $('.star').removeClass('choosed');
+  $( this ).addClass('choosed');
+});

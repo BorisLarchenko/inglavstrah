@@ -36,7 +36,6 @@
 }
 
 
-
 .modal--enter {
   width: 400px;
 }
@@ -63,6 +62,63 @@
   border-radius: 20px;
   z-index: 10;
 }
+.modal--blog-item{
+  width: 740px;
+  margin-left: -370px;
+}
+.lets-leave-review .modal__gift-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lets-leave-review .modal__gift-wrapper svg{
+  fill: #ffd800;
+  width: 110px;
+    height: auto;
+}
+.leave-review-title{
+  color: #3c5778;
+  font-size: 18px;
+  font-family: 'cuprumbold';
+  margin-bottom: 10px;
+}
+.leave-review textarea{
+  resize: none;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.leave-review .modal__forgot-pass--gift {
+    min-height: auto;
+}
+.leave-review .stars{
+  margin-bottom: 30px;
+}
+.leave-review .stars{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.leave-review .star{
+  float: right;
+}
+.leave-review .star input{
+  display: none;
+}
+.leave-review .star .image{
+  background: url('../img/icons/star.svg') no-repeat center;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  display: block;
+}
+.leave-review .star:hover .image,
+.leave-review .star:hover ~ .star .image,
+.leave-review .star.choosed .image,
+.leave-review .star.choosed ~ .star .image{
+  background: url('../img/icons/star-full.svg') no-repeat center;
+}
+
 
 .modal__forgot-pass--gift {
   min-height: 390px;
