@@ -59,3 +59,9 @@ $(".info-mobile-only").on("click", function(){
   $(this).toggleClass("close");
   $(".main__test-info.test__info").toggleClass("opened");
 });
+
+// Reviews raiting
+$('.star').click( function() {
+  $('.star').removeClass('choosed');
+  $( this ).addClass('choosed');
+});

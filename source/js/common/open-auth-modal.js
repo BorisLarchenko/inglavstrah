@@ -254,8 +254,3 @@ for (let i = 0; i < allCloseButtons.length; i++) {
   }
   isElementPresent('.lets-leave-review', leaveReviewInit);
 })();
-
-$('.star').click( function() {
-  $('.star').removeClass('choosed');
-  $( this ).addClass('choosed');
-});

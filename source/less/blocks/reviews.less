@@ -110,6 +110,56 @@
 
 }
 
+.stars-flex{
+  display: flex;
+  align-items: center;
+}
+.stars{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.form__review-wrapper .stars{
+  margin-left: 20px;
+}
+.form__review-wrapper .leave-review-title{
+  margin-bottom: 0;
+}
+.star .image{
+  background: url('../img/icons/star.svg') no-repeat center;
+  cursor: pointer;
+  display: block;
+  background-size: cover;
+}
+.star input{
+  display: none;
+}
+.star:hover .image,
+.star:hover ~ .star .image,
+.star.choosed .image,
+.star.choosed ~ .star .image{
+  background: url('../img/icons/star-full.svg') no-repeat center;
+  background-size: cover;
+}
+.form__review-wrapper .star .image{
+  width: 40px;
+  height: 32px;
+}
+.form__review-wrapper .leave-review-title{
+  color: #fff;
+}
+@media (max-width: 1023px){
+  .stars-flex{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form__review-wrapper .stars{
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
 
 //Write all styles for small desktop and big tablet
 @media (max-width: @desctopWidth)  {
