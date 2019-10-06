@@ -294,3 +294,207 @@
   }
   
 }
+
+
+.insurance{
+  .test__title{
+    font-family: 'robotomedium';
+  }
+  &__table{
+    background: #fff;
+    padding: 15px 15px 50px;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.12), 0px 5px 8px 0px rgba(0, 0, 0, 0.11);
+    border-radius: 8px;
+
+    table{
+      width: 100%;
+    }
+    .hover:hover{
+      background-color: #f6f6f6;
+    }
+    .pointer{
+      cursor: pointer;
+    }
+    .insur__company{
+      font-size: 18px;
+      color: #26283b;
+      &__logo{
+        width: 46px;
+        height: 46px;
+        display: inline-block;
+        margin-right: 12px;
+        vertical-align: middle;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 1px 1.732px 6px 0px rgba(0, 0, 0, .23);
+        background-size: contain;
+        background-position: center;
+        & + p{
+          display: inline-block;
+          vertical-align: middle;
+          width: calc(100% - 55px - 12px);
+        }
+      }
+    }
+    th.border-bottom{
+      font-family: 'cuprumbold';
+      font-size: 24px;
+      color: #305a7f;
+      text-align: left;
+      line-height: 40px;
+      padding: 0 15px 0 0;
+      &:last-child{
+        padding: 0;
+      }
+    }
+    td{
+      line-height: 22px;
+      font-size: 16px;
+      color: #7f7f7f;
+    }
+    .text-link{
+      color: #325a7e;
+      border-bottom: 1px dashed #325a7e;
+      line-height: 1em;
+      &:hover{
+        border-bottom: 1px dashed transparent;
+      }
+    }
+    .text-accent{
+      font-family: 'robotomedium';
+      color: #000;
+      white-space: nowrap;
+    }
+    .contacts-flex{
+      display: flex;
+    }
+    .border-bottom{
+      border-bottom: 1px solid #ccc;
+      width: 30%;
+      min-width: 30%;
+      max-width: 30%;
+      padding-top: 25px;
+      padding-bottom: 20px;
+      vertical-align: middle;
+      &:first-child{
+        padding-left: 10px;
+        width: 22%;
+        min-width: 22%;
+        max-width: 22%;
+      }
+      &:nth-child(4){
+        width: 10%;
+        min-width: 10%;
+        max-width: 10%;
+      }
+      &:last-child{
+        width: 8%;
+        min-width: 8%;
+        max-width: 8%;
+        padding-right: 10px
+      }
+    }
+    .open{
+      .border-bottom{
+        border-bottom: 1px solid transparent;
+      }
+    }
+    .padding-right{
+      padding-right: 15px;
+    }
+  }
+  &__details{
+    display: none;
+    .insurance__details__padding{
+      padding: 0 10px 15px;
+      .insurnce__links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #325a7e;
+        a{
+          height: 110px;
+          width: calc((100% - 2px) / 3);
+          background-color: #325a7e;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          font-size: 22px;
+          color: #fff;
+          font-family: 'Cuprum';
+          img{
+            margin-bottom: 5px;
+          }
+          &:hover{
+            background-color: #264f74;
+          }
+          & + a:before{
+            content: '';
+            display: block;
+            width: 1px;
+            height: 70px;
+            background-color: #f5f5f5;
+            left: -1px;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+          }
+        }
+      }      
+      .company__descr{
+        margin-top: 35px;
+        margin-bottom: 35px;
+        max-width: 1012px;
+        .text-accent{
+          padding-right: 15px;
+        }
+        tr{
+          td{
+            padding-bottom: 20px;
+          }
+          &.hidden-content{
+            &.hidden{
+              display: none;
+            }
+            .review{
+              margin-bottom: 25px;
+              &__hat{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 5px;
+              }
+              &er__name{
+                font-family: 'robotomedium';
+                color: #273c55;
+                span{
+                  color: #b2b2b2;
+                  font-family: 'Roboto';
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .insurance__btn{
+      padding: 12px 35px;
+      font-size: 22px;
+      line-height: 30px;
+      border-radius: 0 12px 12px;
+      color: #000;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+  }
+  .insur__details-trigger{
+    &.open{
+      background-color: #f6f6f6;
+      & + .insurance__details{
+        display: table;
+        background-color: #f6f6f6;
+      }
+    }
+  }
+}
