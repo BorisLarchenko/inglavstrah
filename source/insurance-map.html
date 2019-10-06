@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta	name="viewport"	content="width=device-width,initial-scale=1">
+	<title>Страховые</title>
+	<link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+	<link rel="icon" href="./img/favicon.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+<include src="source/html-modules/header.html"></include>
+<main class="main insurance">
+	<section class="main__form-test test insurance__page  insurance__map">
+		<div class="container">
+			<div class="insurance__map__head">
+				<div class="insur__company">
+					<div class="insur__company__logo" style="background-image: url('img/insurance/3.png');"></div>
+					<p>Отделения компании “АльфаСтрахование”</p>
+				</div>
+				<div class="ui dropdown geolocation" tabindex="0">
+				  <input type="hidden" name="filters">
+				  <i class="map marker icon"></i>
+				  <span class="text">Воронеж</span>
+				  <div class="menu" tabindex="-1">
+				    <div class="ui icon search input">
+				      <i class="search icon"></i>
+				      <input type="text" placeholder="Найти">
+				    </div>
+				    <div class="scrolling menu">
+				      <div class="item" data-value="spb">
+				        Санкт-Петербург
+				      </div>
+				      <div class="item" data-value="msk">
+				        Москва
+				      </div>
+				      <div class="item" data-value="kzn">
+				        Казань
+				      </div>
+				      <div class="item" data-value="nn">
+				        Нижний Новгород
+				      </div>
+				      <div class="item" data-value="ekat">
+				        Екатеринбург
+				      </div>
+				      <div class="item" data-value="sochi">
+				        Сочи
+				      </div>
+				      <div class="item" data-value="nsb">
+				        Новосибирск
+				      </div>
+				      <div class="item" data-value="omsk">
+				        Омск
+				      </div>
+				      <div class="item" data-value="vlg">
+				        Волгоград
+				      </div>
+				      <div class="item" data-value="srtv">
+				        Саратов
+				      </div>
+				      <div class="item" data-value="rnd">
+				        Ростов-на-Дону
+				      </div>
+				      <div class="item" data-value="ufa">
+				        Уфа
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="departments">
+				<div class="insurnce__links">
+					<a href="full-request.html">
+						<img src="img/insurance/icon-1.svg" alt="icon">
+						Калькулятор ОСАГО
+					</a>
+					<a href="http://localhost:3000/request.html">
+						<img src="img/insurance/icon-2.svg" alt="icon">
+						Оформить ОСАГО
+					</a>
+					<a href="http://localhost:3000/kbm-steps.html">
+						<img src="img/insurance/icon-3.svg" alt="icon">
+						Проверить КБМ
+					</a>
+				</div>
+				<div id="departments__map" class="departments__map"></div>
+				<div class="insurance__table">
+					<table>
+						<tr>
+							<th class="border-bottom">Номер отделения</th>
+							<th class="border-bottom">Контакты</th>
+							<th class="border-bottom">Время работы</th>
+						</tr>
+						<tr class="hover">
+							<td class="padding-right border-bottom insur__company">
+								<div class="insur__company__logo" style="background-image: url('img/insurance/3.png');"></div>
+								<p>111024</p>
+							</td>
+							<td class="padding-right border-bottom">
+								<p>+7 (495) 2211042</p>
+								<p>Москва, Киевская улица, 7</p>
+							</td>
+							<td class="padding-right border-bottom">
+								<div class="time">
+									<div class="day">
+										ПН
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ВТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										СР
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ЧТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ПТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										СБ
+										<br>
+										Выходной
+									</div>
+									<div class="day">
+										ВС
+										<br>
+										Выходной
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="hover">
+							<td class="padding-right border-bottom insur__company">
+								<div class="insur__company__logo" style="background-image: url('img/insurance/3.png');"></div>
+								<p>111024</p>
+							</td>
+							<td class="padding-right border-bottom">
+								<p>+7 (495) 2211042</p>
+								<p>Москва, Киевская улица, 7</p>
+							</td>
+							<td class="padding-right border-bottom">
+								<div class="time">
+									<div class="day">
+										ПН
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ВТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										СР
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ЧТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ПТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										СБ
+										<br>
+										Выходной
+									</div>
+									<div class="day">
+										ВС
+										<br>
+										Выходной
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="hover">
+							<td class="padding-right border-bottom insur__company">
+								<div class="insur__company__logo" style="background-image: url('img/insurance/3.png');"></div>
+								<p>111024</p>
+							</td>
+							<td class="padding-right border-bottom">
+								<p>+7 (495) 2211042</p>
+								<p>Москва, Киевская улица, 7</p>
+							</td>
+							<td class="padding-right border-bottom">
+								<div class="time">
+									<div class="day">
+										ПН
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ВТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										СР
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ЧТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ПТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										СБ
+										<br>
+										Выходной
+									</div>
+									<div class="day">
+										ВС
+										<br>
+										Выходной
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="hover hidden">
+							<td class="padding-right border-bottom insur__company">
+								<div class="insur__company__logo" style="background-image: url('img/insurance/3.png');"></div>
+								<p>111024</p>
+							</td>
+							<td class="padding-right border-bottom">
+								<p>+7 (495) 2211042</p>
+								<p>Москва, Киевская улица, 7</p>
+							</td>
+							<td class="padding-right border-bottom">
+								<div class="time">
+									<div class="day">
+										ПН
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ВТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										СР
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ЧТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ПТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										СБ
+										<br>
+										Выходной
+									</div>
+									<div class="day">
+										ВС
+										<br>
+										Выходной
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="hover hidden">
+							<td class="padding-right border-bottom insur__company">
+								<div class="insur__company__logo" style="background-image: url('img/insurance/3.png');"></div>
+								<p>111024</p>
+							</td>
+							<td class="padding-right border-bottom">
+								<p>+7 (495) 2211042</p>
+								<p>Москва, Киевская улица, 7</p>
+							</td>
+							<td class="padding-right border-bottom">
+								<div class="time">
+									<div class="day">
+										ПН
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ВТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										СР
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ЧТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ПТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										СБ
+										<br>
+										Выходной
+									</div>
+									<div class="day">
+										ВС
+										<br>
+										Выходной
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="hover hidden">
+							<td class="padding-right border-bottom insur__company">
+								<div class="insur__company__logo" style="background-image: url('img/insurance/3.png');"></div>
+								<p>111024</p>
+							</td>
+							<td class="padding-right border-bottom">
+								<p>+7 (495) 2211042</p>
+								<p>Москва, Киевская улица, 7</p>
+							</td>
+							<td class="padding-right border-bottom">
+								<div class="time">
+									<div class="day">
+										ПН
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ВТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										СР
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ЧТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ПТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										СБ
+										<br>
+										Выходной
+									</div>
+									<div class="day">
+										ВС
+										<br>
+										Выходной
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="hover hidden">
+							<td class="padding-right border-bottom insur__company">
+								<div class="insur__company__logo" style="background-image: url('img/insurance/3.png');"></div>
+								<p>111024</p>
+							</td>
+							<td class="padding-right border-bottom">
+								<p>+7 (495) 2211042</p>
+								<p>Москва, Киевская улица, 7</p>
+							</td>
+							<td class="padding-right border-bottom">
+								<div class="time">
+									<div class="day">
+										ПН
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ВТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										СР
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ЧТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ПТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										СБ
+										<br>
+										Выходной
+									</div>
+									<div class="day">
+										ВС
+										<br>
+										Выходной
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr class="hover hidden">
+							<td class="padding-right border-bottom insur__company">
+								<div class="insur__company__logo" style="background-image: url('img/insurance/3.png');"></div>
+								<p>111024</p>
+							</td>
+							<td class="padding-right border-bottom">
+								<p>+7 (495) 2211042</p>
+								<p>Москва, Киевская улица, 7</p>
+							</td>
+							<td class="padding-right border-bottom">
+								<div class="time">
+									<div class="day">
+										ПН
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ВТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										СР
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ЧТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										ПТ
+										<br>
+										9:00
+										<br>
+										20:00
+									</div>
+									<div class="day">
+										СБ
+										<br>
+										Выходной
+									</div>
+									<div class="day">
+										ВС
+										<br>
+										Выходной
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<button class="btn test__btn insurance__btn">Показать все (8)</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</main>
+<include src="source/html-modules/footer.html"></include>
+<include src="source/html-modules/modal-auth-reg.html"></include>
+
+<script src="js/libs.min.js"></script>
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6HjX8Vp_hwJmQisJGsQfaC8jXIokZUxA&extension=.js"></script>
+<script src="js/common.min.js"></script>
+
+<script src="js/custom.min.js"></script>
+
+<!--build:js js/insurance_map.min.js -->
+<script src="js/modules/insurance_map.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

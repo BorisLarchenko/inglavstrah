@@ -25,5 +25,5 @@ $(document).ready(function() {
 			$('.hidden-content[data-company=' + attr + ']').addClass('hidden');
 		};
 	});
-
+    
 });
