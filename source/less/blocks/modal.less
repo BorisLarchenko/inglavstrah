@@ -124,9 +124,10 @@
       display: block;
     }
   }
-  .visually-hidden{
-    display: none;
-  }
+}
+
+.modal__close .visually-hidden{
+  display: none;
 }
 
 .modal__aouth--reg {
@@ -633,7 +634,24 @@
   .modal__auth, .modal__forgot-pass{
     width: 100%;
     margin-left: -50%;
-    padding: 50px 15px;
+    padding: 40px 15px 20px;
+
+    max-height: 80vh;
+    top: 50%;
+    transform: translateY(-50%);
+    min-height: auto;
+    overflow: auto;
+  }
+  .modal__title {
+    margin-bottom: 20px;
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .modal__checkbox-wrapper {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 0;
+    width: auto;
   }
   .modal__aouth--reg{
     width: 100%;
@@ -662,10 +680,5 @@
   }
   .modal__auth-text--reg{
     font-size: 14px;
-  }
-  .modal__forgot-pass--gift-overview{
-    max-height: 80vh;
-    top: 50%;
-    transform: translateY(-50%);
   }
 }

@@ -527,6 +527,7 @@
         color: #305a7f;
         .insur__company__logo + p{
           width: auto;
+              font-size: 30px;
         }
       }
     }
@@ -575,5 +576,108 @@
     .insurance__table th.border-bottom:last-child {
       padding-right: 10px;
     }
+  }
+}
+
+@media (max-width: 1279px){
+  .insurance .insur__company {
+      font-size: 16px;
+  }
+  .insurance__table th.border-bottom {
+      font-size: 18px;
+      line-height: 34px;
+      padding: 0 10px 0 0;
+  }
+  .insurance .insur__company__logo {
+      width: 36px;
+      height: 36px;
+      margin-right: 6px;
+  }
+  .insurance__table td {
+      font-size: 14px;
+  }
+  .insurance__table .border-bottom {
+      width: 22%;
+      min-width: 22%;
+      max-width: 22%;
+  }
+  .insurance__table .border-bottom:first-child,
+  .insurance__table .border-bottom:nth-child(2) {
+      width: 30%;
+      min-width: 30%;
+      max-width: 30%;
+  }
+  .insurance__map .time .day {
+      width: 80px;
+      padding: 0 3px;
+  }
+  .insurance__map .border-bottom:first-child{
+      width: 16%;
+      min-width: 16%;
+      max-width: 16%;
+  }
+  .insurance__map .border-bottom:nth-child(2) {
+      width: 28%;
+      min-width: 28%;
+      max-width: 28%;
+  }
+  .insurance__map__head .ui.dropdown.geolocation .text,
+  .ui.dropdown.geolocation i.icon.marker{
+    color: #325a7e;
+  }
+}
+@media (max-width: 1023px){
+  .insurance__table{
+    max-width: 100%;
+    overflow: auto;
+  }
+  .insurance__table > table {
+      min-width: 962px;
+      width: 962px;
+  }
+  .insurance .insur__details-trigger.open+.insurance__details {
+      width: calc(100vw - 30px);
+  }
+  .insurance__map__head{
+    flex-direction: column;
+    padding: 0 10px 40px 10px;
+  }
+  .insurance__map__head .insur__company{
+    margin-bottom: 20px;
+  }
+  .insurance__page{
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 767px){
+  .insurance .insur__details-trigger.open+.insurance__details {
+      width: calc(100vw - 15px);
+      min-width: 360px;
+  }
+  .insurance__table .text-accent {
+      white-space: normal;
+  }
+  .insurance__map__head .insur__company{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .insurance__table .insurance__details td {
+      font-size: 12px;
+  }
+  .insurance .insurance__btn {
+      padding: 8px 20px;
+      font-size: 20px;
+      line-height: 24px;
+  }
+  .insurance .insurnce__links a {
+      font-size: 10px;
+      height: 82px;
+  }
+  .insurance .insurnce__links a img {
+      height: 30px;
   }
 }

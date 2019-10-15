@@ -152,9 +152,16 @@ for (let i = 0; i < allCloseButtons.length; i++) {
 */
   //find callback button
   const callback = document.querySelector('.btn--small.header__button');
+  const callback2 = document.querySelector('.header-callback-btn');
   const modalCallback = document.querySelector('.modal__auth.modal__callback');
 
   callback.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    modalCallback.classList.add('modal--active');
+    overlay.classList.add('modal--active');
+  });
+
+  callback2.addEventListener('click', function (evt) {
     evt.preventDefault();
     modalCallback.classList.add('modal--active');
     overlay.classList.add('modal--active');

@@ -161,7 +161,9 @@ h1 {
   }
 }
 
-
+.main{
+  overflow-x: hidden;
+}
 
 
 .main_breadcrumbs{
@@ -229,4 +231,21 @@ h1 {
 .modal__select-wrapper .error--text {
   position: absolute;
   top: calc(100% + 5px);
+}
+
+@media (max-width: 1023px){
+  .main_breadcrumbs {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px){
+  .main_breadcrumbs {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 0;
+    position: static;
+    &.dark-section{
+      background-color: #283d56;
+    }
+  }
 }

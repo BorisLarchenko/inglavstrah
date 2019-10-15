@@ -250,6 +250,13 @@
 
 //Write all styles for mobile
 @media (max-width: @tabletWidth) {
+  .form--unauthorised::before {
+    top: 50%;
+    left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    width: auto;
+  }
   .form {
     .form__text {
       font-size: 16px;
